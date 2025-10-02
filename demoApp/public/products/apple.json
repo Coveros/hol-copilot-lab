@@ -1,0 +1,9 @@
+{
+    "id": "1",
+    "name": "Apple",
+    "description": "A juicy red apple",
+    "price": 0.5,
+    "image": "apple.png",
+    "category": "fruits",
+    "inStock": true
+}
