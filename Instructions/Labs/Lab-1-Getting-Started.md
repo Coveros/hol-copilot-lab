@@ -21,15 +21,13 @@
 
 ## Set Up GitHub Copilot
 
-(Should live in the PPT.)
-
 ### Administration and Enablement
 
-(Should live in the PPT.)
+(Should live in the PPT. Pull from existing PPT deck?)
 
 ### Billing
 
-(Should live in the PPT.)
+(Should live in the PPT. Pull from existing PPT deck?)
 
 ## Complete Technical Prerequisites
 
@@ -39,7 +37,7 @@
 
 ### Set Up the Lab Environment
 
-(Do these steps belong in the PPT or here in the Markdown file?)
+(Do these steps belong in the PPT or here in the Markdown file? We also need to get these from Spektra (or through TJ).)
 
 ## Understand the Repository
 
@@ -49,13 +47,15 @@
 
 ### Select Language for the Remaining Labs
 
-While completing these hands-on exercises you will be able to choose between four languages. <<List those languages and tell students what they need to do (if anything) to select one of them.
+While completing these hands-on exercises you will be able to choose between four languages. <<List those languages and tell students what they need to do (if anything) to select one of them.>>
 
 ## Review the Project
 
 ### Project Purpose
 
-(It is hard to say what this is going to look like until I know the current state of the project.)
+(It is hard to say what this is going to look like until I know the current state of the project. Below is a suggestion from the work breakdown document.)
+
+Something like you were just moved onto this project and tasked with taking over support of it. One idea we had was maybe a project with limited or no tests in it.
 
 ### Improvements Needed
 
