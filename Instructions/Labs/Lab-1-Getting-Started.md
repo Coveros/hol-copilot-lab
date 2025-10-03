@@ -13,7 +13,7 @@ of the lab’s goals, the technical setup required, and the real-world context d
 Establish the lab environment, understand the administrative context of Copilot Enablement and Billing, and frame the project scenario for hands-on development. By the end of this lab, participants will be able to configure:
 
 1. Task 1: Overview of Admin for GitHub Copilot Enablement & Billing
-2. Task 2: Log in to GitHub & Set Up Lab Environment (Using Agent Mode Prompts)
+2. Task 2: Log in to GitHub & Set Up Lab Environment
 3. Task 3: Review Repo & Select Language
 4. Task 4: Frame the Scenario  
 
