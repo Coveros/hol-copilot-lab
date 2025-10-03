@@ -141,7 +141,7 @@ Encourage learners to open their repo in Visual Studio Code and inspect the fold
   This prompt helps learners understand the modular design and encourages Copilot to provide contextual guidance.
 </details>
 
-1. Choose Your Development Language
+2. Choose Your Development Language
 
 Participants now select their preferred stack:
 
@@ -163,7 +163,7 @@ Ask Copilot for guidance on how to configure your environment for your chosen st
 
 Follow the guidance provided by Copilot for configuring your environment.
 
-### Task 4: Frame the Scenario (Python & .NET Focus) (Read Only)
+### Task 4: Frame the Scenario
 
 This task will help to define the real-world challenge and success criteria for enhancing the chosen application using GitHub Copilot. Participants will apply Copilot to refactor code, automate tasks, and improve the developer experience.
 
