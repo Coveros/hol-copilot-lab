@@ -141,7 +141,7 @@ Encourage learners to open their repo in Visual Studio Code and inspect the fold
   This prompt helps learners understand the modular design and encourages Copilot to provide contextual guidance.
 </details>
 
-3. Choose Your Development Language
+1. Choose Your Development Language
 
 Participants now select their preferred stack:
 
