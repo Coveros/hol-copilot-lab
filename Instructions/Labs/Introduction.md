@@ -78,7 +78,7 @@ To adjust the zoom level for the environment page, click the A↕: 100% icon loc
 
 1. On the **Sign in to GitHub** tab, enter the provided **GitHub username** **(1)** in the input field, and click on **Sign in with your identity provider** to continue **(2)**.
 
-    - Email/Username: <inject key="GitHub User Name" enableCopy="true"/>`
+    - Email/Username: <inject key="GitHub User Name" enableCopy="true"/>
 
       ![](../../media/23-7-25-g1.png)
 
