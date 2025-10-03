@@ -48,7 +48,7 @@ This structure of this repository is as follows:
  - Instructions/Labs/ - Contains one file for every lab that you will complete.
  - demoApp/ - Stores the code and configuration for a simple demo application written in four languages that you will modify during the labs.
  - README.md - Helps newcomers get oriented to this repository.
- - masterdoc.json - <<TBD -- Ask Phil.>>
+ - masterdoc.json - A configuration file that is used to help with managing access to the labs in the virtual learning environment.
 
 ### Select Language for the Remaining Labs
 
