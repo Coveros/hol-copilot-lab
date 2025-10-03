@@ -21,7 +21,6 @@ By the end of this lab, participants will be able to:
 - Build a functional micro-application using Agent Mode for task-driven development.
 - Use GitHub Copilot to author Infrastructure as Code (IaC) scripts with tools like Terraform and Bicep.
 - Integrate Model Context Protocol (MCP) to create richer, contextual prompts for more accurate and targeted AI assistance.
-- Explore GitHub Model
 
 ## Architecture
 
