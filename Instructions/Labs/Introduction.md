@@ -29,7 +29,7 @@ The architecture of **Advanced GitHub Copilot Capabilities** goes beyond simple 
 
 ## Architecture Diagram
 
-![image](../media/arch2.png)
+![image](../../media/arch2.png)
 
 ## Getting Started with the Lab
 
@@ -39,7 +39,7 @@ Welcome to your Advanced GitHub Copilot Hands-On Lab! We've prepared a seamless 
  
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
    
-   ![](../media/guide.png)
+   ![](../../media/guide.png)
 
 ### Virtual Machine & Lab Guide
  
@@ -49,31 +49,31 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
 
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
-   ![Manage Your Virtual Machine](../media/exp-lab-resources.png)
+   ![Manage Your Virtual Machine](../../media/exp-lab-resources.png)
 
 ## Utilizing the Split Window Feature
 
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
 
-![Use the Split Window Feature](../media/split-window.png)
+![Use the Split Window Feature](../../media/split-window.png)
 
 ## Managing Your Virtual Machine
 
 Feel free to **Start**, **Stop**, or **Restart** your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-![Manage Your Virtual Machine](../media/23-7-25-g-2.png)
+![Manage Your Virtual Machine](../../media/23-7-25-g-2.png)
 
 ## Utilizing the Zoom In/Out Feature
 
 To adjust the zoom level for the environment page, click the A↕: 100% icon located next to the timer in the lab environment.
 
-![Use the Split Window Feature](../media/zoom.png)
+![Use the Split Window Feature](../../media/zoom.png)
 
 ## Login to GitHub
 
 1. In the LABVM desktop, open the **Microsoft Edge** browser.
 
-   ![](../media/23-7-25-g-1.png)
+   ![](../../media/23-7-25-g-1.png)
 
 1. In a new tab, navigate to the **GitHub login** page by copying and pasting the following URL into the address bar:
 
@@ -85,31 +85,31 @@ To adjust the zoom level for the environment page, click the A↕: 100% icon loc
 
     - Email/Username: <inject key="GitHub User Name" enableCopy="true"/>`
 
-      ![](../media/23-7-25-g1.png)
+      ![](../../media/23-7-25-g1.png)
 
 1. Click on **Continue** on the **Single sign-on to CloudLabs Organizations** page to proceed.
 
-    ![](../media/23-7-25-g2.png)
+    ![](../../media/23-7-25-g2.png)
 
 1. You'll see the **Sign in** tab. Here, enter your Azure Entra credentials:
 
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
-       ![Enter Your Username](../media/23-7-25-g3.png)
+       ![Enter Your Username](../../media/23-7-25-g3.png)
 
 1. Next, provide your password and click on **Sign in**
 
    - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-      ![Enter Your Password](../media/23-7-25-g4.png)
+      ![Enter Your Password](../../media/23-7-25-g4.png)
 
 1. On the **Stay Signed in?** pop-up, click on No.
 
-    ![](../media/23-7-25-g4.1.png)
+    ![](../../media/23-7-25-g4.1.png)
 
 1. You are now successfully logged in to **GitHub** and have been redirected to the **GitHub homepage**.
 
-   ![](../media/github-homepage01.png)
+   ![](../../media/github-homepage01.png)
 
 1. On the **Create a new repository** tab, most fields will be pre-filled. Just update the **Owner** to **Cloudlabs-Enterprises** **(1)**, change the **Repository name** **(2)** as provided below to make it unique.
 
@@ -119,29 +119,29 @@ To adjust the zoom level for the environment page, click the A↕: 100% icon loc
       invoice-api-<inject key="Deployment-id" enableCopy="false"/>
       ```
 
-      ![](../media/23-7-25-g5.png)
+      ![](../../media/23-7-25-g5.png)
 
     - Slide the **Add README** configuration toggle **On**
 
     - Then click **Create repository** **(3)** to continue
 
-      ![](../media/23-7-25-g6.png)
+      ![](../../media/23-7-25-g6.png)
 
 1. After your new repository is created, wait about 20 seconds and then refresh the page; you will be redirected to the main page of the **invoice-api-<inject key="Deployment-id" enableCopy="false"/>**  repository.
 
-      ![](../media/new-repo.png)
+      ![](../../media/new-repo.png)
 
 1. Once the repository is created, click on your profile picture in the top right corner and then select **Organizations** under the settings section.
 
-      ![](../media/organizations.png)
+      ![](../../media/organizations.png)
 
 1. On the GitHub **Settings** page, under the **Code, planning, and automation** section, click **Codespaces** from the left pane to view and manage your Codespace.
 
-      ![](../media/codespace-01.png)
+      ![](../../media/codespace-01.png)
 
 1. Scroll down and make sure, **Visual Studio Code** is selected, under the **Editor preference**.
 
-     ![](../media/vscode02.png)
+     ![](../../media/vscode02.png)
    
 
 ## Support Contact
@@ -155,6 +155,6 @@ Learner Support Contacts:
 
 Now, click on Next from the lower right corner to move on to the next page.
 
-![](../media/next-page.png)
+![](../../media/next-page.png)
 
 ### Happy Learning!!
