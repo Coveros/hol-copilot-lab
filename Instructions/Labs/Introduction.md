@@ -27,10 +27,6 @@ By the end of this lab, participants will be able to:
 
 The architecture of **Advanced GitHub Copilot Capabilities** goes beyond simple suggestions to act as a full **AI-driven development assistant** across the software lifecycle. At its core, **GitHub Copilot** enables **project scaffolding** for collaborative development. It provides **Copilot Edits** for contextual refactoring and generating features like **API WebApps**, enhanced by the **Model Context Protocol (MCP)** for richer prompts. In parallel, it supports **Infrastructure as Code (IaC)** with Terraform or Bicep, while integrating with **GitHub Web** for seamless editing, versioning, and deployment. Together, these features streamline **code creation**, **infrastructure automation**, and **application scaffolding** in a unified ecosystem.
 
-## Architecture Diagram
-
-![image](../../media/arch2.png)
-
 ## Getting Started with the Lab
 
 Welcome to your Advanced GitHub Copilot Hands-On Lab! We've prepared a seamless environment for you to explore and learn GitHub Copilot Services. Let's begin by making the most of this experience:
