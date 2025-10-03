@@ -33,9 +33,9 @@ GitHub Copilot is licensed **per user**, and is available through the following 
 
 - You can view the assigned Licenses by navigating to your organization **Settings** and **Copilot > Features**. 
 
-  ![](../media/org-settings.png)
+  ![](../../media/org-settings.png)
 
-  ![](../media/copilot-license.png)
+  ![](../../media/copilot-license.png)
 
 >  *Note:* Both **Copilot for Business** and **Copilot Enterprise** support centralized billing, policy enforcement, and user provisioning.
 
@@ -90,41 +90,41 @@ In this task, participants will prepare their technical workspace using **Copilo
 
 1. Navigate back to the home page of your repository by clicking the **Code** **(1)** tab located at the top left of the screen. Click the **Code** **(2)** button located in the middle of the page. 
 
-   ![](../media/23-7-25-g9.png)
+   ![](../../media/23-7-25-g9.png)
 
 1. Click the **Codespaces (1)** tab on the box that pops up and then click the **Create codespace on main (2)** button.  If you don't see the "Create Codespace" button, it likely means your repository wasn't created under the **Cloudlabs-enterprises** organization. To fix this, either delete your current repository and recreate it under the specified organization or fork the existing repository into **Cloudlabs-enterprises** Org.
 
-   ![](../media/23-7-25-g10.png)
+   ![](../../media/23-7-25-g10.png)
 
    >**Note**: If a pop-up prompt doesn't appear in the browser to open Visual Studio Code, manually launch Visual Studio Code from the desktop and close it. Next, return to the browser, refresh the page, and launch the codespace that was previously created.
 
 1. You will encounter a pop-up prompt: **This site is trying to open Visual Studio Code.** Click **Open** to proceed. Subsequently, another pop-up window will appear within Visual Studio Code (VS Code), where you should select **Install Extension and Open URI** to continue.
 
-    ![](../media/E1T1S8-0807.png)
+    ![](../../media/E1T1S8-0807.png)
 
-   ![](../media/23-7-25-g10.1.png)
+   ![](../../media/23-7-25-g10.1.png)
 
     >**Note**: Click on **Allow** if "The extension **Github Codepsaces** wants to sign in using Github" pop-up appears.
 
-      ![](../media/23-7-25-g13.png)
+      ![](../../media/23-7-25-g13.png)
 
 1. On **Select user to authorize Visual Studio Code** page click on **Continue** 
 
-    ![](../media/23-7-25-g14.png)
+    ![](../../media/23-7-25-g14.png)
 
       >**Note:** If you get an error connecting to the browser like _"this page isn't working right now, 127.0.0.1 didn't send any data," close the browser window then in VS Code, click on **Cancel** and select **Yes** to try a different method. It will redirect to a new page for authentication. You may need to try this a couple of times to sign in to Copilot. 
 
 1. On the **Visual Studio Code is requesting additional permissions** tab, click **Authorize Visual-Studio-Code**.
 
-    ![](../media/23-7-25-g15.png)
+    ![](../../media/23-7-25-g15.png)
 
 1. On the **This site is trying to open Visual Studio Code** pop-up, click **Open** to launch VS Code via vscode.dev.
 
-    ![](../media/c3.png)
+    ![](../../media/c3.png)
 
 1. You are now signed-in to your GitHub account in Visual Studio Code. Click on the **GitHub Copilot** icon from the top and select **Agent** from the dropdown.
 
-    ![](../media/select-agent-mode.png)
+    ![](../../media/select-agent-mode.png)
 
 ### Task 3: Review Repo & Select Language
 
