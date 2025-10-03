@@ -33,7 +33,7 @@
 
 ### Log Into GitHub
 
-(Should live in the PPT.)
+(Should live in the PPT. Should this instead appear after the step "Set Up the Lab Environment"? Are students supposed to be logging into GitHub through Spektra's platform?)
 
 ### Set Up the Lab Environment
 
@@ -43,7 +43,12 @@
 
 ### Review Repository and Project Structure
 
-(It is difficult to write about this until I know what application we'll be working with during the remaining labs.)
+This structure of this repository is as follows:
+ - .github/ - Contains workflow files for managing the labs.
+ - Instructions/Labs/ - Contains one file for every lab that you will complete.
+ - demoApp/ - Stores the code and configuration for a simple demo application written in four languages that you will modify during the labs.
+ - README.md - Helps newcomers get oriented to this repository.
+ - masterdoc.json - <<TBD -- Ask Phil.>>
 
 ### Select Language for the Remaining Labs
 
@@ -53,13 +58,14 @@ While completing these hands-on exercises you will be able to choose between fou
 
 ### Project Purpose
 
-(It is hard to say what this is going to look like until I know the current state of the project. Below is a suggestion from the work breakdown document.)
-
-Something like you were just moved onto this project and tasked with taking over support of it. One idea we had was maybe a project with limited or no tests in it.
+You have just moved onto a project for developing a shopping website for a local grocery store. The previous developers failed to deliver an application with all of the required
+features and did not perform any testing.
 
 ### Improvements Needed
 
-(See above.)
+You have been tasked with developing the missing features and ensuring that the appliction is well-tested.
+
+(It is difficult to say more than this until the remaining labs have been completed and we know what features and tests will be added.)
 
 ## Goals for Remaining Labs
 
