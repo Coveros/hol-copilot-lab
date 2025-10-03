@@ -86,7 +86,7 @@ Best practices:
 
 ### Task 2: Log in to GitHub & Set Up Lab Environment
 
-In this task, participants will prepare their technical workspace using **Copilot Agent Mode**. Instead of manually executing commands, learners will craft and submit **natural language prompts** to GitHub Copilot, allowing it to scaffold their environment, generate boilerplate code, and guide setup steps interactively.
+In this task, participants will prepare their technical workspace.
 
 1. Navigate back to the home page of your repository by clicking the **Code** **(1)** tab located at the top left of the screen. Click the **Code** **(2)** button located in the middle of the page. 
 
