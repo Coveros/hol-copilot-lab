@@ -1,77 +1,200 @@
-# Lab 1 - Getting Started :hammer_and_wrench:
+# Lab 01: Getting Started (Setup & Context)
 
-<p align="center">
-  <img src="https://octodex.github.com/images/manufacturetocat.png" alt="Manufacturetocat" width="300" />
-</p>
+#### Duration : 20 minutes
 
-- [Lab 1 - Getting Started with GitHub Copilot](#skills-exercises-toolkit-hammer_and_wrench)
-  - [Set Up GitHub Copilot](#set-up-github-copilot)
-    - [Administration and Enablement](#administration-and-enablement)
-    - [Billing](#billing)
-  - [Complete Technical Prerequisites](#complete-technical-prerequisites)
-    - [Log Into GitHub](#log-into-github)
-    - [Set Up the Lab Environment](#set-up-the-lab-environment)
-  - [Understand the Repository](#understand-the-repository)
-    - [Review Repository and Project Structure](#review-repository-and-project-structure)
-    - [Select Language for the Remaining Labs](#select-language-for-the-remaining-labs)
-  - [Review the Project](#review-the-project)
-    - [Project Purpose](#project-purpose)
-    - [Improvements Needed](#improvements-needed)
-    - [Goals for Remaining Labs](#goals-for-remaining-labs)
+### Lab Overview:
 
-## Set Up GitHub Copilot
+In this foundational exercise, participants will set the stage for the lab by reviewing Copilot enablement and billing essentials, 
+logging into GitHub, and configuring their development environment. They'll explore the provided repository, select a preferred programming 
+language, and familiarize themselves with the project structure. The scenario centers on enhancing a shopping website. By the end of this session, learners will have a clear understanding 
+of the lab’s goals, the technical setup required, and the real-world context driving the hands-on experience.
 
-### Administration and Enablement
+### Lab Objectives:
+Establish the lab environment, understand the administrative context of Copilot Enablement and Billing, and frame the project scenario for hands-on development. By the end of this lab, participants will be able to configure:
 
-(Should live in the PPT. Pull from existing PPT deck?)
+1. Task 1: Overview of Admin for GitHub Copilot Enablement & Billing
+2. Task 2: Log in to GitHub & Set Up Lab Environment (Using Agent Mode Prompts)
+3. Task 3: Review Repo & Select Language
+4. Task 4: Frame the Scenario  
 
-### Billing
+### Task 1: Overview of Admin for GitHub Copilot Enablement & Billing (Read Only)
 
-(Should live in the PPT. Pull from existing PPT deck?)
+This task equips participants with foundational knowledge and administrative skills to enable, configure, and manage GitHub Copilot—including **Copilot for Business** and **Copilot Enterprise**—within an organization.
 
-## Complete Technical Prerequisites
 
-### Log Into GitHub
+1. Understand GitHub Copilot Licensing
 
-(Should live in the PPT. Should this instead appear after the step "Set Up the Lab Environment"? Are students supposed to be logging into GitHub through Spektra's platform?)
+GitHub Copilot is licensed **per user**, and is available through the following SKUs:
 
-### Set Up the Lab Environment
+| SKU                    | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| **Copilot for Business** | For organizations: includes centralized policy controls and team management. |
+| **Copilot Enterprise** | Advanced enterprise-grade offering with enhanced security, compliance, and integration with enterprise identity providers (e.g., SAML SSO). |
 
-(Do these steps belong in the PPT or here in the Markdown file? We also need to get these from Spektra (or through TJ).)
+- You can view the assigned Licenses by navigating to your organization **Settings** and **Copilot > Features**. 
 
-## Understand the Repository
+  ![](../media/org-settings.png)
 
-### Review Repository and Project Structure
+  ![](../media/copilot-license.png)
 
-This structure of this repository is as follows:
- - .github/ - Contains workflow files for managing the labs.
- - Instructions/Labs/ - Contains one file for every lab that you will complete.
- - demoApp/ - Stores the code and configuration for a simple demo application written in four languages that you will modify during the labs.
- - README.md - Helps newcomers get oriented to this repository.
- - masterdoc.json - A configuration file that is used to help with managing access to the labs in the virtual learning environment.
+>  *Note:* Both **Copilot for Business** and **Copilot Enterprise** support centralized billing, policy enforcement, and user provisioning.
 
-### Select Language for the Remaining Labs
 
-While completing these hands-on exercises you will be able to choose between four languages. <<List those languages and tell students what they need to do (if anything) to select one of them.>>
+2. Configure GitHub Copilot Access
 
-## Review the Project
+To enable and configure Copilot access:
 
-### Project Purpose
+- Navigate to **Enterprise > Policies > Copilot**
+- Choose access scope:
+  - All organization members
+  - Specific teams or individual users
+- Set **repository access policies** to control what code Copilot can reference:
+  - Public repositories only
+  - Public + selected private repositories
 
-You have just moved onto a project for developing a shopping website for a local grocery store. The previous developers failed to deliver an application with all of the required
-features and did not perform any testing.
 
-### Improvements Needed
+3️. Assign Users & Manage Access
 
-You have been tasked with developing the missing features and ensuring that the appliction is well-tested.
+User provisioning and license assignment can be done via:
 
-(It is difficult to say more than this until the remaining labs have been completed and we know what features and tests will be added.)
+- **GitHub Enterprise Admin Console**
+- **Organization Settings > Members & Teams**
 
-## Goals for Remaining Labs
+Best practices:
+- Use **Teams** to bulk-assign Copilot access
+- Monitor activation and usage via the **Copilot Usage Dashboard**
 
-The goal during the lab is to implement these needed improvements while demonstrating the following Copilot features:
- - Code Editing
- - Agent Mode
- - Agentic Coding
- - MCP
- - Customizing Copilot
+4. Billing & Cost Management
+
+- Billing is **monthly or annual**, based on active users
+- View invoices and usage under **Settings > Billing**
+- Use **Copilot Usage Reports** to track:
+  - Adoption trends
+  - ROI metrics
+  - License utilization
+
+> Consider **license pooling** or **reassignment** for inactive users to optimize costs.
+
+5. Define Key Roles in GitHub Copilot Administration
+
+| Role                  | Responsibilities                                                                 |
+|-----------------------|----------------------------------------------------------------------------------|
+| **Enterprise Admin**  | Manages Copilot enablement, policies, and billing across the organization.       |
+| **Billing Manager**   | Oversees license purchases, invoicing, and cost optimization.                    |
+| **Copilot Champion**  | Drives adoption, supports onboarding, collects feedback, and promotes best use.  |
+| **Security Admin** *(Copilot Enterprise)* | Ensures compliance, configures identity integrations, and monitors repository access boundaries. |
+
+### Task 2: Log in to GitHub & Set Up Lab Environment
+
+In this task, participants will prepare their technical workspace using **Copilot Agent Mode**. Instead of manually executing commands, learners will craft and submit **natural language prompts** to GitHub Copilot, allowing it to scaffold their environment, generate boilerplate code, and guide setup steps interactively.
+
+1. Navigate back to the home page of your repository by clicking the **Code** **(1)** tab located at the top left of the screen. Click the **Code** **(2)** button located in the middle of the page. 
+
+   ![](../media/23-7-25-g9.png)
+
+1. Click the **Codespaces (1)** tab on the box that pops up and then click the **Create codespace on main (2)** button.  If you don't see the "Create Codespace" button, it likely means your repository wasn't created under the **Cloudlabs-enterprises** organization. To fix this, either delete your current repository and recreate it under the specified organization or fork the existing repository into **Cloudlabs-enterprises** Org.
+
+   ![](../media/23-7-25-g10.png)
+
+   >**Note**: If a pop-up prompt doesn't appear in the browser to open Visual Studio Code, manually launch Visual Studio Code from the desktop and close it. Next, return to the browser, refresh the page, and launch the codespace that was previously created.
+
+1. You will encounter a pop-up prompt: **This site is trying to open Visual Studio Code.** Click **Open** to proceed. Subsequently, another pop-up window will appear within Visual Studio Code (VS Code), where you should select **Install Extension and Open URI** to continue.
+
+    ![](../media/E1T1S8-0807.png)
+
+   ![](../media/23-7-25-g10.1.png)
+
+    >**Note**: Click on **Allow** if "The extension **Github Codepsaces** wants to sign in using Github" pop-up appears.
+
+      ![](../media/23-7-25-g13.png)
+
+1. On **Select user to authorize Visual Studio Code** page click on **Continue** 
+
+    ![](../media/23-7-25-g14.png)
+
+      >**Note:** If you get an error connecting to the browser like _"this page isn't working right now, 127.0.0.1 didn't send any data," close the browser window then in VS Code, click on **Cancel** and select **Yes** to try a different method. It will redirect to a new page for authentication. You may need to try this a couple of times to sign in to Copilot. 
+
+1. On the **Visual Studio Code is requesting additional permissions** tab, click **Authorize Visual-Studio-Code**.
+
+    ![](../media/23-7-25-g15.png)
+
+1. On the **This site is trying to open Visual Studio Code** pop-up, click **Open** to launch VS Code via vscode.dev.
+
+    ![](../media/c3.png)
+
+1. You are now signed-in to your GitHub account in Visual Studio Code. Click on the **GitHub Copilot** icon from the top and select **Agent** from the dropdown.
+
+    ![](../media/select-agent-mode.png)
+
+### Task 3: Review Repo & Select Language
+
+In this task, participants will explore their scaffolded repository, understand the lab’s technical and instructional goals, and choose their preferred development language—either **TypeScript (React/Vite)**, **TECH STACK 2**, **TECH STACK 3**, or **TECH STACK 4**. They'll use **Copilot Agent Mode prompts** to review their environment.
+
+1. Explore the Project Structure
+
+Encourage learners to open their repo in Visual Studio Code and inspect the folder layout. If desired, they can ask Copilot to explain the purpose of each file and folder in the repository.
+
+<details>
+  <summary>Need a hint? Try this prompt.</summary>
+  > Walk me through the structure of this repository. Explain the purpose of each folder and file.
+
+  This prompt helps learners understand the modular design and encourages Copilot to provide contextual guidance.
+</details>
+
+3. Choose Your Development Language
+
+Participants now select their preferred stack:
+
+| Language              | Use Case                         | Strengths                                    |
+|-----------------------|----------------------------------|----------------------------------------------|
+| **TypeScript**        | TBD                              | TBD                                          |
+| **LANGUAGE 2**        | TBD                              | TBD                                          |
+| **LANGUAGE 3**        | TBD                              | TBD                                          |
+| **LANGUAGE 4**        | TBD                              | TBD                                          |
+
+Ask Copilot for guidance on how to configure your environment for your chosen stack.
+
+<details>
+  <summary>Need a hint? Try this prompt.</summary>
+  > I want to work in [Python / C#]. Help me configure my environment and update any launch settings or dependencies accordingly.
+
+  This prompt allows Copilot to tailor the environment setup based on the learner’s choice.
+</details>
+
+Follow the guidance provided by Copilot for configuring your environment.
+
+### Task 4: Frame the Scenario (Python & .NET Focus) (Read Only)
+
+This task will help to define the real-world challenge and success criteria for enhancing the chosen application using GitHub Copilot. Participants will apply Copilot to refactor code, automate tasks, and improve the developer experience.
+
+#### Scenario Context
+
+You have just moved onto a project for developing a shopping website for a local grocery store. The previous developers failed to deliver an application with all of the required features and did not perform any testing. Your team has adopted **GitHub Copilot** to accelerate development, improve onboarding, and automate boilerplate tasks.
+
+#### Development Challenge
+
+Your mission is to:
+
+- Refactor code for clarity and maintainability  
+- Add meaningful documentation
+- Generate unit tests to reach 80%+ code coverage  
+- Automate repetitive logic like error handling and data validation  
+- Use GitHub.com features (PR review, issue implementation, summaries)  
+- Apply custom instructions to tailor Copilot’s tone and priorities
+
+Using the following Copilot features:
+- Code Editing
+- Agent Mode
+- Agentic Coding
+- MCP
+- Customizing Copilot
+
+#### Success Criteria
+
+By the end of the lab, participants will:
+
+- Achieve 80%+ test coverage using GitHub Copilot  
+- Refactor and document code
+- Use GitHub.com to implement issues, review PRs, and summarize changes  
+- Apply custom instructions to shape Copilot’s tone and priorities  
+- Reflect on Copilot’s impact on productivity, code quality, and developer experience
