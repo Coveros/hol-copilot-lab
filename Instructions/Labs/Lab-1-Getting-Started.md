@@ -17,7 +17,7 @@ Establish the lab environment, understand the administrative context of Copilot 
 3. Task 3: Review Repo & Select Language
 4. Task 4: Frame the Scenario  
 
-### Task 1: Overview of Admin for GitHub Copilot Enablement & Billing (Read Only)
+### Task 1: Overview of Admin for GitHub Copilot Enablement & Billing
 
 This task equips participants with foundational knowledge and administrative skills to enable, configure, and manage GitHub Copilot—including **Copilot for Business** and **Copilot Enterprise**—within an organization.
 
