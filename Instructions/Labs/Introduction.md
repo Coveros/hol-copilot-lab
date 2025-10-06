@@ -4,15 +4,15 @@
 
 ## Overview
 
-This hands-on lab is designed to immerse participants in the advanced capabilities of GitHub Copilot. Moving beyond autocomplete, learners will explore how AI-powered tooling can transform the entire software development lifecycle—from project scaffolding and contextual refactoring to infrastructure automation and agent-driven development.
+This hands-on lab is designed to immerse you in the advanced capabilities of GitHub Copilot. Moving beyond autocomplete, you will explore how AI-powered tooling can transform the entire software development lifecycle—from project scaffolding and contextual refactoring to infrastructure automation and agent-driven development.
 
-Through guided exercises, participants will gain practical experience with GitHub Copilot Edits, Agent Mode, Infrastructure as Code (IaC), and Model Context Protocol (MCP) integration. By the end of the lab, learners will be equipped to strategically apply GitHub Copilot across real-world development scenarios, enhancing productivity, code quality, and team collaboration.
+Through guided exercises, you will gain practical experience with GitHub Copilot Edits, Agent Mode, Infrastructure as Code (IaC), and Model Context Protocol (MCP) integration. By the end of the lab, you will be equipped to strategically apply GitHub Copilot across real-world development scenarios, enhancing productivity, code quality, and team collaboration.
 
 ## Objective
 
-This lab equips participants with hands-on experience using GitHub Copilot to enhance software development workflows. Learners will explore advanced features such as Agent Mode, Copilot Edits, Infrastructure as Code generation, and Model Context Protocol integration. 
+This lab equips you with hands-on experience using GitHub Copilot to enhance software development workflows. You will explore advanced features such as Agent Mode, Copilot Edits, Infrastructure as Code generation, and Model Context Protocol integration. 
 
-By the end of this lab, participants will be able to:
+By the end of this lab, you will be able to:
 
 - Create and manage projects using GitHub Copilot.
 - Apply GitHub Copilot Edits for multi-line and contextual code refactoring.

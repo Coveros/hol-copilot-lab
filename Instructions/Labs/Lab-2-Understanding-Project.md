@@ -1,20 +1,20 @@
 # Lab 02: Understanding the Project Using Ask Mode
 
-#### Duration : 25 min
+#### Duration : 30 min
 
 ### Lab Overview:
 
-This lab is designed to help participants build confidence and clarity by actively engaging with Copilot to explore the project’s purpose, setup, and structure. Learners will create prompts to uncover what the project does, how to build and run it locally, and where existing tests and TODOs reside. This exercise encourages curiosity, reinforces technical comprehension, and sets the stage for deeper collaboration and contribution in later phases of the lab.
+This lab is designed to help you build confidence and clarity by actively engaging with Copilot to explore the project’s purpose, setup, and structure. You will create prompts to uncover what the project does, how to build and run it locally, and where existing tests and TODOs reside. This exercise encourages curiosity, reinforces technical comprehension, and sets the stage for deeper collaboration and contribution in later phases of the lab.
 
 ### Lab Objective  
-Participants will get a baseline introduction to GitHub Copilot and then use it in Ask Mode to:
+You will get a baseline introduction to GitHub Copilot and then use it in Ask Mode to:
 - Learn how to build the application and run it locally
 - Identify existing tests and TODOs in the codebase
 - Feel confident about what’s coming next
 
 ### Task 1: Baseline Introduction to GitHub Copilot
 
-This task introduces learners to GitHub's capabilities and how it differs from individual Copilot usage.
+This task introduces you to GitHub's capabilities and how it differs from individual Copilot usage.
 
 #### What is GitHub Copilot?
 
@@ -40,11 +40,11 @@ GitHub Copilot is an enterprise-grade AI coding assistant that integrates with G
 
 
 ### Task 2: Build & Run Locally 
-In this step, learners will use **Copilot** to understand the project structure and how to build and run the application locally.
+In this step, you will use **Copilot** to understand the project structure and how to build and run the application locally.
 
 **Explore the Project Structure**
 
-Encourage learners to open their repo in Visual Studio Code and inspect the folder layout. If desired, they can ask Copilot to explain the purpose of each file and folder in the repository.
+Ppen your repo in Visual Studio Code and inspect the folder layout. If desired, you can ask Copilot to explain the purpose of each file and folder in the repository.
 
 <details>
   <summary>Need a hint? Try this prompt.</summary>
@@ -53,7 +53,7 @@ Encourage learners to open their repo in Visual Studio Code and inspect the fold
 
 **Choose Your Development Language**
 
-Participants now select their preferred stack from these options:
+You should now select their preferred stack from these options:
 
 | Language                           | Use Case                         | Strengths                                    |
 |------------------------------------|----------------------------------|----------------------------------------------|
@@ -74,7 +74,7 @@ Ask Copilot for guidance on how to configure your environment for your chosen st
 Follow the guidance provided by Copilot for configuring your environment.
    
 ### Task 3: Explore Tests & TODOs  
-In this task participants identify existing tests and unfinished work.  
+In this task you will identify existing tests and unfinished work.  
 
 **Explore Tests**
 
@@ -98,7 +98,7 @@ Ask Copilot to help you identify any existing uncompleted work within the codeba
 </details>
 
 ### Review
-By the end of this exercise, participants will:
+You should now:
 - Understand the project’s purpose and architecture  
 - Know how to build and run it locally  
 - Be aware of current test coverage and pending work  

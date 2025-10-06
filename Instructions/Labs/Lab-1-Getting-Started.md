@@ -1,14 +1,14 @@
 # Lab 01: Getting Started (Setup & Context)
 
-#### Duration : 20 minutes
+#### Duration : 15 minutes
 
 ### Lab Overview:
 
-In this foundational exercise, participants will set the stage for the lab by reviewing Copilot enablement and billing essentials and accessing GitHub Codespaces and the lab environment. The scenario centers on enhancing a shopping website. By the end of this session, learners will have a clear understanding 
+In this foundational exercise, you will set the stage for the lab by reviewing Copilot enablement and billing essentials and accessing GitHub Codespaces and the lab environment. The scenario centers on enhancing a shopping website. By the end of this session, you will have a clear understanding 
 of the lab’s goals and the real-world context driving the hands-on experience.
 
 ### Lab Objectives:
-Establish the lab environment, understand the administrative context of Copilot Enablement and Billing, and frame the project scenario for hands-on development. By the end of this lab, participants will complete the following tasks:
+Establish the lab environment, understand the administrative context of Copilot Enablement and Billing, and frame the project scenario for hands-on development. By the end of this lab, you will complete the following tasks:
 
 1. Task 1: Review Admin for GitHub Copilot Enablement & Billing
 2. Task 2: Access GitHub Codespaces & Set Up Lab Environment
@@ -16,7 +16,7 @@ Establish the lab environment, understand the administrative context of Copilot 
 
 ### Task 1: Review Admin for GitHub Copilot Enablement & Billing
 
-This task equips participants with foundational knowledge and administrative skills to enable, configure, and manage GitHub Copilot—including **Copilot for Business** and **Copilot Enterprise**—within an organization.
+This task equips you with foundational knowledge and administrative skills to enable, configure, and manage GitHub Copilot—including **Copilot for Business** and **Copilot Enterprise**—within an organization.
 
 
 **Understand GitHub Copilot Licensing**
@@ -76,7 +76,7 @@ Best practices:
 
 ### Task 2: Access GitHub Codespaces & Set Up Lab Environment
 
-In this task, participants will prepare their technical workspace.
+In this task, you will prepare their technical workspace.
 
 1. Navigate back to the home page of your repository by clicking the **Code** **(1)** tab located at the top left of the screen. Click the **Code** **(2)** button located in the middle of the page. 
 
@@ -118,7 +118,7 @@ In this task, participants will prepare their technical workspace.
 
 ### Task 3: Frame the Scenario
 
-This task will help to define the real-world challenge and success criteria for enhancing the chosen application using GitHub Copilot. Participants will apply Copilot to refactor code, automate tasks, and improve the developer experience.
+This task will help to define the real-world challenge and success criteria for enhancing the chosen application using GitHub Copilot. You will apply Copilot to refactor code, automate tasks, and improve the developer experience.
 
 #### Scenario Context
 
