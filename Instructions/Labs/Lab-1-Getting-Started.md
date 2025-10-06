@@ -4,10 +4,8 @@
 
 ### Lab Overview:
 
-In this foundational exercise, participants will set the stage for the lab by reviewing Copilot enablement and billing essentials, 
-accessing GitHub Codespaces, and configuring their development environment. They'll explore the provided repository, select a preferred programming 
-language, and familiarize themselves with the project structure. The scenario centers on enhancing a shopping website. By the end of this session, learners will have a clear understanding 
-of the lab’s goals, the technical setup required, and the real-world context driving the hands-on experience.
+In this foundational exercise, participants will set the stage for the lab by reviewing Copilot enablement and billing essentials and accessing GitHub Codespaces and the lab environment. The scenario centers on enhancing a shopping website. By the end of this session, learners will have a clear understanding 
+of the lab’s goals and the real-world context driving the hands-on experience.
 
 ### Lab Objectives:
 Establish the lab environment, understand the administrative context of Copilot Enablement and Billing, and frame the project scenario for hands-on development. By the end of this lab, participants will complete the following tasks:
