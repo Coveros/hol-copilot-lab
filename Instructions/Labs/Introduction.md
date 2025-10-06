@@ -17,7 +17,7 @@ By the end of this lab, participants will be able to:
 - Create and manage projects using GitHub Copilot.
 - Apply GitHub Copilot Edits for multi-line and contextual code refactoring.
 - Prompt Copilot effectively to generate complete API endpoints and scaffold web applications.
-- Explore the Agent Mode in GitHub Copilot and understand its benefits over Prompt Mode.
+- Explore the Agent Mode in GitHub Copilot and understand its benefits over Ask Mode.
 - Build a functional micro-application using Agent Mode for task-driven development.
 - Use GitHub Copilot to author Infrastructure as Code (IaC) scripts with tools like Terraform and Bicep.
 - Integrate Model Context Protocol (MCP) to create richer, contextual prompts for more accurate and targeted AI assistance.
@@ -108,11 +108,7 @@ To adjust the zoom level for the environment page, click the A↕: 100% icon loc
 
 1. On the **Create a new repository** tab, most fields will be pre-filled. Just update the **Owner** to **Cloudlabs-Enterprises** **(1)**, change the **Repository name** **(2)** as provided below to make it unique.
 
-    - Enter your Repository name as:
-
-      ```
-      invoice-api-<inject key="Deployment-id" enableCopy="false"/>
-      ```
+    - Enter your Repository name as: **invoice-api-<inject key="Deployment-id" enableCopy="false"/>**
 
       ![](../../media/23-7-25-g5.png)
 
