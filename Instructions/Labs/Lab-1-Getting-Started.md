@@ -129,9 +129,7 @@ Encourage learners to open their repo in Visual Studio Code and inspect the fold
 
 <details>
   <summary>Need a hint? Try this prompt.</summary>
-  **Walk me through the structure of this repository. Explain the purpose of each folder and file.**
-
-  This prompt helps learners understand the modular design and encourages Copilot to provide contextual guidance.
+  Walk me through the structure of this repository. Explain the purpose of each folder and file.
 </details>
 
 **Choose Your Development Language**
@@ -149,9 +147,7 @@ Ask Copilot for guidance on how to configure your environment for your chosen st
 
 <details>
   <summary>Need a hint? Try this prompt.</summary>
-  **I want to work in [**CHOSEN TECH STACK**]. Help me configure my environment and update any launch settings or dependencies accordingly.
-
-  This prompt allows Copilot to tailor the environment setup based on the learner’s choice.
+  I want to work in [CHOSEN TECH STACK]. Help me configure my environment and update any launch settings or dependencies accordingly.
 </details>
 
 Follow the guidance provided by Copilot for configuring your environment.
