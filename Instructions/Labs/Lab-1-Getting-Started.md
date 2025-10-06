@@ -10,14 +10,14 @@ language, and familiarize themselves with the project structure. The scenario ce
 of the lab’s goals, the technical setup required, and the real-world context driving the hands-on experience.
 
 ### Lab Objectives:
-Establish the lab environment, understand the administrative context of Copilot Enablement and Billing, and frame the project scenario for hands-on development. By the end of this lab, participants will be able to configure:
+Establish the lab environment, understand the administrative context of Copilot Enablement and Billing, and frame the project scenario for hands-on development. By the end of this lab, participants will complete the following tasks:
 
-1. Task 1: Overview of Admin for GitHub Copilot Enablement & Billing
+1. Task 1: Review Admin for GitHub Copilot Enablement & Billing
 2. Task 2: Access GitHub Codespaces & Set Up Lab Environment
 3. Task 3: Review Repo & Select Language
 4. Task 4: Frame the Scenario  
 
-### Task 1: Overview of Admin for GitHub Copilot Enablement & Billing
+### Task 1: Review Admin for GitHub Copilot Enablement & Billing
 
 This task equips participants with foundational knowledge and administrative skills to enable, configure, and manage GitHub Copilot—including **Copilot for Business** and **Copilot Enterprise**—within an organization.
 
@@ -29,7 +29,7 @@ GitHub Copilot is licensed **per user**, and is available through the following 
 | SKU                    | Description                                                                 |
 |------------------------|-----------------------------------------------------------------------------|
 | **Copilot Business** | For organizations: includes centralized policy controls and team management. |
-| **Copilot Enterprise** | Advanced enterprise-grade offering with enhanced security, compliance, and integration with enterprise identity providers (e.g., SAML SSO). |
+| **Copilot Enterprise** | Provides additional premium requests, access to additional models, the ability to create Copilot knowledge bases, and access to GitHub Spark. |
 
 - You can view the assigned Licenses by navigating to your organization **Settings** and **Copilot > Features**. 
 
@@ -105,7 +105,7 @@ In this task, participants will prepare their technical workspace.
 
     ![](../../media/23-7-25-g14.png)
 
-      >**Note:** If you get an error connecting to the browser like "this page isn't working right now, 127.0.0.1 didn't send any data," close the browser window then in VS Code, click on **Cancel** and select **Yes** to try a different method. It will redirect to a new page for authentication. You may need to try this a couple of times to sign in to Copilot. 
+      >**Note:** If you get an error connecting to the browser like "this page isn't working right now, 127.0.0.1 didn't send any data," close the browser window and then, in VS Code, click on **Cancel** and select **Yes** to try a different method. It will redirect you to a new page for authentication. You may need to try this a couple of times to sign in to Copilot. 
 
 1. On the **Visual Studio Code is requesting additional permissions** tab, click **Authorize Visual-Studio-Code**.
 
@@ -129,7 +129,7 @@ Encourage learners to open their repo in Visual Studio Code and inspect the fold
 
 <details>
   <summary>Need a hint? Try this prompt.</summary>
-  Walk me through the structure of this repository. Explain the purpose of each folder and file.
+  @workspace Walk me through the structure of this repository. Explain the purpose of each folder and file.
 </details>
 
 **Choose Your Development Language**
@@ -147,7 +147,7 @@ Ask Copilot for guidance on how to configure your environment for your chosen st
 
 <details>
   <summary>Need a hint? Try this prompt.</summary>
-  I want to work in [CHOSEN TECH STACK]. Help me configure my environment and update any launch settings or dependencies accordingly.
+  @workspace I want to work in [CHOSEN TECH STACK]. Help me configure my environment and update any launch settings or dependencies accordingly.
 </details>
 
 Follow the guidance provided by Copilot for configuring your environment.
