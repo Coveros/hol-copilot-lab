@@ -29,7 +29,7 @@ GitHub Copilot is licensed **per user**, and is available through the following 
 | SKU                    | Description                                                                 |
 |------------------------|-----------------------------------------------------------------------------|
 | **Copilot Business** | For organizations: includes centralized policy controls and team management. |
-| **Copilot Enterprise** | Provides additional premium requests, access to additional models, the ability to create Copilot knowledge bases, and access to GitHub Spark. |
+| **Copilot Enterprise** | Provides more premium requests, access to additional models, the ability to create Copilot knowledge bases, and access to GitHub Spark. |
 
 - You can view the assigned Licenses by navigating to your organization **Settings** and **Copilot > Features**. 
 
@@ -59,8 +59,8 @@ To enable and configure Copilot access:
 
 User provisioning and license assignment can be done via:
 
-- **GitHub Enterprise Admin Console (as shown previously)**
-- **Organization Settings > Copilot > Access**
+- GitHub Enterprise Admin Console (as shown previously)
+- Organization Settings > Copilot > Access
 
 Best practices:
 - Use **Teams** to bulk-assign Copilot access
