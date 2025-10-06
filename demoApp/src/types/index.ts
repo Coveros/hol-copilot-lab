@@ -22,4 +22,5 @@ export interface Product {
   description?: string
   image?: string
   category?: string
+  inStock?: boolean
 }

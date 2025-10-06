@@ -5,11 +5,12 @@ import { Product } from './types'
 function App() {
     const [products, setProducts] = useState<Product[]>([]);
     const [loading, setLoading] = useState(true);
-    const [page, setPage] = useState<'main' | 'login' | 'admin'>('main');
+    const [page, setPage] = useState<'main' | 'login' | 'admin' | 'cart'>('main');
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [loginError, setLoginError] = useState('');
     const [salePercent, setSalePercent] = useState<number>(0);
+    const [cart, setCart] = useState<Product[]>([]);
 
     useEffect(() => {
         const loadProducts = async () => {
@@ -48,6 +49,58 @@ function App() {
             setLoginError('Invalid credentials');
         }
     };
+
+    // Add to cart logic
+    const addToCart = (product: Product) => {
+        setCart([...cart, product]);
+    };
+
+    // Render cart page
+    if (page === 'cart') {
+        return (
+            <div className="app">
+                <header className="app-header">
+                    <h1>Shopping Website</h1>
+                    <nav>
+                        <a href="#home">Home</a>
+                        <a href="#products">Products</a>
+                        <button onClick={() => setPage('cart')}>Cart ({cart.length})</button>
+                    </nav>
+                </header>
+                <main className="main-content">
+                    <div className="cart-container">
+                        <h2>Your Cart</h2>
+                        {cart.length === 0 ? (
+                            <p>Your cart is empty.</p>
+                        ) : (
+                            <div className="cart-items">
+                                {cart.map((item, index) => (
+                                    <div key={index} className="cart-item">
+                                        {item.image && (
+                                            <img
+                                                src={`products/productImages/${item.image}`}
+                                                alt={item.name}
+                                                className="cart-item-image"
+                                            />
+                                        )}
+                                        <div className="cart-item-info">
+                                            <h3>{item.name}</h3>
+                                            <p>${item.price.toFixed(2)}</p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                        <button onClick={() => setPage('main')} style={{ marginTop: '2rem' }}>Continue Shopping</button>
+                    </div>
+                </main>
+                <footer className="app-footer">
+                    <p>&copy; 2025 Shopping Website. All rights reserved.</p>
+                    <button onClick={() => setPage('login')}>Admin Login</button>
+                </footer>
+            </div>
+        );
+    }
 
     // Render admin portal
     if (page === 'admin') {
@@ -130,6 +183,7 @@ function App() {
                     <nav>
                         <a href="#home">Home</a>
                         <a href="#products">Products</a>
+                        <button onClick={() => setPage('cart')}>Cart ({cart.length})</button>
                         <button onClick={() => setPage('login')}>Admin Login</button>
                     </nav>
                 </header>
@@ -147,6 +201,7 @@ function App() {
                 <nav>
                     <a href="#home">Home</a>
                     <a href="#products">Products</a>
+                    <button onClick={() => setPage('cart')}>Cart ({cart.length})</button>
                 </nav>
             </header>
             <main className="main-content">
@@ -190,6 +245,13 @@ function App() {
                                         {product.description && (
                                             <p className="product-description">{product.description}</p>
                                         )}
+                                        <button
+                                            className={product.inStock ? "add-to-cart-btn" : "add-to-cart-btn disabled"}
+                                            onClick={() => product.inStock && addToCart(product)}
+                                            disabled={!product.inStock}
+                                        >
+                                            Add to cart
+                                        </button>
                                     </div>
                                 </div>
                             );
