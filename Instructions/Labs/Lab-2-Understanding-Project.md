@@ -82,9 +82,9 @@ Write prompts that will cause Copilot to understand how testing is being perform
 
 <details>
   <summary>Need a hint? Try these prompts.</summary>
-  > “@workspace Where are the tests located?”
-  > “@workspace Can you summarize what’s being tested?”
-  > “@workspace What coverage do the tests have, and what code coverage improvements can you suggest?”
+    > “@workspace Where are the tests located?”
+    > “@workspace Can you summarize what’s being tested?”
+    > “@workspace What coverage do the tests have, and what code coverage improvements can you suggest?”
 </details>
 
 **Generate TODOs**
@@ -93,8 +93,8 @@ Ask Copilot to help you identify any existing uncompleted work within the codeba
 
 <details>
   <summary>Need a hint? Try these prompts.</summary>
-  > “@workspace Are there any TODOs or FIXME comments in the code?”
-  > “@workspace What is this application missing that should be added?”
+    > “@workspace Are there any TODOs or FIXME comments in the code?”
+    > “@workspace What is this application missing that should be added?”
 </details>
 
 ### Review
