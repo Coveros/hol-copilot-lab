@@ -7,8 +7,7 @@
 This lab is designed to help participants build confidence and clarity by actively engaging with Copilot to explore the project’s purpose, setup, and structure. Learners will create prompts to uncover what the project does, how to build and run it locally, and where existing tests and TODOs reside. This exercise encourages curiosity, reinforces technical comprehension, and sets the stage for deeper collaboration and contribution in later phases of the lab.
 
 ### Lab Objective  
-Participants will use Copilot in Ask Mode to:
-- Get a baseline introduction to GitHub Copilot
+Participants will get a baseline introduction to GitHub Copilot and then use it in Ask Mode to:
 - Learn how to build the application and run it locally
 - Identify existing tests and TODOs in the codebase
 - Feel confident about what’s coming next
