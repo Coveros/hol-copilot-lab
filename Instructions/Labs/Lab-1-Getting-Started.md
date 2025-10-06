@@ -14,8 +14,7 @@ Establish the lab environment, understand the administrative context of Copilot 
 
 1. Task 1: Review Admin for GitHub Copilot Enablement & Billing
 2. Task 2: Access GitHub Codespaces & Set Up Lab Environment
-3. Task 3: Review Repo & Select Language
-4. Task 4: Frame the Scenario  
+4. Task 3: Frame the Scenario  
 
 ### Task 1: Review Admin for GitHub Copilot Enablement & Billing
 
@@ -119,40 +118,7 @@ In this task, participants will prepare their technical workspace.
 
     ![](../../media/select-ask-mode.png)
 
-### Task 3: Review Repo & Select Language
-
-In this task, participants will explore their scaffolded repository, understand the lab’s technical and instructional goals, and choose their preferred development language—either **TypeScript (React/Vite)**, **TECH STACK 2**, **TECH STACK 3**, or **TECH STACK 4**. They'll use **Copilot Ask Mode prompts** to review their environment.
-
-**Explore the Project Structure**
-
-Encourage learners to open their repo in Visual Studio Code and inspect the folder layout. If desired, they can ask Copilot to explain the purpose of each file and folder in the repository.
-
-<details>
-  <summary>Need a hint? Try this prompt.</summary>
-  @workspace Walk me through the structure of this repository. Explain the purpose of each folder and file.
-</details>
-
-**Choose Your Development Language**
-
-Participants now select their preferred stack:
-
-| Language              | Use Case                         | Strengths                                    |
-|-----------------------|----------------------------------|----------------------------------------------|
-| **TypeScript**        | TBD                              | TBD                                          |
-| **LANGUAGE 2**        | TBD                              | TBD                                          |
-| **LANGUAGE 3**        | TBD                              | TBD                                          |
-| **LANGUAGE 4**        | TBD                              | TBD                                          |
-
-Ask Copilot for guidance on how to configure your environment for your chosen stack.
-
-<details>
-  <summary>Need a hint? Try this prompt.</summary>
-  @workspace I want to work in [CHOSEN TECH STACK]. Help me configure my environment and update any launch settings or dependencies accordingly.
-</details>
-
-Follow the guidance provided by Copilot for configuring your environment.
-
-### Task 4: Frame the Scenario
+### Task 3: Frame the Scenario
 
 This task will help to define the real-world challenge and success criteria for enhancing the chosen application using GitHub Copilot. Participants will apply Copilot to refactor code, automate tasks, and improve the developer experience.
 
