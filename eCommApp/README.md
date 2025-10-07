@@ -11,9 +11,9 @@ A modern TypeScript-based shopping website built with React and Vite.
 
 ### Installation
 
-1. Navigate to the demoApp directory:
+1. Navigate to the eCommApp directory:
    ```bash
-   cd demoApp
+   cd eCommApp
    ```
 
 2. Install dependencies:
@@ -31,7 +31,7 @@ A modern TypeScript-based shopping website built with React and Vite.
 ## 📁 Project Structure
 
 ```
-demoApp/
+eCommApp/
 ├── public/              # Static assets
 ├── src/
 │   ├── components/      # Reusable React components
