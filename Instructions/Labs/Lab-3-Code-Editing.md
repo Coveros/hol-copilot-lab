@@ -53,14 +53,14 @@ Now let's use Copilot's Edit mode to create comprehensive unit tests.
 ### Basic Test Generation:
 
 <details>
-  <summary>**Sample Edit Prompts:**</summary>
+  <summary>Sample Edit Prompts</summary>
   ```
   Generate comprehensive unit tests for the ShoppingCart class. Include tests for adding items, calculating subtotals, and edge cases like empty carts.
   ```
 </details>
 
 <details>
-  <summary>**More Specific Prompts:**</summary>
+  <summary>More Specific Prompts</summary>
   ```
   Add unit tests for the addItem method that cover:
    - Adding a new item

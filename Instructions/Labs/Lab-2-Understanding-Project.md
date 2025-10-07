@@ -43,7 +43,7 @@ Let's start by getting a high-level understanding of what this application does.
 2. Ask Copilot some questions to help you understand the application as it is currently working. If you get stuck, try using these sample prompts to explore the project:
 
 <details>
-  <summary>**Sample Prompts:**</summary>
+  <summary>Sample Prompts</summary>
   ```
   @workspace What is the main purpose of this application? What does it do?
   ```
@@ -75,7 +75,7 @@ Now let's understand how the code is organized and what the folder structure tel
 Ask Copilot some questions to help you understand the organization of the codebase. If you get stuck, try using these sample prompts to explore the project:
 
 <details>
-  <summary>**Sample Prompts:**</summary>
+  <summary>Sample Prompts</summary>
   ```
   @workspace How is this project structured? Can you explain the main folders and their purposes?
   ```
@@ -107,7 +107,7 @@ Understanding the tech stack is crucial for knowing what skills you'll need and 
 Ask Copilot some questions to help you understand the technologies and frameworks used within the codebase. If you get stuck, try using these sample prompts to explore the project:
 
 <details>
-  <summary>**Sample Prompts:**</summary>
+  <summary>Sample Prompts</summary>
   ```
   @workspace What programming languages are used in this project?
   ```
@@ -228,7 +228,7 @@ Now let's figure out how to actually build and run this application.
 Ask Copilot how to build your codebase. If you get stuck you can use the below sample prompts:
 
 <details>
-  <summary>**Sample Prompts:**</summary>
+  <summary>Sample Prompts</summary>
   ```
   @workspace How do I build this project? What are the build commands?
   ```
@@ -260,7 +260,7 @@ Testing is crucial for maintaining code quality. Let's explore what testing fram
 Ask Copilot how the codebase is being tested. If you get stuck you can use the below sample prompts:
 
 <details>
-  <summary>**Sample Prompts:**</summary>
+  <summary>Sample Prompts</summary>
   ```
   @workspace How do I run the tests for this project? What testing frameworks are being used?
   ```
@@ -297,7 +297,7 @@ Now that you understand the project structure and setup process, let's use Copil
 2. Create or enhance documentation based on your exploration.
 
 <details>
-  <summary>**Sample Prompts:**</summary>
+  <summary>Sample Prompts</summary>
   ```
   @workspace Does this project have a README? If so, what's missing that would help new developers?
   ```
