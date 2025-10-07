@@ -54,7 +54,7 @@ function App() {
         return (
             <div className="app">
                 <header className="app-header">
-                    <h1>Shopping Website</h1>
+                    <h1>The Daily Harvest</h1>
                 </header>
                 <main className="main-content">
                     <div className="admin-portal">
@@ -76,7 +76,7 @@ function App() {
                     </div>
                 </main>
                 <footer className="app-footer">
-                    <p>&copy; 2025 Shopping Website. All rights reserved.</p>
+                    <p>&copy; 2025 The Daily Harvest. All rights reserved.</p>
                 </footer>
             </div>
         );
@@ -87,7 +87,7 @@ function App() {
         return (
             <div className="app">
                 <header className="app-header">
-                    <h1>Shopping Website</h1>
+                    <h1>The Daily Harvest</h1>
                 </header>
                 <main className="main-content">
                     <div className="login-container">
@@ -115,7 +115,7 @@ function App() {
                     </div>
                 </main>
                 <footer className="app-footer">
-                    <p>&copy; 2025 Shopping Website. All rights reserved.</p>
+                    <p>&copy; 2025 The Daily Harvest. All rights reserved.</p>
                 </footer>
             </div>
         );
@@ -126,7 +126,7 @@ function App() {
         return (
             <div className="app">
                 <header className="app-header">
-                    <h1>Shopping Website</h1>
+                    <h1>The Daily Harvest</h1>
                     <nav>
                         <a href="#home">Home</a>
                         <a href="#products">Products</a>
@@ -143,7 +143,7 @@ function App() {
     return (
         <div className="app">
             <header className="app-header">
-                <h1>Shopping Website</h1>
+                <h1>The Daily Harvest</h1>
                 <nav>
                     <a href="#home">Home</a>
                     <a href="#products">Products</a>
@@ -198,7 +198,7 @@ function App() {
                 </div>
             </main>
             <footer className="app-footer">
-                <p>&copy; 2025 Shopping Website. All rights reserved.</p>
+                <p>&copy; 2025 The Daily Harvest. All rights reserved.</p>
                 <button onClick={() => setPage('login')}>Admin Login</button>
             </footer>
         </div>
