@@ -56,7 +56,7 @@ Let's start by getting a high-level understanding of what this application does.
   ```
   @workspace What type of application is this? Is it a web app, API, desktop app, or something else?
   ```
-  
+
 </details>
 
 ### 💡 What to Expect from Copilot
@@ -78,6 +78,7 @@ Ask Copilot some questions to help you understand the organization of the codeba
 
 <details>
   <summary>Sample Prompts</summary>
+
   ```
   @workspace How is this project structured? Can you explain the main folders and their purposes?
   ```
@@ -89,6 +90,7 @@ Ask Copilot some questions to help you understand the organization of the codeba
   ```
   @workspace Are there any configuration files I should be aware of? What do they control?
   ```
+
 </details>
 
 ### 💡 What to Expect from Copilot
@@ -110,6 +112,7 @@ Ask Copilot some questions to help you understand the technologies and framework
 
 <details>
   <summary>Sample Prompts</summary>
+
   ```
   @workspace What programming languages are used in this project?
   ```
@@ -121,6 +124,7 @@ Ask Copilot some questions to help you understand the technologies and framework
   ```
   @workspace What's the package.json/requirements.txt/build.gradle telling me about the dependencies?
   ```
+
 </details>
 
 If Copilot mentions any technologies you're unfamiliar with, don't hesitate to ask follow-up questions! Remember, GitHub Copilot Chat isn't just for understanding your specific codebase - it's your **onboarding buddy**, **technical sounding board**, and **intelligent search engine** all rolled into one.
@@ -130,6 +134,7 @@ If Copilot mentions any technologies you're unfamiliar with, don't hesitate to a
 Think of Copilot Chat as having a knowledgeable senior developer sitting next to you who's always available to answer questions. You can ask about:
 
 **Technology Fundamentals:**
+
 ```
 What is React and why is it popular for web development?
 ```
@@ -143,6 +148,7 @@ What are the pros and cons of using TypeScript vs JavaScript?
 ```
 
 **Best Practices & Patterns:**
+
 ```
 What's the MVC pattern and how does it apply to web development?
 ```
@@ -156,6 +162,7 @@ What are some common security considerations for web applications?
 ```
 
 **Troubleshooting & Problem Solving:**
+
 ```
 I'm getting this error: [paste error message]. What does it mean and how can I fix it?
 ```
@@ -171,21 +178,25 @@ Why might my tests be failing intermittently?
 ### 💡 Pro Tips for Effective Learning with Copilot
 
 1. **Ask "Why" Questions**: Don't just ask what something does - ask why it's used
+
     ```
     Why would a team choose Redux over React's built-in state management?
     ```
 
 2. **Request Comparisons**: Understanding alternatives helps you make better decisions
+
     ```
     Compare Docker vs virtual machines - when would I use each?
     ```
 
 3. **Get Context**: Ask how technologies fit into the bigger picture
+
     ```
     How does JWT authentication work in a typical web application flow?
     ```
 
 4. **Seek Examples**: Request practical demonstrations
+
     ```
     Can you show me a simple example of how middleware works in Express.js?
     ```
@@ -209,6 +220,7 @@ Why might my tests be failing intermittently?
 Remember: Every expert was once a beginner. Copilot Chat gives you a judgment-free space to ask questions, explore concepts, and build your understanding at your own pace!
 
 **Sample Follow-up Prompts:**
+
 ```
 Can you explain what [framework name] is and why it might be used in this type of project?
 ```
@@ -231,6 +243,7 @@ Ask Copilot how to build your codebase. If you get stuck you can use the below s
 
 <details>
   <summary>Sample Prompts</summary>
+
   ```
   @workspace How do I build this project? What are the build commands?
   ```
@@ -246,6 +259,7 @@ Ask Copilot how to build your codebase. If you get stuck you can use the below s
   ```
   @workspace How do I start the development server or run the application?
   ```
+
 </details>
 
 ### ⚙️ Try It Yourself:
@@ -263,6 +277,7 @@ Ask Copilot how the codebase is being tested. If you get stuck you can use the b
 
 <details>
   <summary>Sample Prompts</summary>
+
   ```
   @workspace How do I run the tests for this project? What testing frameworks are being used?
   ```
@@ -278,10 +293,12 @@ Ask Copilot how the codebase is being tested. If you get stuck you can use the b
   ```
   @workspace How are tests organized? Where should I put new tests?
   ```
+
 </details>
 
 ### 📈 Extension: Test Coverage Deep Dive
 **Advanced Prompts:**
+
 ```
 @workspace Can you identify which files or functions have low or missing test coverage?
 ```
@@ -300,6 +317,7 @@ Now that you understand the project structure and setup process, let's use Copil
 
 <details>
   <summary>Sample Prompts</summary>
+
   ```
   @workspace Does this project have a README? If so, what's missing that would help new developers?
   ```
@@ -311,6 +329,7 @@ Now that you understand the project structure and setup process, let's use Copil
   ```
   @workspace Can you suggest a better project description and feature list for the README based on the actual codebase?
   ```
+
 </details>
 
 ### 💡 Pro Tips for README Enhancement:
@@ -322,6 +341,7 @@ Now that you understand the project structure and setup process, let's use Copil
 
 ### 🔄 Iterative Improvement:
 After Copilot generates documentation, you can refine it:
+
 ```
 Can you make this setup guide more beginner-friendly?
 ```

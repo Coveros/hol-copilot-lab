@@ -54,13 +54,16 @@ Now let's use Copilot's Edit mode to create comprehensive unit tests.
 
 <details>
   <summary>Sample Edit Prompts</summary>
+
   ```
   Generate comprehensive unit tests for the ShoppingCart class. Include tests for adding items, calculating subtotals, and edge cases like empty carts.
   ```
+
 </details>
 
 <details>
   <summary>More Specific Prompts</summary>
+
   ```
   Add unit tests for the addItem method that cover:
    - Adding a new item
@@ -75,6 +78,7 @@ Now let's use Copilot's Edit mode to create comprehensive unit tests.
    - Multiple items calculation
    - Items with different quantities
   ```
+
 </details>
 
 ### BONUS: Refine tests to handle an edge case that copilot didn't cover initially
@@ -90,11 +94,13 @@ Let's use Copilot to review and improve our test quality.
 ### Instructions:
 
 **Code Review with Copilot:**
+
 ```
 @workspace Review these unit tests for best practices. Are there any improvements you'd suggest for maintainability, readability, or coverage?
 ```
 
 **Testing Best Practices Check:**
+
 ```
 Do these tests follow testing best practices? Check for:
 - Single responsibility per test
