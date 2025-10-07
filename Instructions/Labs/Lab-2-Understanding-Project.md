@@ -43,7 +43,7 @@ Let's start by getting a high-level understanding of what this application does.
 2. Ask Copilot some questions to help you understand the application as it is currently working. If you get stuck, try using these sample prompts to explore the project:
 
 <details>
-  <summary>Sample Prompts</summary>
+  <summary>Sample Prompts</summary><br>
   ```
   @workspace What is the main purpose of this application? What does it do?
   ```
