@@ -44,6 +44,7 @@ Let's start by getting a high-level understanding of what this application does.
 
 <details>
   <summary>Sample Prompts</summary>
+  
   ```
   @workspace What is the main purpose of this application? What does it do?
   ```
@@ -55,6 +56,7 @@ Let's start by getting a high-level understanding of what this application does.
   ```
   @workspace What type of application is this? Is it a web app, API, desktop app, or something else?
   ```
+  
 </details>
 
 ### 💡 What to Expect from Copilot
