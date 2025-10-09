@@ -1,9 +1,10 @@
 {
     "id": "2",
     "name": "Grapes",
-    "description": "A bunch of fresh grapes",
-    "price": 2.0,
+    "description": "A bunch of sweet grapes",
+    "price": 2.5,
     "image": "grapes.png",
     "category": "fruits",
-    "inStock": true
+    "inStock": true,
+    "reviews": []
 }

@@ -1,9 +1,10 @@
 {
     "id": "4",
     "name": "Pear",
-    "description": "A ripe and juicy pear",
-    "price": 1.0,
+    "description": "A sweet and juicy pear",
+    "price": 0.6,
     "image": "pear.png",
     "category": "fruits",
-    "inStock": false
+    "inStock": true,
+    "reviews": []
 }

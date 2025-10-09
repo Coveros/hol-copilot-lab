@@ -1,9 +1,10 @@
 {
     "id": "3",
     "name": "Orange",
-    "description": "A ripe and juicy orange",
-    "price": 0.85,
+    "description": "A tangy orange",
+    "price": 0.75,
     "image": "orange.png",
     "category": "fruits",
-    "inStock": true
+    "inStock": false,
+    "reviews": []
 }
