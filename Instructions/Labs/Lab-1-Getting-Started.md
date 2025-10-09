@@ -1,200 +1,134 @@
-# Lab 01: Getting Started (Setup & Context)
+# Exercise 1 - Lab Overview and Setup
 
-#### Duration : 20 minutes
+## Overall Lab Objectives
 
-### Lab Overview:
+This 4-hour hands-on lab is designed to give developers practical experience using **GitHub Copilot** as an AI-powered assistant throughout the Software Development Life Cycle (SDLC). You will explore how Copilot can improve developer productivity, code quality, and security — from feature planning and prototyping to implementation, code review, and remediation.
 
-In this foundational exercise, participants will set the stage for the lab by reviewing Copilot enablement and billing essentials, 
-logging into GitHub, and configuring their development environment. They'll explore the provided repository, select a preferred programming 
-language, and familiarize themselves with the project structure. The scenario centers on enhancing a shopping website. By the end of this session, learners will have a clear understanding 
-of the lab’s goals, the technical setup required, and the real-world context driving the hands-on experience.
+Through a series of guided, real-world exercises, you will learn how to:
+- Understand Copilot’s role across all phases of the SDLC
+- Plan new features and define success criteria with Copilot
+- Use AI-powered code completions directly within the IDE
+- Leverage Copilot Chat in Ask, Edit, and Agent modes
+- Delegate tasks to the Copilot coding agent to multiply development impact
+- Review code at scale using Copilot code reviews
+- Detect and fix security vulnerabilities using Copilot Autofix
+- Extend Copilot’s capabilities with Model Context Protocol (MCP) servers
+- Optimize Copilot performance using Custom Instructions and Prompt Files
 
-### Lab Objectives:
-Establish the lab environment, understand the administrative context of Copilot Enablement and Billing, and frame the project scenario for hands-on development. By the end of this lab, participants will be able to configure:
+## Welcome to The Daily Harvest
 
-1. Task 1: Overview of Admin for GitHub Copilot Enablement & Billing
-2. Task 2: Log in to GitHub & Set Up Lab Environment
-3. Task 3: Review Repo & Select Language
-4. Task 4: Frame the Scenario  
+🍎 **Your Mission: Develop your daily pick of fresh code!**
 
-### Task 1: Overview of Admin for GitHub Copilot Enablement & Billing
+Congratulations! You've just been hired as a software developer at **The Daily Harvest**, an exciting new startup that's revolutionizing the way that fresh fruit is sold. Your company specializes in creating websites that allow orchards to sell their products to those who will never drive to a store.
 
-This task equips participants with foundational knowledge and administrative skills to enable, configure, and manage GitHub Copilot—including **Copilot for Business** and **Copilot Enterprise**—within an organization.
+### Your Role
 
+As a new developer on the team, you'll be working on extending the functionality of the website and ensuring that it is well-tested. The company has recently adopted **GitHub Copilot** as part of their development workflow, and you'll be learning how to leverage this AI-powered assistant to accelerate your productivity and code quality.
 
-1. Understand GitHub Copilot Licensing
+### The Challenge Ahead
 
-GitHub Copilot is licensed **per user**, and is available through the following SKUs:
+Throughout this lab, you'll help The Daily Harvest tackle real development challenges:
+- Understanding and navigating the existing codebase effectively
+- Enhancing test coverage across critical application components
+- Planning and implementing a robust shopping cart system for the e-commerce platform
+- Maintaining high code quality standards across the development team
+- Identifying and resolving security vulnerabilities
 
-| SKU                    | Description                                                                 |
-|------------------------|-----------------------------------------------------------------------------|
-| **Copilot for Business** | For organizations: includes centralized policy controls and team management. |
-| **Copilot Enterprise** | Advanced enterprise-grade offering with enhanced security, compliance, and integration with enterprise identity providers (e.g., SAML SSO). |
+Your manager has emphasized that speed to market is crucial in the competitive fruit selling space, but code quality and security cannot be compromised. This is where GitHub Copilot becomes your secret weapon – helping you write better code faster while maintaining the high standards that fruit lovers expect from The Daily Harvest.
 
-- You can view the assigned Licenses by navigating to your organization **Settings** and **Copilot > Features**. 
+Let's get started and grow some ripe code together! 🍊
 
-  ![](../../media/org-settings.png)
+## Logging into the Lab Environment
 
-  ![](../../media/copilot-license.png)
+### Accessing Your Lab Environment
+ 
+Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
+   
+   ![](../../media/guide.png)
 
->  *Note:* Both **Copilot for Business** and **Copilot Enterprise** support centralized billing, policy enforcement, and user provisioning.
+#### Virtual Machine & Lab Guide
+ 
+Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
 
+### Exploring Your Lab Resources
 
-2. Configure GitHub Copilot Access
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
-To enable and configure Copilot access:
+   ![Manage Your Virtual Machine](../../media/exp-lab-resources.png)
 
-- Navigate to **Enterprise > Policies > Copilot**
-- Choose access scope:
-  - All organization members
-  - Specific teams or individual users
-- Set **repository access policies** to control what code Copilot can reference:
-  - Public repositories only
-  - Public + selected private repositories
+### Utilizing the Split Window Feature
 
+For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
 
-3️. Assign Users & Manage Access
+![Use the Split Window Feature](../../media/split-window.png)
 
-User provisioning and license assignment can be done via:
+### Managing Your Virtual Machine
 
-- **GitHub Enterprise Admin Console**
-- **Organization Settings > Members & Teams**
+Feel free to **Start**, **Stop**, or **Restart** your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-Best practices:
-- Use **Teams** to bulk-assign Copilot access
-- Monitor activation and usage via the **Copilot Usage Dashboard**
+![Manage Your Virtual Machine](../../media/23-7-25-g-2.png)
 
-4. Billing & Cost Management
+### Utilizing the Zoom In/Out Feature
 
-- Billing is **monthly or annual**, based on active users
-- View invoices and usage under **Settings > Billing**
-- Use **Copilot Usage Reports** to track:
-  - Adoption trends
-  - ROI metrics
-  - License utilization
+To adjust the zoom level for the environment page, click the A↕: 100% icon located next to the timer in the lab environment.
 
-> Consider **license pooling** or **reassignment** for inactive users to optimize costs.
+![Use the Split Window Feature](../../media/zoom.png)
 
-5. Define Key Roles in GitHub Copilot Administration
+### Login to GitHub
 
-| Role                  | Responsibilities                                                                 |
-|-----------------------|----------------------------------------------------------------------------------|
-| **Enterprise Admin**  | Manages Copilot enablement, policies, and billing across the organization.       |
-| **Billing Manager**   | Oversees license purchases, invoicing, and cost optimization.                    |
-| **Copilot Champion**  | Drives adoption, supports onboarding, collects feedback, and promotes best use.  |
-| **Security Admin** *(Copilot Enterprise)* | Ensures compliance, configures identity integrations, and monitors repository access boundaries. |
+1. In the LABVM desktop, open the **Microsoft Edge** browser.
 
-### Task 2: Log in to GitHub & Set Up Lab Environment
+   ![](../../media/23-7-25-g-1.png)
 
-In this task, participants will prepare their technical workspace.
+1. In a new tab, navigate to the **GitHub login** page by copying and pasting the following URL into the address bar:
 
-1. Navigate back to the home page of your repository by clicking the **Code** **(1)** tab located at the top left of the screen. Click the **Code** **(2)** button located in the middle of the page. 
+   ```
+   https://github.com/login
+   ```
 
-   ![](../../media/23-7-25-g9.png)
+1. On the **Sign in to GitHub** tab, enter the provided **GitHub username** **(1)** in the input field, and click on **Sign in with your identity provider** to continue **(2)**.
 
-1. Click the **Codespaces (1)** tab on the box that pops up and then click the **Create codespace on main (2)** button.  If you don't see the "Create Codespace" button, it likely means your repository wasn't created under the **Cloudlabs-enterprises** organization. To fix this, either delete your current repository and recreate it under the specified organization or fork the existing repository into **Cloudlabs-enterprises** Org.
+    - Email/Username: <inject key="GitHub User Name" enableCopy="true"/>
 
-   ![](../../media/23-7-25-g10.png)
+      ![](../../media/23-7-25-g1.png)
 
-   >**Note**: If a pop-up prompt doesn't appear in the browser to open Visual Studio Code, manually launch Visual Studio Code from the desktop and close it. Next, return to the browser, refresh the page, and launch the codespace that was previously created.
+1. Click on **Continue** on the **Single sign-on to CloudLabs Organizations** page to proceed.
 
-1. You will encounter a pop-up prompt: **This site is trying to open Visual Studio Code.** Click **Open** to proceed. Subsequently, another pop-up window will appear within Visual Studio Code (VS Code), where you should select **Install Extension and Open URI** to continue.
+    ![](../../media/23-7-25-g2.png)
 
-    ![](../../media/E1T1S8-0807.png)
+1. You'll see the **Sign in** tab. Here, enter your Azure Entra credentials:
 
-   ![](../../media/23-7-25-g10.1.png)
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
-    >**Note**: Click on **Allow** if "The extension **Github Codepsaces** wants to sign in using Github" pop-up appears.
+       ![Enter Your Username](../../media/23-7-25-g3.png)
 
-      ![](../../media/23-7-25-g13.png)
+1. Next, provide your password and click on **Sign in**
 
-1. On **Select user to authorize Visual Studio Code** page click on **Continue** 
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-    ![](../../media/23-7-25-g14.png)
+      ![Enter Your Password](../../media/23-7-25-g4.png)
 
-      >**Note:** If you get an error connecting to the browser like _"this page isn't working right now, 127.0.0.1 didn't send any data," close the browser window then in VS Code, click on **Cancel** and select **Yes** to try a different method. It will redirect to a new page for authentication. You may need to try this a couple of times to sign in to Copilot. 
+1. On the **Stay Signed in?** pop-up, click on No.
 
-1. On the **Visual Studio Code is requesting additional permissions** tab, click **Authorize Visual-Studio-Code**.
+    ![](../../media/23-7-25-g4.1.png)
 
-    ![](../../media/23-7-25-g15.png)
+1. You are now successfully logged in to **GitHub** and have been redirected to the **GitHub homepage**.
 
-1. On the **This site is trying to open Visual Studio Code** pop-up, click **Open** to launch VS Code via vscode.dev.
+   ![](../../media/github-homepage01.png)
 
-    ![](../../media/c3.png)
+## Creating your Repository
 
-1. You are now signed-in to your GitHub account in Visual Studio Code. Click on the **GitHub Copilot** icon from the top and select **Agent** from the dropdown.
+TODO use the repo template to create your own repo
 
-    ![](../../media/select-agent-mode.png)
+## Setting up IDE
 
-### Task 3: Review Repo & Select Language
+TODO either use codespace or clone repo locally. login into github for copilot access
 
-In this task, participants will explore their scaffolded repository, understand the lab’s technical and instructional goals, and choose their preferred development language—either **TypeScript (React/Vite)**, **TECH STACK 2**, **TECH STACK 3**, or **TECH STACK 4**. They'll use **Copilot Agent Mode prompts** to review their environment.
+## Support Contact
 
-1. Explore the Project Structure
+The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
 
-Encourage learners to open their repo in Visual Studio Code and inspect the folder layout. If desired, they can ask Copilot to explain the purpose of each file and folder in the repository.
+Learner Support Contacts:
 
-<details>
-  <summary>Need a hint? Try this prompt.</summary>
-  > Walk me through the structure of this repository. Explain the purpose of each folder and file.
-
-  This prompt helps learners understand the modular design and encourages Copilot to provide contextual guidance.
-</details>
-
-2. Choose Your Development Language
-
-Participants now select their preferred stack:
-
-| Language              | Use Case                         | Strengths                                    |
-|-----------------------|----------------------------------|----------------------------------------------|
-| **TypeScript**        | TBD                              | TBD                                          |
-| **LANGUAGE 2**        | TBD                              | TBD                                          |
-| **LANGUAGE 3**        | TBD                              | TBD                                          |
-| **LANGUAGE 4**        | TBD                              | TBD                                          |
-
-Ask Copilot for guidance on how to configure your environment for your chosen stack.
-
-<details>
-  <summary>Need a hint? Try this prompt.</summary>
-  > I want to work in [Python / C#]. Help me configure my environment and update any launch settings or dependencies accordingly.
-
-  This prompt allows Copilot to tailor the environment setup based on the learner’s choice.
-</details>
-
-Follow the guidance provided by Copilot for configuring your environment.
-
-### Task 4: Frame the Scenario
-
-This task will help to define the real-world challenge and success criteria for enhancing the chosen application using GitHub Copilot. Participants will apply Copilot to refactor code, automate tasks, and improve the developer experience.
-
-#### Scenario Context
-
-You have just moved onto a project for developing a shopping website for a local grocery store. The previous developers failed to deliver an application with all of the required features and did not perform any testing. Your team has adopted **GitHub Copilot** to accelerate development, improve onboarding, and automate boilerplate tasks.
-
-#### Development Challenge
-
-Your mission is to:
-
-- Refactor code for clarity and maintainability  
-- Add meaningful documentation
-- Generate unit tests to reach 80%+ code coverage  
-- Automate repetitive logic like error handling and data validation  
-- Use GitHub.com features (PR review, issue implementation, summaries)  
-- Apply custom instructions to tailor Copilot’s tone and priorities
-
-Using the following Copilot features:
-- Code Editing
-- Agent Mode
-- Agentic Coding
-- MCP
-- Customizing Copilot
-
-#### Success Criteria
-
-By the end of the lab, participants will:
-
-- Achieve 80%+ test coverage using GitHub Copilot  
-- Refactor and document code
-- Use GitHub.com to implement issues, review PRs, and summarize changes  
-- Apply custom instructions to shape Copilot’s tone and priorities  
-- Reflect on Copilot’s impact on productivity, code quality, and developer experience
+- Email Support: cloudlabs-support@spektrasystems.com
+- Live Chat Support: https://cloudlabs.ai/labs-support
