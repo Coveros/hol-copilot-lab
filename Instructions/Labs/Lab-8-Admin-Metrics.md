@@ -4,9 +4,7 @@
 
 By the end of this exercise, you will understand:
 - How GitHub Copilot is administered at the enterprise level
-- Key policies and controls available for organizational governance
 - Metrics and analytics available for measuring Copilot adoption and impact
-- Best practices for rolling out and managing Copilot across development teams
 - How to measure ROI and developer productivity improvements
 
 ## 🍎 Scenario: Scaling Copilot Across The Daily Harvest
@@ -16,8 +14,8 @@ The Daily Harvest has seen tremendous success with GitHub Copilot in your develo
 Your manager wants to understand:
 - How to properly configure Copilot for enterprise use
 - What governance controls are available for security and compliance
-- How to measure the success and ROI of the Copilot investment
 - What metrics will help demonstrate value to executive leadership
+- How to measure the success and ROI of the Copilot investment
 
 This lab will explore the administrative and metrics capabilities that make GitHub Copilot suitable for enterprise deployment.
 
@@ -157,7 +155,7 @@ The Daily Harvest's leadership team can evaluate Copilot's business impact throu
 **For IT and Security Teams:**
 - Robust security and compliance capabilities address enterprise risk management requirements
 - Audit trails and policy controls enable governance without limiting developer productivity
-- Integration capabilities allow Copilot metrics to enhance existing business intelligence systems
+- Copilot metrics can be used in addition to the information provided by existing business intelligence systems
 
 ## 🚀 Conclusion
 
