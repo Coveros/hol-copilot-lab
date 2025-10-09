@@ -58,8 +58,8 @@ use Copilot's Edit mode to create comprehensive unit tests.
 
 ### Instructions:
 1. Open Copilot Chat and switch to Edit mode
-2. Write prompts (examples are hidden below) to generate tests for uncovered conditions in `CartPage`.
-3. Run the newly-generated tests and use Copilot to help you correct any failures.
+2. Write prompts (examples are hidden below) to generate tests for uncovered conditions in `CartPage`
+3. Run the newly-generated tests and use Copilot to help you correct any failures
 
 ### Basic Test Generation:
 
