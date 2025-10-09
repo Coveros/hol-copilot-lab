@@ -3,9 +3,8 @@
 ## 🎯 Learning Objectives
 
 By the end of this exercise, you will:
-- Understand how to use GitHub Copilot's Edit mode for code modifications
+- Understand how to use GitHub Copilot's Autocomplete feature and Edit mode for code modifications
 - Learn to write comprehensive unit tests with AI assistance
-- Practice test-driven development workflows with Copilot
 - Improve existing code coverage using intelligent test generation
 - Understand best practices for AI-assisted testing
 
@@ -13,23 +12,43 @@ By the end of this exercise, you will:
 
 Your manager at The Daily Harvest has noticed that some critical e-commerce functions lack proper test coverage. During yesterday's code review, the team identified several functions in the shopping cart module that need comprehensive unit tests before the next release.
 
-Your task today is to use GitHub Copilot's Edit mode to write high-quality unit tests that will:
-- Ensure the shopping cart calculations are accurate
-- Test edge cases like empty carts and invalid items
-- Validate discount and tax calculations
-- Improve the overall code quality and reliability
+Your task today is to use GitHub Copilot to write high-quality unit tests that will:
+- Verify happy path scenarios such as the cart having items
+- Test edge cases like the cart being empty
+- Improve overall code quality and reliability
 
-## 🛠️ Understanding GitHub Copilot Edit Mode
+## ✏️ Step 1: Using Autocomplete to Generate One Additional Unit Test
 
-Edit mode is one of the most powerful features of GitHub Copilot Chat. Unlike Ask mode (which provides information), Edit mode actively modifies your code files.
+To start off you'd like to generate one additional unit test. We can use Copilot's Autocomplete feature to make an addition to the unit test suite.
 
-### Edit Mode vs Other Modes:
+### Instructions:
+1. Open the existing test file named `CartPage.test.tsx`
+2. Place your cursor underneath the existing test and go to a new line.
 
-| Mode | Action | Best For | Example Use |
-|------|---------|----------|-------------|
-| **Ask** | Provides information | Understanding code, getting explanations | "How does this function work?" |
-| **Edit** | Modifies existing code | Adding features, refactoring, writing tests | "Add unit tests for this function" |
-| **Agent** | Autonomous multi-file changes | Complex features, architecture changes | "Implement user authentication" |
+   ![](../../media/where-to-add-new-unit-test.png)
+
+3. Add a comment (starting with '//') stating that you'd like to test the condition where the cart displays an "empty cart message" when it is empty. 
+   Please refer to the below sample comment if you get stuck.
+
+   <details>
+   <summary>Sample New Test Comment</summary>
+
+     ```
+     // Verify that an empty cart message is displayed when the cart is empty.
+     ```
+
+   </details>
+
+4. After adding the comment you should press `Enter` to go to the next line. Copilot will start suggesting lines of code, and you can press `Tab` to accept
+   one and then press `Enter` to go to the next line, repeating this process until the test is implemented. If Copilot starts suggesting the next test 
+   you can simply press the `Esc` key to stop the code generation process.
+
+6. Once the test is generated, try running it to make sure that it and the existing test pass. If there are any failures, try asking Copilot how to fix them.
+
+## 💭 Step 2: Using Edit Mode to Generate Additional Unit Tests
+
+There are many other tests that we can write for `CartPage`. While we could use Autocomplete to generate them, that would be very slow and cumbersome. We'll instead
+use Copilot's Edit mode to create comprehensive unit tests.
 
 ### Why Edit Mode is Perfect for Unit Testing:
 - 🎯 **Context-aware**: Understands your existing code structure and testing patterns
@@ -37,97 +56,71 @@ Edit mode is one of the most powerful features of GitHub Copilot Chat. Unlike As
 - 📋 **Pattern recognition**: Follows your project's testing conventions and style
 - 🚀 **Efficiency**: Generates comprehensive test suites quickly
 
-## ✏️ Step 1: Using Edit Mode to Generate Basic Unit Tests
-
-Now let's use Copilot's Edit mode to create comprehensive unit tests.
-
 ### Instructions:
-1. Create or open your test file (e.g., `shoppingCart.test.js`)
-2. Select the area where you want to add tests
-3. Open Copilot Chat and switch to Edit mode
-4. Write prompts (examples are hidden below) to generate tests for the following methods:
-    - `addItem()`
-    - `calculateSubtotal()`
-    - `removeItem()`
+1. Open Copilot Chat and switch to Edit mode
+2. Write prompts (examples are hidden below) to generate tests for uncovered conditions in `CartPage`.
+3. Run the newly-generated tests and use Copilot to help you correct any failures.
 
 ### Basic Test Generation:
 
 <details>
-  <summary>Sample Edit Prompts</summary>
+  <summary>Sample Test Generation Prompt</summary>
 
   ```
-  Generate comprehensive unit tests for the ShoppingCart class. Include tests for adding items, calculating subtotals, and edge cases like empty carts.
+  Generate comprehensive unit tests for the CartPage class. Make sure to generate tests that cover negative scenarios and edge cases.
   ```
 
 </details>
 
 <details>
-  <summary>More Specific Prompts</summary>
+  <summary>More Specific Prompt</summary>
 
   ```
-  Add unit tests for the addItem method that cover:
-   - Adding a new item
-   - Adding quantity to existing item
-   - Adding multiple different items
-  ```
-  
-  ```
-  Create tests for the calculateSubtotal method including:
-   - Empty cart should return 0
-   - Single item calculation
-   - Multiple items calculation
-   - Items with different quantities
+  Add unit tests that cover the following conditions if they have not already been covered:
+   - Checkout button is displayed
+   - Checkout modal is rendered properly
+   - Checkout modal is closed if the checkout is canceled
   ```
 
 </details>
 
-### BONUS: Refine tests to handle an edge case that copilot didn't cover initially
+### BONUS: Refine tests to handle an edge case that Copilot didn't cover initially
 
 **Pro Tip:** The more specific and contextual your Edit mode prompts are, the better the generated code will be. Always review and iterate on AI-generated tests to ensure they meet your quality standards!
 
-### Run your tests and confirm they work, iterate if not
-
-## 🎓 Step 7: Best Practices and Code Review
+## 🎓 Step 3: Best Practices and Code Review
 
 Let's use Copilot to review and improve our test quality.
 
 ### Instructions:
 
-**Code Review with Copilot:**
+**Ask Copilot to review your unit tests and make suggestions for improvement. Consider implementing its suggestions if you have time.**
 
 ```
-@workspace Review these unit tests for best practices. Are there any improvements you'd suggest for maintainability, readability, or coverage?
-```
-
-**Testing Best Practices Check:**
-
-```
-Do these tests follow testing best practices? Check for:
+@workspace Do these tests follow testing best practices? Check the following and suggest improvements if needed.
+- Clear and descriptive test names
 - Single responsibility per test
 - Clear arrange-act-assert structure
+- Single assertion per test (when appropriate)
 - Appropriate use of mocks/stubs
 - Good error messages
+- Good test data setup
+- Proper error handling
+- Performance considerations
+- Maintainable test structure
 ```
-
-### 📋 Test Quality Checklist:
-Review your tests against these criteria:
-- [ ] **Clear and descriptive test names**
-- [ ] **Single assertion per test (when appropriate)**
-- [ ] **Good test data setup**
-- [ ] **Proper error handling tests**
-- [ ] **Performance considerations**
-- [ ] **Maintainable test structure**
 
 ## 🏆 Exercise Wrap-up
 
 ### 🎯 Key Skills Practiced:
-- Using Edit mode for targeted code modifications
+- Using Autocomplete to make a single targeted code modification
+- Using Edit mode to make multiple targeted code modifications
 - Generating comprehensive unit test suites
 - Iterating and improving AI-generated code
 - Following testing best practices with AI assistance
 
 ### 💡 Reflection Questions:
-1. **How did Edit mode compare to writing tests manually?**
+1. **How did Edit mode compare to Autocomplete?**
    - Speed: _____________________
    - Quality: _____________________
    - Coverage: _____________________
