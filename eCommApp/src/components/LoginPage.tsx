@@ -27,6 +27,7 @@ const LoginPage = () => {
             <main className="main-content">
                 <div className="login-container">
                     <h2>Admin Login</h2>
+                    <!-- Let's make sure we switch the default admin credentials away from 'admin'/'admin' to something more secure -->
                     <form onSubmit={handleLogin} style={{ display: 'flex', flexDirection: 'column', maxWidth: 300 }}>
                         <input
                             type="text"
