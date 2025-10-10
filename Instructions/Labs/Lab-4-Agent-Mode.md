@@ -71,8 +71,7 @@ Now let's put the Agent to work on our coverage goal.
 1. **Open GitHub Copilot Chat** in VS Code
 2. **Switch to Agent mode** by clicking selecting 'Agent' from the dropdown underneath the prompt text area
 3. **Provide your goal-oriented prompt** (example below):
-
-&nbsp;&nbsp;&nbsp;&nbsp;<details>
+<details>
 <summary>Sample Agent Prompt</summary>
 
 ```
