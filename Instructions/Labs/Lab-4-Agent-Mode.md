@@ -58,7 +58,7 @@ Before we delegate to the Agent, let's understand our starting point.
 2. **Review the coverage report** that displays in the terminal. Note:
    - Overall coverage percentage
    - Which files have low coverage
-   - Which types of statements/branches need testing
+   - Which lines are uncovered
 
 3. **Take a screenshot or note** the current coverage percentage - you'll compare this to the final result!
 
@@ -69,26 +69,26 @@ Now let's put the Agent to work on our coverage goal.
 ### Instructions:
 
 1. **Open GitHub Copilot Chat** in VS Code
-2. **Switch to Agent mode** by clicking the Agent icon or typing `@agent`
+2. **Switch to Agent mode** by clicking selecting 'Agent' from the dropdown underneath the prompt text area
 3. **Provide your goal-oriented prompt** (example below):
 
-<details>
-<summary>Sample Agent Prompt</summary>
+> <details>
+> <summary>Sample Agent Prompt</summary>
 
-```
-@agent I need you to help me achieve 80% code coverage for The Daily Harvest project. Please:
+> ```
+> I need you to help me achieve 80% code coverage for The Daily Harvest project. Please:
 
-1. Analyze the current test coverage across all files
-2. Identify components, functions, and modules that lack adequate testing
-3. Generate comprehensive unit tests for uncovered code paths
-4. Ensure all new tests follow the existing testing patterns and conventions
-5. Make sure all tests pass and actually improve coverage
-6. Continue working until we reach at least 80% overall coverage
+> 1. Analyze the current test coverage across all files
+> 2. Identify components, functions, and modules that lack adequate testing
+> 3. Generate comprehensive unit tests for uncovered code paths
+> 4. Ensure all new tests follow the existing testing patterns and conventions
+> 5. Make sure all tests pass and actually improve coverage
+> 6. Continue working until we reach at least 80% overall coverage
 
-Please work autonomously and let me know your progress as you go. Focus on business logic, utility functions, and React components first.
-```
+> Please work autonomously and let me know your progress as you go. Focus on business logic, utility functions, and React components first.
+> ```
 
-</details>
+> </details>
 
 4. **Submit the prompt** and let the Agent begin working
 
@@ -141,9 +141,14 @@ The Agent will work toward the 80% goal, but you should review its work.
    - Verify test quality and comprehensiveness
 
 4. **If coverage is still below 80%**, ask the Agent to continue:
-   ```
-   @agent Current coverage is at X%. Please continue working to reach our 80% goal. Focus on the remaining uncovered areas.
-   ```
+    > <details>
+    > <summary>Sample Agent Prompt</summary>
+
+    > ```
+    > Current coverage is at X%. Please continue working to reach our 80% goal. Focus on the remaining uncovered areas.
+    > ```
+
+    > </details>
 
 ## 🎯 Step 5: Understanding Agent Decision-Making
 
@@ -152,18 +157,28 @@ Let's gain insight into how the Agent approached this complex task.
 ### Instructions:
 
 **Ask the Agent to explain its strategy:**
-```
-@agent Can you explain your approach to achieving the code coverage goal? What was your strategy for:
-- Prioritizing which files to test first
-- Deciding what types of tests to write
-- Handling dependencies between different components
-- Ensuring tests followed our project conventions
-```
+> <details>
+> <summary>Sample Agent Prompt</summary>
+
+> ```
+> Can you explain your approach to achieving the code coverage goal? What was your strategy for:
+> - Prioritizing which files to test first
+> - Deciding what types of tests to write
+> - Handling dependencies between different components
+> - Ensuring tests followed our project conventions
+> ```
+
+> </details>
 
 **Follow up with specific questions about its decisions:**
-```
-@agent What were the biggest challenges you encountered while working toward the 80% coverage goal? How did you handle edge cases or complex components?
-```
+> <details>
+> <summary>Sample Agent Prompt</summary>
+
+> ```
+> What were the biggest challenges you encountered while working toward the 80% coverage goal? How did you handle edge cases or complex components?
+> ```
+
+> </details>
 
 ## 🏆 Step 6: Comparing Agent Mode to Previous Methods
 
@@ -187,17 +202,17 @@ If you've achieved 80% coverage quickly, try these advanced scenarios:
 
 ### Challenge 1: Optimization Goal
 ```
-@agent Now that we have good coverage, please optimize our test suite for performance. Identify and refactor any slow-running tests while maintaining coverage.
+Now that we have good coverage, please optimize our test suite for performance. Identify and refactor any slow-running tests while maintaining coverage and a 100% test pass rate.
 ```
 
 ### Challenge 2: Error Handling Focus
 ```
-@agent Please add comprehensive error handling tests across the application. Focus on edge cases, invalid inputs, and failure scenarios.
+Please add comprehensive error handling tests across the application. Focus on edge cases, invalid inputs, and failure scenarios. Make sure all of the tests still pass.
 ```
 
 ### Challenge 3: Integration Testing
 ```
-@agent Create integration tests that verify the interaction between our components, especially the cart functionality and API calls.
+Create integration tests that verify the interaction between our components, especially the cart functionality and API calls.
 ```
 
 ## 🎓 Best Practices for Agent Mode
@@ -265,12 +280,4 @@ Consider how you might use Agent mode in your actual development work:
 
 ## 🔮 What's Next?
 
-Congratulations! You've now experienced the full spectrum of GitHub Copilot's capabilities:
-- ✅ **Autocomplete**: Fast, contextual code suggestions
-- ✅ **Chat Mode**: Conversational development assistance  
-- ✅ **Edit Mode**: Targeted, precise code modifications
-- ✅ **Agent Mode**: Autonomous, goal-oriented development
-
-In future development work, you'll know exactly which Copilot mode to use for any given task, dramatically amplifying your productivity and code quality.
-
-**The Daily Harvest team is impressed with your AI-assisted development skills - welcome to the future of coding! 🍎**
+In Exercise 5, we'll explore GitHub Copilot's **Agentic Coding** capability to utilize Copilot as a full workflow assistant for addressing a GitHub issue, reviewing a pull request, and generating a summary of a pull request.
