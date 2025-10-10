@@ -115,6 +115,8 @@ This is where Agent mode truly shines! Watch as it works autonomously.
 
 ### Instructions:
 1. **Monitor the Agent's work** - don't interrupt unless there's an error
+     - If Copilot times out, simply restart the analysis
+     - You might need to press `Ctrl-C` to stop the test execution process before the Agent will continue working
 2. **Watch the file explorer** - you'll see new test files being created
 3. **Check the Agent's status updates** - it will report progress toward the 80% goal
 4. **Note the multi-file coordination** - observe how it handles dependencies between tests
@@ -188,7 +190,7 @@ Reflect on the differences between Agent mode and the approaches used in previou
 
 **Fill out this comparison based on your experience:**
 
-| Aspect | Autocomplete (Ex 1) | Edit Mode (Ex 3) | Agent Mode (Ex 4) |
+| Aspect | Autocomplete | Edit Mode | Agent Mode |
 |--------|-------------------|------------------|-------------------|
 | **Speed for large tasks** | _____________ | _____________ | _____________ |
 | **Multi-file coordination** | _____________ | _____________ | _____________ |
