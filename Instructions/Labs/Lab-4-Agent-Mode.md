@@ -72,23 +72,23 @@ Now let's put the Agent to work on our coverage goal.
 2. **Switch to Agent mode** by clicking selecting 'Agent' from the dropdown underneath the prompt text area
 3. **Provide your goal-oriented prompt** (example below):
 
-> <details>
-> <summary>Sample Agent Prompt</summary>
+<details>
+<summary>Sample Agent Prompt</summary>
 
-> ```
-> I need you to help me achieve 80% code coverage for The Daily Harvest project. Please:
+```
+I need you to help me achieve 80% code coverage for The Daily Harvest project. Please:
 
-> 1. Analyze the current test coverage across all files
-> 2. Identify components, functions, and modules that lack adequate testing
-> 3. Generate comprehensive unit tests for uncovered code paths
-> 4. Ensure all new tests follow the existing testing patterns and conventions
-> 5. Make sure all tests pass and actually improve coverage
-> 6. Continue working until we reach at least 80% overall coverage
+1. Analyze the current test coverage across all files
+2. Identify components, functions, and modules that lack adequate testing
+3. Generate comprehensive unit tests for uncovered code paths
+4. Ensure all new tests follow the existing testing patterns and conventions
+5. Make sure all tests pass and actually improve coverage
+6. Continue working until we reach at least 80% overall coverage
 
-> Please work autonomously and let me know your progress as you go. Focus on business logic, utility functions, and React components first.
-> ```
+Please work autonomously and let me know your progress as you go. Focus on business logic, utility functions, and React components first.
+```
 
-> </details>
+</details>
 
 4. **Submit the prompt** and let the Agent begin working
 
@@ -141,14 +141,14 @@ The Agent will work toward the 80% goal, but you should review its work.
    - Verify test quality and comprehensiveness
 
 4. **If coverage is still below 80%**, ask the Agent to continue:
-    > <details>
-    > <summary>Sample Agent Prompt</summary>
+    <details>
+    <summary>Sample Agent Prompt</summary>
 
-    > ```
-    > Current coverage is at X%. Please continue working to reach our 80% goal. Focus on the remaining uncovered areas.
-    > ```
+    ```
+    Current coverage is at X%. Please continue working to reach our 80% goal. Focus on the remaining uncovered areas.
+    ```
 
-    > </details>
+    </details>
 
 ## 🎯 Step 5: Understanding Agent Decision-Making
 
@@ -157,28 +157,28 @@ Let's gain insight into how the Agent approached this complex task.
 ### Instructions:
 
 **Ask the Agent to explain its strategy:**
-> <details>
-> <summary>Sample Agent Prompt</summary>
+<details>
+<summary>Sample Agent Prompt</summary>
 
-> ```
-> Can you explain your approach to achieving the code coverage goal? What was your strategy for:
-> - Prioritizing which files to test first
-> - Deciding what types of tests to write
-> - Handling dependencies between different components
-> - Ensuring tests followed our project conventions
-> ```
+```
+Can you explain your approach to achieving the code coverage goal? What was your strategy for:
+- Prioritizing which files to test first
+- Deciding what types of tests to write
+- Handling dependencies between different components
+- Ensuring tests followed our project conventions
+```
 
-> </details>
+</details>
 
 **Follow up with specific questions about its decisions:**
-> <details>
-> <summary>Sample Agent Prompt</summary>
+<details>
+<summary>Sample Agent Prompt</summary>
 
-> ```
-> What were the biggest challenges you encountered while working toward the 80% coverage goal? How did you handle edge cases or complex components?
-> ```
+```
+What were the biggest challenges you encountered while working toward the 80% coverage goal? How did you handle edge cases or complex components?
+```
 
-> </details>
+</details>
 
 ## 🏆 Step 6: Comparing Agent Mode to Previous Methods
 
