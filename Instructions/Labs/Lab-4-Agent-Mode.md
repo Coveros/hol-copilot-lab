@@ -72,23 +72,23 @@ Now let's put the Agent to work on our coverage goal.
 2. **Switch to Agent mode** by clicking selecting 'Agent' from the dropdown underneath the prompt text area
 3. **Provide your goal-oriented prompt** (example below):
 
-        <details>
-        <summary>Sample Agent Prompt</summary>
+<details>
+<summary>Sample Agent Prompt</summary>
 
-        ```
-        I need you to help me achieve 80% code coverage for The Daily Harvest project. Please:
+```
+I need you to help me achieve 80% code coverage for The Daily Harvest project. Please:
 
-        1. Analyze the current test coverage across all files
-        2. Identify components, functions, and modules that lack adequate testing
-        3. Generate comprehensive unit tests for uncovered code paths
-        4. Ensure all new tests follow the existing testing patterns and conventions
-        5. Make sure all tests pass and actually improve coverage
-        6. Continue working until we reach at least 80% overall coverage
+1. Analyze the current test coverage across all files
+2. Identify components, functions, and modules that lack adequate testing
+3. Generate comprehensive unit tests for uncovered code paths
+4. Ensure all new tests follow the existing testing patterns and conventions
+5. Make sure all tests pass and actually improve coverage
+6. Continue working until we reach at least 80% overall coverage
 
-        Please work autonomously and let me know your progress as you go. Focus on business logic, utility functions, and React components first.
-        ```
+Please work autonomously and let me know your progress as you go. Focus on business logic, utility functions, and React components first.
+```
 
-        </details>
+</details>
 
 4. **Submit the prompt** and let the Agent begin working
 
