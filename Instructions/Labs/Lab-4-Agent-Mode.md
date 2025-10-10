@@ -72,7 +72,7 @@ Now let's put the Agent to work on our coverage goal.
 2. **Switch to Agent mode** by clicking selecting 'Agent' from the dropdown underneath the prompt text area
 3. **Provide your goal-oriented prompt** (example below):
 
-<details>
+&nbsp;&nbsp;&nbsp;&nbsp;<details>
 <summary>Sample Agent Prompt</summary>
 
 ```
