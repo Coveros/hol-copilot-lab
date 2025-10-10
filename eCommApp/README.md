@@ -1,4 +1,4 @@
-# Shopping Website
+# The Daily Harvest
 
 A modern TypeScript-based shopping website built with React and Vite.
 
