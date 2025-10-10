@@ -6,7 +6,7 @@ const HomePage = () => {
         <div className="app">
             <Header />
             <main className="main-content">
-                <p><h2>Welcome to the Shopping Website!</h2></p>
+                <p><h2>Welcome to the The Daily Harvest!</h2></p>
                 <p>Check out our products page for some great deals.</p>
             </main>
             <Footer />
