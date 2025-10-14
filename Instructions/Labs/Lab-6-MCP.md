@@ -1,3 +1,7 @@
+__Note:__ This lab is currently built for working directly in VS Code. However, all functionality is available in other IDEs after manually configuring the tooling covered here.
+
+__TODO:__ Finalize issue content/number in step 2.
+
 # Exercise 6 - Extending GitHub Copilot with MCP
 
 ## 🎯 Learning Objectives
@@ -12,7 +16,7 @@ By the end of this exercise, you will be able to...
 
 ## 🍎 Scenario: Using Model Context Protocols to Gather External Information
 
-Having spent your time at The Daily Harvest working with GitHub Copilot, you are now (hopefully) quite familiar with the the typical patterns with utilizing GitHub Copilot. However, you have now begun to notice an unusual bottleneck in your daily workflow. In order to appropriately understand the current GitHub.com environment, you have to _go_ to GitHub. Wouldn't it be so much easier if there were a way for GitHub Copilot to be able to do that interfacing for you so you could spend more time focusing on your work and less time moving from your IDE to your browser back to your IDE then back to your browser once more?
+Having spent your time at The Daily Harvest working with GitHub Copilot, you are now (hopefully) quite familiar with the the typical patterns with utilizing GitHub Copilot. However, you have now begun to notice an unusual bottleneck in your daily workflow. In order to appropriately understand the current GitHub.com environment, you have to _go_ to GitHub. Wouldn't it be _so_ much easier if there were a way for GitHub Copilot to be able to do that interfacing for you so you could spend more time focusing on your work and less time moving from your IDE to your browser back to your IDE then back to your browser once more?
 
 Luckily, there is a tool for that!
 
@@ -51,33 +55,48 @@ Inside the chosen file, you will add a configuration such as this template below
 
 By finding and viewing the documentation for your third-party MCP Server, you will be able to retrieve any additional information that may be required for that particular configuration.
 
-## 🔍 Step 1: Getting the GitHub MCP Server up and running
+## 💻 Step 1: Getting the GitHub MCP Server up and running
 
-Let's start by getting a high-level understanding of what this application does.
+Before we can begin to utilize the GitHub MCP Server, we need to install it. Luckily for us, installing the Server requires just a few clicks. 
 
-Instructions:
-Open GitHub Copilot Chat (Ctrl+Shift+I or Cmd+Shift+I)
-Ask Copilot some questions to help you understand the application as it is currently working. If you get stuck, try using these sample prompts to explore the project:
-Sample Prompts
-💡 What to Expect from Copilot
-When you ask these questions, Copilot will analyze your workspace and provide insights such as:
+__Instructions:__
 
-Application Type: Whether it's an e-commerce site, API, web application, etc.
-Core Features: Key functionality like user authentication, product catalogs, payment processing
-Technology Stack: Programming languages, frameworks, and architectural patterns in use
-Business Domain: The industry or use case the application serves
-Copilot's responses will be based on analyzing your codebase structure, configuration files, dependencies, and code patterns. The more specific your questions, the more targeted and useful the responses will be.
+1. Start by opening up [the MCP Registry](https://github.com/mcp) in a new browser tab or window.
+2. Find the GitHub Server
+<img width="557" height="170" alt="image" src="https://github.com/user-attachments/assets/82e8a1b8-066f-4a8f-858f-f6161b5d0732" />
+3. Click the "Install" drop-down, then click "Install in VS Code"
+3.5. If prompted by your browser, accept opening VS Code
+4. In your IDE, an extension page for the GitHub MCP Server should be displayed. Click "Install".
+5. Link your GitHub account to your IDE as prompted
 
-## 🏗️ Step 2: Analyzing Project Structure
+With that, you should be all set to begin work with the MCP Server.
 
-Now let's understand how the code is organized and what the folder structure tells us.
+### 💡 Additional Learning: Other Servers
 
+If you would like to see what your other options are, take a moment to peruse the MCP Registry.
 
+1. Look at the available pre-configured servers. Are there any you/your organization uses on a regular basis that could be tied in to your GitHub Copilot for greater efficiency?
+2. Instead of installing them, click on an interesting server instance. Check out the documentation. Are there any interesting features of that particular MCP Server that could be useful in your day-to-day workflows?
 
-MCP Servers (Context Enrichment) – 30 min
-- Explain what MCP servers are and how they connect external knowledge to Copilot.
-- Enable MCP integration with GitHub in this project.
-- Use MCP server to pull a GitHub Issue into the IDE.
-- Ask Copilot Agent to work on that issue.
-- Outcome: Learners understand how MCP expands Copilot’s capabilities.
+## 🏗️ Step 2: Pulling an Issue from GitHub
 
+With the MCP Server now installed and authenticated to our account, we can now begin to utilize one of the many tools that has been added to our arsenal as a result: _get\_issue_.
+
+Inside the [MCP documentation](https://github.com/mcp/github/github-mcp-server) under the _Issues_ tool section, there is a short note about this tool and its capabilities as displayed here:
+
+<img width="524" height="139" alt="image" src="https://github.com/user-attachments/assets/7c6a056e-a06f-45c3-901e-d6a0be63b045" />
+
+With this, we can utilize GitHub Copilot to directly acquire issues we may need to work on directly into our IDE with the help of [chat variable formatting](https://docs.github.com/en/copilot/reference/cheat-sheet?tool=vscode#chat-variables).
+
+__Instructions:__
+
+1. Within this repository, navigate to the __Issues__ tab and find the issue called __{TBD}__.
+2. Take a moment to understand the issue, and consider how you would ask GitHub Copilot to handle such a task.
+3. As shown in the image above, we need three pieces of information to pass along for our MCP Server tool to work: the issue number, the owner, and the repository name. Find these three values.
+4. Back inside our IDE, switch GitHub Copilot to agent mode (if it was not there already) and fill in the information required using chat variable formatting syntax at the beginning of our prompt.
+<details>
+  <summary>Example Syntax</summary>
+  `#get_issue __{TBD}__, Coveros, hol-copilot-lab`
+</details>
+4. Hit Shift + Enter to move to the next line in your prompt, and fill out the rest of your prompt for how you would have GitHub Copilot tackle this issue.
+5. Submit your prompt, and watch GitHub Copilot both extract and work on the issue attached!
