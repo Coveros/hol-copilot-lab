@@ -94,9 +94,32 @@ __Instructions:__
 2. Take a moment to understand the issue, and consider how you would ask GitHub Copilot to handle such a task.
 3. As shown in the image above, we need three pieces of information to pass along for our MCP Server tool to work: the issue number, the owner, and the repository name. Find these three values.
 4. Back inside our IDE, switch GitHub Copilot to agent mode (if it was not there already) and fill in the information required using chat variable formatting syntax at the beginning of our prompt.
+
 <details>
   <summary>Example Syntax</summary>
   `#get_issue __{TBD}__, Coveros, hol-copilot-lab`
 </details>
-4. Hit Shift + Enter to move to the next line in your prompt, and fill out the rest of your prompt for how you would have GitHub Copilot tackle this issue.
-5. Submit your prompt, and watch GitHub Copilot both extract and work on the issue attached!
+
+5. Hit Shift + Enter to move to the next line in your prompt, and fill out the rest of your prompt for how you would have GitHub Copilot tackle this issue.
+6. Submit your prompt, and watch GitHub Copilot both extract and work on the issue attached!
+
+## 🏆 Exercise Wrap-up
+
+### 🎯 Key Skills Practiced:
+
+- Installing MCP Servers from the MCP Registry
+- Understanding MCP functionality documentation
+- Utilizing MCP tools to expand GitHub Copilot's inheret capabilities
+
+### 💡 Reflection Questions:
+
+1. **For your day-to-day work, what systems and services do you utilize for data storage and business planning? Do those have MCP Servers established?**
+   _____________________________________
+2. **Why might you choose a repository-level configuration over a local configuration for an MCP Server?**
+   _____________________________________
+3. **Take another look at [the GitHub MCP Server Documentation](https://github.com/mcp/github/github-mcp-server). Are there any tools that may be particularly helpful for your workflow?**
+   _____________________________________
+
+## 🔮 What's Next?
+
+In Exercise 7, we'll take the extendability we received by using MCPs and expand that customizability further through the use of __Custom Instructions files__ to ensure GitHub Copilot has both a thorough understanding of our work's context _and_ the format through which we want our responses.
