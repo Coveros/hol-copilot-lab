@@ -95,3 +95,17 @@ __Instructions:__
   <img width="551" height="266" alt="image" src="https://github.com/user-attachments/assets/dd0f8940-8ae5-484a-b62a-1491f064e99b" />
 </details>
 3. After GitHub Copilot has finished, refresh your repository on GitHub.com (or simply navigate to the __Issues__ tab if you are not already there). Do you see your issue? If so, did it follow the guidelines established in your instructions file?
+
+## 🏆 Exercise Wrap-up
+
+### 💡 Reflection Questions
+
+- A more limited feature utilizing custom instructions is the [path-specific custom instructions file](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions#creating-path-specific-custom-instructions-1). How might these be beneficial over more general repository instruction sets?
+- What are some prompts you might be using in your daily workflow that can be consolidated into an instructions file?
+- A _Public Preview_ feature similar to custom instructions files is [prompt files](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions#enabling-and-using-prompt-files). How might you use these in conjunction with or separately from custom instructions files?
+
+### 🎯 Key Takeaways
+
+- Custom instructions files can be used to limit repetition in your prompts
+- Custom instructions can both reinforce context and define response formats
+- These files can be stored at different levels to enforce rules with different scopes
