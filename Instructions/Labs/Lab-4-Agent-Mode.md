@@ -29,8 +29,8 @@ GitHub Copilot Agent mode represents a significant evolution in AI-assisted deve
 - ✅ Complex code migrations or upgrades
 - ✅ Comprehensive documentation generation
 
-### Premium Usage Note:
-Agent mode utilizes advanced AI models and may consume more of your GitHub Copilot usage allocation compared to standard Chat and Edit modes.
+### Billing Considerations:
+This is a common source of confusion when using Agent mode. You only need to pay for one request every time you submit an Agent mode prompt if you're using a standard AI model. An Agent mode request will only cost more if you decide to submit it to one of the premium models.
 
 ## 🍎 Scenario: Boosting The Daily Harvest's Test Coverage
 
