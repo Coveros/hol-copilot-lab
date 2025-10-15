@@ -1,7 +1,5 @@
 __Note:__ This lab is currently built for working directly in VS Code. However, all functionality is available in other IDEs after manually configuring the tooling covered here.
 
-__TODO:__ Finalize issue content/number in step 2.
-
 # Exercise 6 - Extending GitHub Copilot with MCP
 
 ## 🎯 Learning Objectives
@@ -90,14 +88,14 @@ With this, we can utilize GitHub Copilot to directly acquire issues we may need 
 
 __Instructions:__
 
-1. Within this repository, navigate to the __Issues__ tab and find the issue called __{TBD}__.
+1. Within this repository, navigate to the __Issues__ tab and find the issue called "Creation of robots.txt file".
 2. Take a moment to understand the issue, and consider how you would ask GitHub Copilot to handle such a task.
 3. As shown in the image above, we need three pieces of information to pass along for our MCP Server tool to work: the issue number, the owner, and the repository name. Find these three values.
 4. Back inside our IDE, switch GitHub Copilot to agent mode (if it was not there already) and fill in the information required using chat variable formatting syntax at the beginning of our prompt.
 
 <details>
   <summary>Example Syntax</summary>
-  `#get_issue __{TBD}__, Coveros, hol-copilot-lab`
+  `#get_issue 21, Coveros, hol-copilot-lab`
 </details>
 
 5. Hit Shift + Enter to move to the next line in your prompt, and fill out the rest of your prompt for how you would have GitHub Copilot tackle this issue.
