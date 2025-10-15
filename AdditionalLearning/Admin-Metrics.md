@@ -1,4 +1,4 @@
-# Exercise 8 - GitHub Copilot Administration and Metrics
+# GitHub Copilot Administration and Metrics
 
 ## 🎯 Learning Objectives
 
@@ -28,27 +28,27 @@ GitHub Copilot for Enterprise provides organizations with comprehensive administ
 **Key Enterprise Features:**
 - **Organization-wide deployment**: Centralized license management and user provisioning
 
-    ![](../../media/organization-wide-deployment.png)
+    ![](../media/organization-wide-deployment.png)
 
 - **Policy controls**: Fine-grained permissions and usage restrictions
 
-    ![](../../media/policy-controls-part-1.png)
+    ![](../media/policy-controls-part-1.png)
 
-    ![](../../media/policy-controls-part-2.png)
+    ![](../media/policy-controls-part-2.png)
 
 - **Security compliance**: Enterprise-grade data protection and audit capabilities
 
-    ![](../../media/suggestions-matching-public-code.png)
+    ![](../media/suggestions-matching-public-code.png)
 
-    ![](../../media/audit-log.png)
+    ![](../media/audit-log.png)
 
 - **Custom models**: Access to organization-specific knowledge and coding patterns
 
-    ![](../../media/copilot-models.png)
+    ![](../media/copilot-models.png)
 
 - **Repository access controls**: Limit which repositories Copilot can access for context
 
-    ![](../../media/content-exclusion.png)
+    ![](../media/content-exclusion.png)
 
 ## 📊 GitHub Copilot Metrics and Analytics
 
@@ -57,63 +57,63 @@ GitHub Copilot for Enterprise provides organizations with comprehensive administ
 The Copilot Analytics Dashboard provides comprehensive insights into adoption and usage patterns across your enterprise:
 - **IDE active users**
 
-    ![](../../media/ide-active-users.png)
+    ![](../media/ide-active-users.png)
 
 - **Agent adoption**
 
-    ![](../../media/agent-adoption.png)
+    ![](../media/agent-adoption.png)
 
 - **Most used chat model**
 
-    ![](../../media/most-used-chat-model.png)
+    ![](../media/most-used-chat-model.png)
 
 - **IDE daily active users**
 
-    ![](../../media/ide-daily-active-users.png)
+    ![](../media/ide-daily-active-users.png)
 
 - **IDE weekly active users**
 
-    ![](../../media/ide-weekly-active-users.png)
+    ![](../media/ide-weekly-active-users.png)
 
 - **Average chat requests per active user**
 
-    ![](../../media/average-chat-requests-per-active-user.png)
+    ![](../media/average-chat-requests-per-active-user.png)
 
 - **Requests per chat mode**
 
-    ![](../../media/requests-per-chat-mode.png)
+    ![](../media/requests-per-chat-mode.png)
 
 - **Code completions**
 
-    ![](../../media/code-completions.png)
+    ![](../media/code-completions.png)
 
 - **Code completions acceptance rate**
 
-    ![](../../media/code-completions-acceptance-rate.png)
+    ![](../media/code-completions-acceptance-rate.png)
 
 - **Model usage per day**
 
-    ![](../../media/model-usage-per-day.png)
+    ![](../media/model-usage-per-day.png)
 
 - **Chat model usage**
 
-    ![](../../media/chat-model-usage.png)
+    ![](../media/chat-model-usage.png)
 
 - **Model usage per chat mode**
 
-    ![](../../media/model-usage-per-chat-mode.png)
+    ![](../media/model-usage-per-chat-mode.png)
 
 - **Language usage per day**
 
-    ![](../../media/language-usage-per-day.png)
+    ![](../media/language-usage-per-day.png)
 
 - **Language usage**
 
-    ![](../../media/language-usage.png)
+    ![](../media/language-usage.png)
 
 - **Model usage per language**
 
-    ![](../../media/model-usage-per-language.png)
+    ![](../media/model-usage-per-language.png)
 
 ### Business Impact Measurement
 
