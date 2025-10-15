@@ -30,7 +30,7 @@ GitHub Copilot Agent mode represents a significant evolution in AI-assisted deve
 - ✅ Comprehensive documentation generation
 
 ### Billing Considerations:
-This is a common source of confusion when using Agent mode. You only need to pay for one request every time you submit an Agent mode prompt if you're using a standard AI model. An Agent mode request will only cost more if you decide to submit it to one of the premium models.
+This is a common source of confusion when using Agent mode. You will only need to pay for an Agent mode request if you decide to submit it to one of the premium models. However, if you use Copilot in VS Code and allow it to choose a model by using **Auto** mode, one of the premium models (currently GPT-5, Claude Sonnet 3.5, and Claude Sonnet 4.5) may be selected automatically, assuming that model is available in your plan and your administrator has not disabled it. If you're on a paid Copilot plan you will receive a 10% multiplier discount on requests submitted to auto-selected models.
 
 ## 🍎 Scenario: Boosting The Daily Harvest's Test Coverage
 
