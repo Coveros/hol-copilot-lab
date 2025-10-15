@@ -66,7 +66,7 @@ __Instructions:__
 1. With the Pull Request finished by Copilot, we are going to return to the __Conversation__ tab in the Pull Request and click the cogwheel in the "Reviewers" section of the metadata
 2. Now, choose Copilot as your reviewer and scroll to the bottom of your Pull Request conversation.
 
-## Task 3: Ask Copilot to generate a summary of a Pull Request
+## Task 3: Ask GitHub Copilot to generate a summary of a Pull Request
 
 As great as it is to have GitHub Copilot work through a new feature request or bug report, it can be also very helpful to utilize the tool to bring us up to speed on a Pull Request already in the works.
 
@@ -83,3 +83,22 @@ __Instructions:__
 ## Extra Credit: Use GitHub Advanced Security + Copilot to fix a code vulnerability
 
 __TO BE CONSTRUCTED__
+
+## 🏆 Exercise Wrap-up
+
+### 🎯 Key Skills Practiced:
+
+- Utilize Coding Agent to handle Issues
+- Utilize Coding Agent to review Pull Requests
+- Create a generated summary of a Pull Request's contents
+- Utilize Coding Agent to resolve a Code Scanning vulnerability in GitHub Advanced Security
+
+### 💡 Reflection Questions:
+
+1. **How might you use different Issue/Pull Request label to help influence the type of response you receive from Coding Agent?**
+
+2. **Should GitHub Copilot be the only reviewer on a Pull Request? If so, what are the trade-offs of foregoing human reviewers? If not, how might you supplement your current review process with Coding Agent?**
+
+## 🔮 Coming Up Next:
+
+In Exercise 6, we'll take a look at extending GitHub Copilot's knowledge base through the use of **MCPs**, providing new functionality and information to smooth out your workflows.
