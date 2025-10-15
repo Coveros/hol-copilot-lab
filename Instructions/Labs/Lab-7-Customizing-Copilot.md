@@ -29,14 +29,17 @@ Custom Instructions Files are, unsurprisingly, files that can be created and sto
 
 While we are going to focus on repository-level custom instructions here, each has its own use case and they are all melded together when applicable for each individual prompt a user submits. When all three are utilized as context for a particular prompt, personal instructions take the highest priority, followed by repository instructions, with organization instructions prioritized last.
 
-But what can these do? Using _natural language_, custom instruction files allow you to define information and rules that are prepended to every prompt within that context.  
+But what can these do? Using __natural language__, custom instruction files allow you to define information and rules that are prepended to every prompt within that context.  
 
 <details>
+  
   <summary>Repository Instructions support by environment</summary>
+  
   <img width="731" height="503" alt="image" src="https://github.com/user-attachments/assets/43d8a28b-d9d7-4f79-97c4-2c905570bcfe" />
+
 </details>
 
-### A Silly Example
+### A Rudimentary Example
 
 Imagine that you have created a very simple `.github/copilot-instructions.md` file that reads,
 
@@ -74,13 +77,11 @@ In order to begin utilizing a custom instructions file, we must first create one
 
 __Instructions:__
 
-1. In VS Code, open the Explorer tab
-2. Using GitHub Copilot's Agent Mode, write a prompt that encapsulates rules or information you want GitHub Copilot to be aware of and have the agent generate its own custom instructions
-<details>
-  <summary>Example Prompt</summary>
-  `This project utilizes Typescript with React v18.2 to create a e-commerce website for produce shopping. Can you create for me a custom instructions file detailing best practices for this kind of repository in \`.github/copilot-instructions.md\`?`
-</details>
-3. Take a moment to assess the results returned from GitHub Copilot. Are there any results you think are out of place? Are there any guidelines that you might not have previously considered for this kind of project?
+1. In your VS Code instance, open GitHub Copilot Chat and switch to Agent Mode
+2. Click the cogwheel in the upper-right portion of the Chat window
+3. From the drop-down, select the "Generate Agent Instructions"
+4. Watch GitHub Copilot analyze your repository and return a custom instructions file specifically catered to your environment.
+5. Take a moment to assess the results returned from GitHub Copilot. Are there any results you think are out of place? Are there any guidelines that you might not have previously considered for this kind of project?
 
 ## 💭 Step 3: Using the instructions file for feature planning
 
@@ -90,10 +91,15 @@ __Instructions:__
 
 1. Switch GitHub Copilot to Ask Mode, and ask how it would plan to develop a new feature of your choice. Did GitHub Copilot's response match or break any of the rules from the instructions file?
 2. Switch back to Agent Mode, and ask GitHub Copilot to utilize the `create_issue` tool in the GitHub MCP Server to push an issue detailing that plan to your GitHub repository.
+
 <details>
+  
   <summary>`create_issue` Documentation</summary>
+  
   <img width="551" height="266" alt="image" src="https://github.com/user-attachments/assets/dd0f8940-8ae5-484a-b62a-1491f064e99b" />
+
 </details>
+
 3. After GitHub Copilot has finished, refresh your repository on GitHub.com (or simply navigate to the __Issues__ tab if you are not already there). Do you see your issue? If so, did it follow the guidelines established in your instructions file?
 
 ## 🏆 Exercise Wrap-up
