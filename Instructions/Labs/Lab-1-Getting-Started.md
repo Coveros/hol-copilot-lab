@@ -34,7 +34,7 @@ Throughout this lab, you'll help The Daily Harvest tackle real development chall
 - Maintaining high code quality standards across the development team
 - Identifying and resolving security vulnerabilities
 
-Your manager has emphasized that speed to market is crucial in the competitive fruit selling space, but code quality and security cannot be compromised. This is where GitHub Copilot becomes your secret weapon – helping you write better code faster while maintaining the high standards that fruit lovers expect from The Daily Harvest.
+Your manager has emphasized that speed to market is crucial in the competitive fruit-selling space, but code quality and security cannot be compromised. This is where GitHub Copilot becomes your secret weapon---helping you write better code faster while maintaining the high standards that fruit lovers expect from The Daily Harvest.
 
 Let's get started and grow some ripe code together! 🍊
 
