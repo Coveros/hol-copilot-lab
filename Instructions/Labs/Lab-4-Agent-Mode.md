@@ -30,7 +30,7 @@ GitHub Copilot Agent mode represents a significant evolution in AI-assisted deve
 - ✅ Comprehensive documentation generation
 
 ### Billing Considerations:
-This is a common source of confusion when using Agent mode. You will only need to pay for an Agent mode request if you decide to submit it to one of the premium models. However, if you use Copilot in VS Code and allow it to choose a model by using **Auto** mode, one of the premium models (currently GPT-5, Claude Sonnet 3.5, and Claude Sonnet 4.5) may be selected automatically, assuming that model is available in your plan and your administrator has not disabled it. If you're on a paid Copilot plan you will receive a 10% multiplier discount on requests submitted to auto-selected models.
+This is a common source of confusion when using Agent mode. You will only need to pay for an Agent mode request if you decide to submit it to one of the premium models. However, if you use GitHub Copilot in VS Code and allow it to choose a model by using **Auto** mode, one of the premium models (currently GPT-5, Claude Sonnet 3.5, and Claude Sonnet 4.5) may be selected automatically, assuming that model is available in your plan and your administrator has not disabled it. If you're on a paid GitHub Copilot plan you will receive a 10% multiplier discount on requests submitted to auto-selected models.
 
 ## 🍎 Scenario: Boosting The Daily Harvest's Test Coverage
 
@@ -115,7 +115,7 @@ This is where Agent mode truly shines! Watch as it works autonomously.
 
 ### Instructions:
 1. **Monitor the Agent's work** - don't interrupt unless there's an error
-     - If Copilot times out, simply restart the analysis
+     - If GitHub Copilot times out, simply restart the analysis
      - You might need to press `Ctrl-C` to stop the test execution process before the Agent will continue working
 2. **Watch the file explorer** - you'll see new test files being created
 3. **Check the Agent's status updates** - it will report progress toward the 80% goal
@@ -240,7 +240,7 @@ Based on this exercise, here are key practices for effective Agent usage:
 - Delegating complex, multi-file tasks to AI agents
 - Setting and achieving measurable development goals
 - Understanding autonomous AI decision-making in development
-- Comparing different Copilot modes for various scenarios
+- Comparing different GitHub Copilot modes for various scenarios
 - Reviewing and validating AI-generated code at scale
 
 ### 💡 Reflection Questions:
