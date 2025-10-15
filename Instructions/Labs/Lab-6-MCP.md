@@ -1,5 +1,3 @@
-__Note:__ This lab is currently built for working directly in VS Code. However, all functionality is available in other IDEs after manually configuring the tooling covered here.
-
 # Exercise 6 - Extending GitHub Copilot with MCP
 
 ## 🎯 Learning Objectives
@@ -20,7 +18,7 @@ Luckily, there is a tool for that!
 
 ## 🤖 Introduction to MCPs
 
-[Model Context Protocol](https://github.com/modelcontextprotocol) acts as a mediator between your code base and external services. By combining GitHub Copilot with data stores such as files and databases, tools such as [Google Maps](https://developers.google.com/maps/ai/mcp) or [Slack](https://docs.slack.dev/ai/mcp-server/), or business planning utilities such as [Figma](https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server) or [Trello](https://mcpservers.org/servers/m0xai/trello-mcp-server), you can expand the knowledge GitHub Copilot has access to.
+[Model Context Protocol](https://github.com/modelcontextprotocol) acts as a mediator between your code base and external services. By combining GitHub Copilot with data stores such as files and databases, tools such as [Google Maps](https://developers.google.com/maps/ai/mcp) or [Slack](https://docs.slack.dev/ai/mcp-server/), or business planning utilities such as [Figma](https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server) or [Jira](https://github.com/atlassian/atlassian-mcp-server), you can expand the knowledge GitHub Copilot has access to.
 
 When looking to utilize MCP Servers, there are two primary ways of connecting your GitHub Copilot Client: through the MCP Registry, and through manual configuration.
 
@@ -61,11 +59,13 @@ __Instructions:__
 
 1. Start by opening up [the MCP Registry](https://github.com/mcp) in a new browser tab or window.
 2. Find the GitHub Server
+
 <img width="557" height="170" alt="image" src="https://github.com/user-attachments/assets/82e8a1b8-066f-4a8f-858f-f6161b5d0732" />
+
 3. Click the "Install" drop-down, then click "Install in VS Code"
-3.5. If prompted by your browser, accept opening VS Code
-4. In your IDE, an extension page for the GitHub MCP Server should be displayed. Click "Install".
-5. Link your GitHub account to your IDE as prompted
+4. If prompted by your browser, accept opening VS Code
+5. In your IDE, an extension page for the GitHub MCP Server should be displayed. Click "Install".
+6. Link your GitHub account to your IDE as prompted
 
 With that, you should be all set to begin work with the MCP Server.
 
@@ -84,22 +84,45 @@ Inside the [MCP documentation](https://github.com/mcp/github/github-mcp-server) 
 
 <img width="524" height="139" alt="image" src="https://github.com/user-attachments/assets/7c6a056e-a06f-45c3-901e-d6a0be63b045" />
 
-With this, we can utilize GitHub Copilot to directly acquire issues we may need to work on directly into our IDE with the help of [chat variable formatting](https://docs.github.com/en/copilot/reference/cheat-sheet?tool=vscode#chat-variables).
+__Note:__ Before moving on, please make sure your MCP Server is running. 
+
+<details>
+  <summary>Instructions for ensuring MCP is started</summary>
+  
+  - Click on the __Extensions__ tab in VS Code
+  - At the bottom of that section, there should be a tab labeled "MCP Servers - Installed". You may need to collapse your "Installed" and "Recommended" extension sections.
+  - In that installed MCP server section, locate "GitHub" and click the cogwheel next to it
+
+  <img width="349" height="465" alt="image" src="https://github.com/user-attachments/assets/ea8211dc-198d-44e2-9005-e863d7ddf742" />
+  
+  - If the "Start Server" option is available to click, select it
+  - If "Start Server" is greyed out, and you instead see "Stop Server" and "Restart Server" are clickable, you are all set! 
+
+</details> 
 
 __Instructions:__
 
 1. Within this repository, navigate to the __Issues__ tab and find the issue called "Creation of robots.txt file".
 2. Take a moment to understand the issue, and consider how you would ask GitHub Copilot to handle such a task.
-3. As shown in the image above, we need three pieces of information to pass along for our MCP Server tool to work: the issue number, the owner, and the repository name. Find these three values.
-4. Back inside our IDE, switch GitHub Copilot to agent mode (if it was not there already) and fill in the information required using chat variable formatting syntax at the beginning of our prompt.
+3. As described in the documentation shown above, we need three pieces of information to pass along for our MCP Server tool to work: the issue number, the owner, and the repository name. Find these three values.
+4. Back inside our IDE, switch GitHub Copilot to agent mode (if it was not there already) and prompt GitHub Copilot to tackle the issue. Ensure you reference the issue using either [chat variable formatting](https://docs.github.com/en/copilot/reference/cheat-sheet?tool=vscode#chat-variables) or natural language.
 
 <details>
+  
   <summary>Example Syntax</summary>
-  `#get_issue 21, Coveros, hol-copilot-lab`
+  
+  Chat Variable Formatting: 
+  ```md
+  #get_issue 21, Coveros, hol-copilot-lab
+  
+  Can you implement the robots.txt file described in the linked issue?
+  ```
+  
+  Natural Language Formatting: `Can you describe for me the information requested in Issue #21 in the Coveros/hol-copilot-lab repository?`
+  
 </details>
 
-5. Hit Shift + Enter to move to the next line in your prompt, and fill out the rest of your prompt for how you would have GitHub Copilot tackle this issue.
-6. Submit your prompt, and watch GitHub Copilot both extract and work on the issue attached!
+5. Submit your prompt, and watch GitHub Copilot both extract and work on the issue attached!
 
 ## 🏆 Exercise Wrap-up
 
