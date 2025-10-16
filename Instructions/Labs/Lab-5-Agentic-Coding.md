@@ -57,18 +57,19 @@ In the __Conversation__ tab of this new Pull Request, you should now see a butto
 
 Take a few moments to peruse this page and see all the steps GitHub Copilot is taking to meet your issue's needs.
 
-## 👀 Step 2: Ask GitHub Copilot to review a Pull Request.
+## 👀 Step 2: Ask GitHub Copilot to review a Pull Request
 
 With new functionality ready to be reviewed, we can now utilize Coding Agent to analyze the work completed and provide feedback on both functional and stylistic issues with incoming Pull Requests.
 
 __Instructions:__
 
-1. With the Pull Request finished by Copilot, we are going to return to the __Conversation__ tab in the Pull Request and click the cogwheel in the "Reviewers" section of the metadata
-2. Now, choose Copilot as your reviewer and scroll to the bottom of your Pull Request conversation.
+1. With the Pull Request finished by GitHub Copilot, we are going to return to the __Conversation__ tab in the Pull Request and click the cogwheel in the "Reviewers" section of the metadata
+2. Now, choose "Copilot" as your reviewer and scroll to the bottom of your Pull Request conversation
+3. You should see the various critiques GitHub Copilot has regarding this particular Pull Request after a brief wait
 
 ## Task 3: Ask GitHub Copilot to generate a summary of a Pull Request
 
-As great as it is to have GitHub Copilot work through a new feature request or bug report, it can be also very helpful to utilize the tool to bring us up to speed on a Pull Request already in the works.
+As great as it is to have GitHub Copilot work through a new feature request or bug report, it can also be very helpful to utilize the tool to bring us up to speed on a Pull Request already in the works.
 
 __Instructions:__
 
