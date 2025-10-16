@@ -13,11 +13,11 @@ By the end of this exercise, you will:
 
 ## 🍎 Scenario: Limiting Redundancy in The Daily Harvest's workflows
 
-By now, things are running pretty smoothly at The Daily Harvest. Your team is utilizing GitHub Copilot to efficiently learn and develop new features and bug fixes, Coding Agent has been utilized for routine fixes and additions to free up developers' hands for more complex work, and MCPs have been integrated to ensure the information your team _and_ GitHub Copilot needs are always available. However, amidst the productivity, you've noticed an issue that, while small at first, has become more noticable with the most glaring improvements taken care of...
+By now, things are running pretty smoothly at The Daily Harvest. Your team is utilizing GitHub Copilot to efficiently learn and develop new features and bug fixes, Coding Agent has been utilized for routine fixes and additions to free up developers' hands for more complex work, and MCPs have been integrated to ensure the information your team _and_ GitHub Copilot needs are always available. However, amidst the productivity, you've noticed an issue that, while small at first, has become more noticeable with the most glaring improvements taken care of...
 
 It began when you asked GitHub Copilot to spin up a new test suite for a customer support utility and you received tests written using the Jest framework when your company uses Puppeteer. You later received functionality from GitHub Copilot that utilized the wrong version of an API for your payment processor.
 
-You've begun to notice that every new context in which you utilize GitHub Copilot—new Copilot Chat threads, individual Issues assigned to Coding Agent, or using resources drawn from MCPs to create improved functionality—require you to regurgigate a copy-pasted list of do's and don'ts regarding style guides, package versions, and response formatting to ensure GitHub Copilot provides an answer that is not just functional but also correct for your organizational standards. There has to be a better way to ensure GitHub Copilot knows which rules to follow, and some diving into the internet leads you to a perfect solution: custom instruction files.
+You've begun to notice that every new context in which you utilize GitHub Copilot—new Copilot Chat threads, individual Issues assigned to Coding Agent, or using resources drawn from MCPs to create improved functionality—require you to regurgitate a copy-pasted list of do's and don'ts regarding style guides, package versions, and response formatting to ensure GitHub Copilot provides an answer that is not just functional but also correct for your organizational standards. There has to be a better way to ensure GitHub Copilot knows which rules to follow, and some diving into the internet leads you to a perfect solution: custom instructions files.
 
 ## 📄 Introduction to Custom Instructions
 
@@ -65,9 +65,10 @@ Before we can begin utilizing custom instructions, we should first make sure the
 
 __Instructions:__
 
-1. In your VS Code instance, open the Settings editor using `Cmd`+`,` (Mac) or `Ctrl`+`,` (Linux/Windows).
-2. In the search box at the top of your settings editor, type "Instruction file"
-3. Ensure the check box under "Use Instruction Files" is marked
+1. In your VS Code instance, switch to the Explorer tab in your sidebar (if you are not already there)
+2. Open the Settings editor using `Cmd`+`,` (Mac) or `Ctrl`+`,` (Linux/Windows).
+3. In the search box at the top of your settings editor, type "Instruction file"
+4. Ensure the check box under "Use Instruction Files" is marked
 
 Great! With that, we should be ready to go building our first set of custom instructions.
 
