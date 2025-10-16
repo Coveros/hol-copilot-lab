@@ -2,7 +2,7 @@
 
 ## Overall Lab Objectives
 
-This 4-hour hands-on lab is designed to give developers practical experience using **GitHub Copilot** as an AI-powered assistant throughout the Software Development Life Cycle (SDLC). You will explore how GitHub Copilot can improve developer productivity, code quality, and security — from feature planning and prototyping to implementation, code review, and remediation.
+This 4-hour hands-on lab is designed to give developers practical experience using **GitHub Copilot** as an AI-powered assistant throughout the Software Development Life Cycle (SDLC). You will explore how GitHub Copilot can improve developer productivity, code quality, and security—from feature planning and prototyping to implementation, code review, and remediation.
 
 Through a series of guided, real-world exercises, you will learn how to:
 - Understand GitHub Copilot’s role across all phases of the SDLC
@@ -34,7 +34,7 @@ Throughout this lab, you'll help The Daily Harvest tackle real development chall
 - Maintaining high code quality standards across the development team
 - Identifying and resolving security vulnerabilities
 
-Your manager has emphasized that speed to market is crucial in the competitive fruit-selling space, but code quality and security cannot be compromised. This is where GitHub Copilot becomes your secret weapon---helping you write better code faster while maintaining the high standards that fruit lovers expect from The Daily Harvest.
+Your manager has emphasized that speed to market is crucial in the competitive fruit-selling space, but code quality and security cannot be compromised. This is where GitHub Copilot becomes your secret weapon—helping you write better code faster while maintaining the high standards that fruit lovers expect from The Daily Harvest.
 
 Let's get started and grow some ripe code together! 🍊
 
@@ -118,11 +118,53 @@ To adjust the zoom level for the environment page, click the A↕: 100% icon loc
 
 ## Creating your Repository
 
-TODO use the repo template to create your own repo
+1. Navigate to the **hol-copilot-lab** repository in a web browser: https://github.com/Coveros/hol-copilot-lab/tree/main
+
+1. Click the green **Use this template** button and then select **Create a new repository**.
+
+   ![](../../media/create-new-repo-from-template.png)
+
+1. You should see a repository creation form. Make the following selections and then click the **Create repository** button.
+   - **Owner:** Cloudlabs-Enterprises
+   - **Repository name:** hol-copilot-lab-<inject key="GitHub User Name" enableCopy="true"/>
+   - **Visibility:** Internal
+
+1. After a few moments you should be taken to the home page of your newly-created repository.
+
+   ![](../../media/hol-copilot-lab-homepage.png)
 
 ## Setting up IDE
 
-TODO either use codespace or clone repo locally. login into github for copilot access
+1. Double-click on the Visual Studio Code shortcut on the desktop of your virtual environment.
+
+   ![](../../media/visual-studio-code-shortcut.png)
+
+1. Once the IDE opens, click on the "Clone Git Repository..." option and select **Clone from GitHub** when that option appears
+   at the top of the IDE.
+
+   ![](../../media/clone-git-repo-vs-code.png)
+
+1. Type the name of the repository that you just created.
+
+1. Choose a location on the local filesystem to save that repo. If prompted, select a personal access token to authenticate
+   with GitHub, confirm that you want to open the repository in your current VS Code window, and indicate that you trust
+   the author of the files in the folder.
+
+1. Click on the **Extensions** button on the left-hand banner and search for **GitHub Copilot**. Install the extension if needed.
+
+   ![](../../media/searching-for-github-copilot-extension.png)
+
+1. Click on the **Accounts** button in the lower left-hand corner of the IDE. Select **Sign in with GitHub to use GitHub Copilot**.
+
+   ![](../../media/accounts-button.png)
+
+1. A browser window will open asking you to authorize Visual Studio Code. Click the **Continue** button and then **Open Visual Studio Code** when you are prompted.
+
+   ![](../../media/accounts-button.png)
+
+1. A GitHub Copilot toolbar icon will appear in the lower right-hand corner of the IDE. Copilot is now ready for you to use!
+
+   ![](../../media/copilot-toolbar-icon.png)
 
 ## Support Contact
 
