@@ -66,7 +66,7 @@ Before we can begin utilizing custom instructions, we should first make sure the
 __Instructions:__
 
 1. In your VS Code instance, switch to the Explorer tab in your sidebar (if you are not already there)
-2. Open the Settings editor using `Cmd`+`,` (Mac) or `Ctrl`+`,` (Linux/Windows).
+2. Open the Settings editor using `Cmd`+`,` (Mac) or `Ctrl`+`,` (Linux/Windows)
 3. In the search box at the top of your settings editor, type "Instruction file"
 4. Ensure the check box under "Use Instruction Files" is marked
 
@@ -102,6 +102,98 @@ __Instructions:__
 </details>
 
 3. After GitHub Copilot has finished, refresh your repository on GitHub.com (or simply navigate to the __Issues__ tab if you are not already there). Do you see your issue? If so, did it follow the guidelines established in your instructions file?
+
+## 💪 Extra Credit: Going further beyond with custom prompt files and chat modes
+
+### Prompt Files
+
+With custom instructions files, we have discussed the ability to set effective, automatic guardrails for GitHub Copilot: for every response, here are the things it should know and here is how it should respond.
+
+But what if we wanted to take our automation a step further and ask the same __question__ every time? That is where custom prompt files come in. Stored either locally for a particular user or in the repository within the `.github/prompts` directory, these are files which can be formatted to ensure multiple parameters are identical across uses:
+
+- What __mode__ are you using?
+- What __model__ (e.g. GPT, Claude, or Gemini) do you want this particular prompt to target?
+- Are there any __tools__ you want this prompt to use (such as those pulled from an MCP Server)?
+- What __description__ would you provide for the goal of this prompt? 
+
+<details>
+  
+  <summary>A note about tool priority</summary>
+
+  While we will be discussing chat modes more in a moment, it is important to understand how the tools specified in your custom prompt file may be prioritized against tools selected by other means. In short, the list of available tools is determined the following priority order...
+
+  1. Tools specified in the prompt file (if any)
+  2. Tools from the referenced chat mode in the prompt file (if any)
+  3. Default tools for the selected chat mode
+  
+</details>
+
+With these optional values established, you can now define any prompt you would like. In additional to using natural language, we can include various parameters as a part of the prompt using a special `${variableName}` syntax:
+
+- Workspace variables: `${workspaceFolder}`, `${workspaceFolderBasename}`
+- Selection variables: `${selection}`, `${selectedText}`
+- File context variables: `${file}`, `${fileBasename}`, `${fileDirname}`, `${fileBasenameNoExtension}`
+- Input variables: `${input:variableName}`, `${input:variableName:placeholder} (pass values to the prompt from the chat input field)`
+
+Finally, the format for our custom prompt files is:
+
+```md
+---
+{header values, if applicable. For example...}
+description: 'This is a test prompt'
+---
+{body, including any variables and the prompt itself} 
+Workspace to target: ${workspaceFolder}
+How to start each response: ${input:greeting}
+
+Please begin your response with your assigned greeting.
+
+Create a file named `test.txt` and write "Hello, world!" to that file
+```
+
+With this, we now have the building blocks to build a simple reusable prompt file of our own! 
+
+__Instructions:__
+
+1. In your VS Code instance, switch to the Explorer tab in your sidebar (if you are not already there)
+2. Open the Settings editor using `Cmd`+`,` (Mac) or `Ctrl`+`,` (Linux/Windows)
+3. In the search menu, type "Prompt file"
+4. Ensure the (experimental) option "Chat: Prompt Files" is enabled
+5. Ensuring you have GitHub Copilot Chat open, click the cogwheel in the top-right corner of the Chat window
+6. In the drop-down menu provided, click "Prompt Files"
+7. You should now have a new menu open up in your command palette at the top of your screen. Click the button that says "New prompt file..."
+8. When choosing the location to save the prompt file, choose the standard `.github/prompts` directory
+9. For the name of the prompt file, type "explaination" and hit enter. A new file called "explanation.prompt.md" should now have been created for you
+10. Take some to create a custom prompt file that offers an explanation to the user about a code snippet that the user has input as part of the prompt. Consider the many components we have discussed above, although a sample has been provided below to give you some ideas if you are stuck
+
+<details>
+
+  <summary>Example Prompt File</summary>
+
+  
+    ```md
+    ---
+    mode: 'agent'
+    description: 'Generate a clear code explanation with examples'
+    ---
+    
+    Explain the following code in a clear, beginner-friendly way:
+    
+    Code to explain: ${input:code:Paste your code here}
+    Target audience: ${input:audience:Who is this explanation for? (e.g., beginners, intermediate developers, etc.)}
+    
+    Please provide:
+    
+    * A brief overview of what the code does
+    * A step-by-step breakdown of the main parts
+    * Explanation of any key concepts or terminology
+    * A simple example showing how it works
+    * Common use cases or when you might use this approach
+    
+    Use clear, simple language and avoid unnecessary jargon.
+    ```
+  
+</details>
 
 ## 🏆 Exercise Wrap-up
 
