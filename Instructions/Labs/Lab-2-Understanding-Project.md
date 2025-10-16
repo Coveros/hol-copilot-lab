@@ -127,7 +127,7 @@ Ask GitHub Copilot some questions to help you understand the technologies and fr
 
 </details>
 
-If GitHub Copilot mentions any technologies you're unfamiliar with, don't hesitate to ask follow-up questions! Remember, GitHub Copilot Chat isn't just for understanding your specific codebase - it's your **onboarding buddy**, **technical sounding board**, and **intelligent search engine** all rolled into one.
+If GitHub Copilot mentions any technologies you're unfamiliar with, don't hesitate to ask follow-up questions! Remember, GitHub Copilot Chat isn't just for understanding your specific codebase---it's your **onboarding buddy**, **technical sounding board**, and **intelligent search engine** all rolled into one.
 
 ### 🤝 GitHub Copilot as Your Learning Partner
 
@@ -177,7 +177,7 @@ Why might my tests be failing intermittently?
 
 ### 💡 Pro Tips for Effective Learning with GitHub Copilot
 
-1. **Ask "Why" Questions**: Don't just ask what something does - ask why it's used
+1. **Ask "Why" Questions**: Don't just ask what something does---ask why it's used
 
     ```
     Why would a team choose Redux over React's built-in state management?

@@ -19,7 +19,7 @@ Your task today is to use GitHub Copilot to write high-quality unit tests that w
 
 ## ✏️ Step 1: Using Autocomplete to Generate One Additional Unit Test
 
-To start off you'd like to generate one additional unit test. We can use GitHub Copilot's Autocomplete feature to make an addition to the unit test suite.
+To start off, you'd like to generate one additional unit test. We can use GitHub Copilot's Autocomplete feature to make an addition to the unit test suite.
 
 ### Instructions:
 1. Open the existing test file named `CartPage.test.tsx`
@@ -40,8 +40,7 @@ To start off you'd like to generate one additional unit test. We can use GitHub 
    </details>
 
 4. After adding the comment you should press `Enter` to go to the next line. GitHub Copilot will start suggesting lines of code, and you can press `Tab` to accept
-   one and then press `Enter` to go to the next line, repeating this process until the test is implemented. If GitHub Copilot starts suggesting the next test 
-   you can simply press the `Esc` key to stop the code generation process.
+   one and then press `Enter` to go to the next line, repeating this process until the test is implemented. If GitHub Copilot starts suggesting the next test, you can simply press the `Esc` key to stop the code generation process.
 
 6. Once the test is generated, try running it to make sure that it and the existing test pass. If there are any failures, try asking GitHub Copilot how to fix them.
 
@@ -59,7 +58,7 @@ use GitHub Copilot's Edit mode to create comprehensive unit tests.
 ### Instructions:
 1. Open GitHub Copilot Chat and switch to Edit mode
 2. Write prompts (examples are hidden below) to generate tests for uncovered conditions in `CartPage`
-3. Run the newly-generated tests and use GitHub Copilot to help you correct any failures
+3. Run the newly-generated tests, and use GitHub Copilot to help you correct any failures
 
 ### Basic Test Generation:
 
