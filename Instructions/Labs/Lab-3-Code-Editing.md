@@ -19,7 +19,7 @@ Your task today is to use GitHub Copilot to write high-quality unit tests that w
 
 ## ✏️ Step 1: Using Autocomplete to Generate One Additional Unit Test
 
-To start off you'd like to generate one additional unit test. We can use Copilot's Autocomplete feature to make an addition to the unit test suite.
+To start off you'd like to generate one additional unit test. We can use GitHub Copilot's Autocomplete feature to make an addition to the unit test suite.
 
 ### Instructions:
 1. Open the existing test file named `CartPage.test.tsx`
@@ -39,16 +39,16 @@ To start off you'd like to generate one additional unit test. We can use Copilot
 
    </details>
 
-4. After adding the comment you should press `Enter` to go to the next line. Copilot will start suggesting lines of code, and you can press `Tab` to accept
-   one and then press `Enter` to go to the next line, repeating this process until the test is implemented. If Copilot starts suggesting the next test 
+4. After adding the comment you should press `Enter` to go to the next line. GitHub Copilot will start suggesting lines of code, and you can press `Tab` to accept
+   one and then press `Enter` to go to the next line, repeating this process until the test is implemented. If GitHub Copilot starts suggesting the next test 
    you can simply press the `Esc` key to stop the code generation process.
 
-6. Once the test is generated, try running it to make sure that it and the existing test pass. If there are any failures, try asking Copilot how to fix them.
+6. Once the test is generated, try running it to make sure that it and the existing test pass. If there are any failures, try asking GitHub Copilot how to fix them.
 
 ## 💭 Step 2: Using Edit Mode to Generate Additional Unit Tests
 
 There are many other tests that we can write for `CartPage`. While we could use Autocomplete to generate them, that would be very slow and cumbersome. We'll instead
-use Copilot's Edit mode to create comprehensive unit tests.
+use GitHub Copilot's Edit mode to create comprehensive unit tests.
 
 ### Why Edit Mode is Perfect for Unit Testing:
 - 🎯 **Context-aware**: Understands your existing code structure and testing patterns
@@ -57,9 +57,9 @@ use Copilot's Edit mode to create comprehensive unit tests.
 - 🚀 **Efficiency**: Generates comprehensive test suites quickly
 
 ### Instructions:
-1. Open Copilot Chat and switch to Edit mode
+1. Open GitHub Copilot Chat and switch to Edit mode
 2. Write prompts (examples are hidden below) to generate tests for uncovered conditions in `CartPage`
-3. Run the newly-generated tests and use Copilot to help you correct any failures
+3. Run the newly-generated tests and use GitHub Copilot to help you correct any failures
 
 ### Basic Test Generation:
 
@@ -84,17 +84,17 @@ use Copilot's Edit mode to create comprehensive unit tests.
 
 </details>
 
-### BONUS: Refine tests to handle an edge case that Copilot didn't cover initially
+### BONUS: Refine tests to handle an edge case that GitHub Copilot didn't cover initially
 
 **Pro Tip:** The more specific and contextual your Edit mode prompts are, the better the generated code will be. Always review and iterate on AI-generated tests to ensure they meet your quality standards!
 
 ## 🎓 Step 3: Best Practices and Code Review
 
-Let's use Copilot to review and improve our test quality.
+Let's use GitHub Copilot to review and improve our test quality.
 
 ### Instructions:
 
-**Ask Copilot to review your unit tests and make suggestions for improvement. Consider implementing its suggestions if you have time.**
+**Ask GitHub Copilot to review your unit tests and make suggestions for improvement. Consider implementing its suggestions if you have time.**
 
 ```
 @workspace Do these tests follow testing best practices? Check the following and suggest improvements if needed.
@@ -125,7 +125,7 @@ Let's use Copilot to review and improve our test quality.
    - Quality: _____________________
    - Coverage: _____________________
 
-2. **What types of test scenarios did Copilot excel at generating?**
+2. **What types of test scenarios did GitHub Copilot excel at generating?**
    _____________________________________
 
 3. **Where did you need to provide additional guidance or corrections?**

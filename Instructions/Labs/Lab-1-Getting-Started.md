@@ -2,18 +2,18 @@
 
 ## Overall Lab Objectives
 
-This 4-hour hands-on lab is designed to give developers practical experience using **GitHub Copilot** as an AI-powered assistant throughout the Software Development Life Cycle (SDLC). You will explore how Copilot can improve developer productivity, code quality, and security — from feature planning and prototyping to implementation, code review, and remediation.
+This 4-hour hands-on lab is designed to give developers practical experience using **GitHub Copilot** as an AI-powered assistant throughout the Software Development Life Cycle (SDLC). You will explore how GitHub Copilot can improve developer productivity, code quality, and security — from feature planning and prototyping to implementation, code review, and remediation.
 
 Through a series of guided, real-world exercises, you will learn how to:
-- Understand Copilot’s role across all phases of the SDLC
-- Plan new features and define success criteria with Copilot
+- Understand GitHub Copilot’s role across all phases of the SDLC
+- Plan new features and define success criteria with GitHub Copilot
 - Use AI-powered code completions directly within the IDE
-- Leverage Copilot Chat in Ask, Edit, and Agent modes
-- Delegate tasks to the Copilot coding agent to multiply development impact
-- Review code at scale using Copilot code reviews
-- Detect and fix security vulnerabilities using Copilot Autofix
-- Extend Copilot’s capabilities with Model Context Protocol (MCP) servers
-- Optimize Copilot performance using Custom Instructions and Prompt Files
+- Leverage GitHub Copilot Chat in Ask, Edit, and Agent modes
+- Delegate tasks to the GitHub Copilot coding agent to multiply development impact
+- Review code at scale using GitHub Copilot code reviews
+- Detect and fix security vulnerabilities using GitHub Copilot Autofix
+- Extend GitHub Copilot’s capabilities with Model Context Protocol (MCP) servers
+- Optimize GitHub Copilot performance using Custom Instructions and Prompt Files
 
 ## Welcome to The Daily Harvest
 
@@ -34,7 +34,7 @@ Throughout this lab, you'll help The Daily Harvest tackle real development chall
 - Maintaining high code quality standards across the development team
 - Identifying and resolving security vulnerabilities
 
-Your manager has emphasized that speed to market is crucial in the competitive fruit selling space, but code quality and security cannot be compromised. This is where GitHub Copilot becomes your secret weapon – helping you write better code faster while maintaining the high standards that fruit lovers expect from The Daily Harvest.
+Your manager has emphasized that speed to market is crucial in the competitive fruit-selling space, but code quality and security cannot be compromised. This is where GitHub Copilot becomes your secret weapon---helping you write better code faster while maintaining the high standards that fruit lovers expect from The Daily Harvest.
 
 Let's get started and grow some ripe code together! 🍊
 

@@ -6,7 +6,7 @@ By the end of this exercise, you will:
 - Use GitHub Copilot Chat in "Ask" mode to understand unfamiliar codebases
 - Learn how to efficiently navigate and analyze project structure with AI assistance
 - Understand how to identify build processes, testing frameworks, and dependencies
-- Develop strategies for onboarding to new projects using Copilot
+- Develop strategies for onboarding to new projects using GitHub Copilot
 
 ## 🍎 Scenario: Your First Day at The Daily Harvest
 
@@ -20,7 +20,7 @@ As a modern developer, you'll leverage GitHub Copilot Chat to accelerate your on
 
 ## 🤖 Introduction to GitHub Copilot Chat
 
-GitHub Copilot Chat is an AI-powered conversational interface that helps you understand code, generate implementations, and solve development challenges. There are several modes to interact with Copilot:
+GitHub Copilot Chat is an AI-powered conversational interface that helps you understand code, generate implementations, and solve development challenges. There are several modes to interact with GitHub Copilot:
 
 | Mode | Purpose | Best For |
 |------|---------|----------|
@@ -39,8 +39,8 @@ For exploring an unfamiliar codebase, **Ask mode** is ideal because it allows yo
 Let's start by getting a high-level understanding of what this application does.
 
 ### Instructions:
-1. Open GitHub Copilot Chat (Ctrl+Shift+I or Cmd+Shift+I)
-2. Ask Copilot some questions to help you understand the application as it is currently working. If you get stuck, try using these sample prompts to explore the project:
+1. Open GitHub  Chat (Ctrl+Shift+I or Cmd+Shift+I)
+2. Ask GitHub Copilot some questions to help you understand the application as it is currently working. If you get stuck, try using these sample prompts to explore the project:
 
 <details>
   <summary>Sample Prompts</summary>
@@ -59,22 +59,22 @@ Let's start by getting a high-level understanding of what this application does.
 
 </details>
 
-### 💡 What to Expect from Copilot
+### 💡 What to Expect from GitHub Copilot
 
-When you ask these questions, Copilot will analyze your workspace and provide insights such as:
+When you ask these questions, GitHub Copilot will analyze your workspace and provide insights such as:
 - **Application Type**: Whether it's an e-commerce site, API, web application, etc.
 - **Core Features**: Key functionality like user authentication, product catalogs, payment processing
 - **Technology Stack**: Programming languages, frameworks, and architectural patterns in use
 - **Business Domain**: The industry or use case the application serves
 
-Copilot's responses will be based on analyzing your codebase structure, configuration files, dependencies, and code patterns. The more specific your questions, the more targeted and useful the responses will be.
+GitHub Copilot's responses will be based on analyzing your codebase structure, configuration files, dependencies, and code patterns. The more specific your questions, the more targeted and useful the responses will be.
 
 ## 🏗️ Step 2: Analyzing Project Structure
 
 Now let's understand how the code is organized and what the folder structure tells us.
 
 ### Instructions:
-Ask Copilot some questions to help you understand the organization of the codebase. If you get stuck, try using these sample prompts to explore the project:
+Ask GitHub Copilot some questions to help you understand the organization of the codebase. If you get stuck, try using these sample prompts to explore the project:
 
 <details>
   <summary>Sample Prompts</summary>
@@ -93,22 +93,22 @@ Ask Copilot some questions to help you understand the organization of the codeba
 
 </details>
 
-### 💡 What to Expect from Copilot
+### 💡 What to Expect from GitHub Copilot
 
-When you ask these questions, Copilot will analyze the files and folders in your workspace and provide a structural breakdown, including:
+When you ask these questions, GitHub Copilot will analyze the files and folders in your workspace and provide a structural breakdown, including:
 - **Folder Roles**: Explanations of what code lives in main directories like `src/`, `tests/`, `public/`, or `components/`.
 - **Key Files**: Identification of critical files such as `package.json`, `README.md`, or main entry points (e.g., `index.js`, `main.py`).
 - **Architectural Patterns**: Insights into how the project is organized (e.g., MVC, layered architecture, microservices).
 - **Configuration Details**: Information about configuration files like environment variables (`.env`), build configuration (e.g., `webpack.config.js`), or database connection settings.
 
-Copilot's response helps new developers quickly orient themselves by providing a map of the codebase organization.
+GitHub Copilot's response helps new developers quickly orient themselves by providing a map of the codebase organization.
 
 ## 💻 Step 3: Identifying Technologies and Frameworks
 
 Understanding the tech stack is crucial for knowing what skills you'll need and how to work effectively.
 
 ### Instructions:
-Ask Copilot some questions to help you understand the technologies and frameworks used within the codebase. If you get stuck, try using these sample prompts to explore the project:
+Ask GitHub Copilot some questions to help you understand the technologies and frameworks used within the codebase. If you get stuck, try using these sample prompts to explore the project:
 
 <details>
   <summary>Sample Prompts</summary>
@@ -127,11 +127,11 @@ Ask Copilot some questions to help you understand the technologies and framework
 
 </details>
 
-If Copilot mentions any technologies you're unfamiliar with, don't hesitate to ask follow-up questions! Remember, GitHub Copilot Chat isn't just for understanding your specific codebase - it's your **onboarding buddy**, **technical sounding board**, and **intelligent search engine** all rolled into one.
+If GitHub Copilot mentions any technologies you're unfamiliar with, don't hesitate to ask follow-up questions! Remember, GitHub Copilot Chat isn't just for understanding your specific codebase - it's your **onboarding buddy**, **technical sounding board**, and **intelligent search engine** all rolled into one.
 
-### 🤝 Copilot as Your Learning Partner
+### 🤝 GitHub Copilot as Your Learning Partner
 
-Think of Copilot Chat as having a knowledgeable senior developer sitting next to you who's always available to answer questions. You can ask about:
+Think of GitHub Copilot Chat as having a knowledgeable senior developer sitting next to you who's always available to answer questions. You can ask about:
 
 **Technology Fundamentals:**
 
@@ -175,7 +175,7 @@ What's the difference between 500 and 404 HTTP status codes?
 Why might my tests be failing intermittently?
 ```
 
-### 💡 Pro Tips for Effective Learning with Copilot
+### 💡 Pro Tips for Effective Learning with GitHub Copilot
 
 1. **Ask "Why" Questions**: Don't just ask what something does - ask why it's used
 
@@ -217,7 +217,7 @@ Why might my tests be failing intermittently?
 - "Am I overthinking this, or is there a simpler way?"
 - "What are the potential downsides of this solution?"
 
-Remember: Every expert was once a beginner. Copilot Chat gives you a judgment-free space to ask questions, explore concepts, and build your understanding at your own pace!
+Remember: Every expert was once a beginner. GitHub Copilot Chat gives you a judgment-free space to ask questions, explore concepts, and build your understanding at your own pace!
 
 **Sample Follow-up Prompts:**
 
@@ -239,7 +239,7 @@ Now let's figure out how to actually build and run this application.
 
 ### Instructions:
 
-Ask Copilot how to build your codebase. If you get stuck you can use the below sample prompts:
+Ask GitHub Copilot how to build your codebase. If you get stuck you can use the below sample prompts:
 
 <details>
   <summary>Sample Prompts</summary>
@@ -263,9 +263,9 @@ Ask Copilot how to build your codebase. If you get stuck you can use the below s
 </details>
 
 ### ⚙️ Try It Yourself:
-1. Follow the build instructions Copilot provided
+1. Follow the build instructions GitHub Copilot provided
 2. Try to start the development server
-3. If you encounter errors, ask Copilot for help troubleshooting
+3. If you encounter errors, ask GitHub Copilot for help troubleshooting
 
 ## 🧪 Step 5: Understanding the Testing Strategy
 
@@ -273,7 +273,7 @@ Testing is crucial for maintaining code quality. Let's explore what testing fram
 
 ### Instructions:
 
-Ask Copilot how the codebase is being tested. If you get stuck you can use the below sample prompts:
+Ask GitHub Copilot how the codebase is being tested. If you get stuck you can use the below sample prompts:
 
 <details>
   <summary>Sample Prompts</summary>
@@ -309,10 +309,10 @@ Ask Copilot how the codebase is being tested. If you get stuck you can use the b
 
 ## 🎯 Optional Extension: Building a Better README
 
-Now that you understand the project structure and setup process, let's use Copilot to improve the project documentation for future developers.
+Now that you understand the project structure and setup process, let's use GitHub Copilot to improve the project documentation for future developers.
 
 ### Instructions:
-1. Use Copilot to analyze the current README (if it exists) and suggest improvements. See the below sample prompts if you get stuck.
+1. Use GitHub Copilot to analyze the current README (if it exists) and suggest improvements. See the below sample prompts if you get stuck.
 2. Create or enhance documentation based on your exploration.
 
 <details>
@@ -340,7 +340,7 @@ Now that you understand the project structure and setup process, let's use Copil
 - Add examples of common development tasks
 
 ### 🔄 Iterative Improvement:
-After Copilot generates documentation, you can refine it:
+After GitHub Copilot generates documentation, you can refine it:
 
 ```
 Can you make this setup guide more beginner-friendly?
@@ -357,12 +357,12 @@ Include examples of how to run different types of tests.
 ## 🏆 Exercise Wrap-up
 
 **Reflection Questions:**
-1. How did using Copilot Chat change your approach to exploring a new codebase compared to manual exploration?
+1. How did using GitHub Copilot Chat change your approach to exploring a new codebase compared to manual exploration?
 2. What types of questions were most effective for getting useful information?
-3. Were there any areas where Copilot's explanations needed clarification or weren't accurate?
+3. Were there any areas where GitHub Copilot's explanations needed clarification or weren't accurate?
 
 **Key Takeaways:**
-- Copilot Chat can dramatically accelerate codebase onboarding
+- GitHub Copilot Chat can dramatically accelerate codebase onboarding
 - Starting with high-level questions and drilling down works well
 - Always verify critical build/setup instructions by actually trying them
 - Use follow-up questions to deepen understanding of unfamiliar technologies

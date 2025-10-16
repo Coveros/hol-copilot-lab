@@ -4,18 +4,18 @@
 
 By the end of this exercise, you will understand:
 - How GitHub Copilot is administered at the enterprise level
-- Metrics and analytics available for measuring Copilot adoption and impact
+- Metrics and analytics available for measuring GitHub Copilot adoption and impact
 - How to measure ROI and developer productivity improvements
 
-## 🍎 Scenario: Scaling Copilot Across The Daily Harvest
+## 🍎 Scenario: Scaling GitHub Copilot Across The Daily Harvest
 
-The Daily Harvest has seen tremendous success with GitHub Copilot in your development team! The CTO is now considering rolling out Copilot across all engineering teams in the organization. As the lead developer who championed the initial adoption, you've been asked to help with the enterprise-wide rollout planning.
+The Daily Harvest has seen tremendous success with GitHub Copilot in your development team! The CTO is now considering rolling out GitHub Copilot across all engineering teams in the organization. As the lead developer who championed the initial adoption, you've been asked to help with the enterprise-wide rollout planning.
 
 Your manager wants to understand:
-- How to properly configure Copilot for enterprise use
+- How to properly configure GitHub Copilot for enterprise use
 - What governance controls are available for security and compliance
 - What metrics will help demonstrate value to executive leadership
-- How to measure the success and ROI of the Copilot investment
+- How to measure the success and ROI of the GitHub Copilot investment
 
 This lab will explore the administrative and metrics capabilities that make GitHub Copilot suitable for enterprise deployment.
 
@@ -46,7 +46,7 @@ GitHub Copilot for Enterprise provides organizations with comprehensive administ
 
     ![](../media/copilot-models.png)
 
-- **Repository access controls**: Limit which repositories Copilot can access for context
+- **Repository access controls**: Limit which repositories GitHub Copilot can access for context
 
     ![](../media/content-exclusion.png)
 
@@ -54,7 +54,7 @@ GitHub Copilot for Enterprise provides organizations with comprehensive administ
 
 ### Usage Analytics Dashboard
 
-The Copilot Analytics Dashboard provides comprehensive insights into adoption and usage patterns across your enterprise:
+The GitHub Copilot Analytics Dashboard provides comprehensive insights into adoption and usage patterns across your enterprise:
 - **IDE active users**
 
     ![](../media/ide-active-users.png)
@@ -119,7 +119,7 @@ The Copilot Analytics Dashboard provides comprehensive insights into adoption an
 
 **ROI Calculation Framework:**
 
-The Daily Harvest's leadership team can evaluate Copilot's business impact through several key performance indicators:
+The Daily Harvest's leadership team can evaluate GitHub Copilot's business impact through several key performance indicators:
 
 **Developer Productivity KPIs:**
 - **Feature Delivery Velocity**: Increased speed of new feature development
@@ -145,17 +145,17 @@ The Daily Harvest's leadership team can evaluate Copilot's business impact throu
 **For Development Leaders:**
 - GitHub Copilot provides enterprise-grade administrative controls suitable for large-scale deployment
 - Comprehensive metrics enable data-driven decisions about AI adoption and optimization
-- Proper governance and security policies ensure Copilot enhances rather than compromises organizational standards
+- Proper governance and security policies ensure GitHub Copilot enhances rather than compromises organizational standards
 
 **For Business Executives:**
-- Copilot's impact can be measured and quantified across multiple business dimensions
+- GitHub Copilot's impact can be measured and quantified across multiple business dimensions
 - ROI extends beyond just coding speed to include quality, satisfaction, and strategic advantages
 - Enterprise features provide the control and visibility needed for confident organizational adoption
 
 **For IT and Security Teams:**
 - Robust security and compliance capabilities address enterprise risk management requirements
 - Audit trails and policy controls enable governance without limiting developer productivity
-- Copilot metrics can be used in addition to the information provided by existing business intelligence systems
+- GitHub Copilot metrics can be used in addition to the information provided by existing business intelligence systems
 
 ## 🚀 Conclusion
 
