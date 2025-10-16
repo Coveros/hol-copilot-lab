@@ -30,7 +30,7 @@ GitHub Copilot Agent mode represents a significant evolution in AI-assisted deve
 - ✅ Comprehensive documentation generation
 
 ### Billing Considerations:
-This is a common source of confusion when using Agent mode. You will only need to pay for an Agent mode request if you decide to submit it to one of the premium models. However, if you use GitHub Copilot in VS Code and allow it to choose a model by using **Auto** mode, one of the premium models (currently GPT-5, Claude Sonnet 3.5, and Claude Sonnet 4.5) may be selected automatically, assuming that model is available in your plan and your administrator has not disabled it. If you're on a paid GitHub Copilot plan you will receive a 10% multiplier discount on requests submitted to auto-selected models.
+This is a common source of confusion when using Agent mode. You will only need to pay for an Agent mode request if you decide to submit it to one of the premium models. However, if you use GitHub Copilot in VS Code and allow it to choose a model by using **Auto** mode, one of the premium models (currently GPT-5, Claude Sonnet 3.5, and Claude Sonnet 4.5) may be selected automatically, assuming that model is available in your plan and your administrator has not disabled it. If you are on a paid GitHub Copilot plan, you will receive a 10% multiplier discount on requests submitted to auto-selected models.
 
 ## 🍎 Scenario: Boosting The Daily Harvest's Test Coverage
 
@@ -282,4 +282,4 @@ Consider how you might use Agent mode in your actual development work:
 
 ## 🔮 What's Next?
 
-In Exercise 5, we'll explore GitHub Copilot's **Agentic Coding** capability to utilize Copilot as a full workflow assistant for addressing a GitHub issue, reviewing a pull request, and generating a summary of a pull request.
+In Exercise 5, we'll explore GitHub Copilot's **Agentic Coding** capability to utilize GitHub Copilot as a full workflow assistant for addressing a GitHub issue, reviewing a pull request, and generating a summary of a pull request.
