@@ -109,7 +109,7 @@ __Instructions:__
 
 - A more limited feature utilizing custom instructions is the [path-specific custom instructions file](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions#creating-path-specific-custom-instructions-1). How might these be beneficial over more general repository instruction sets?
 - What are some prompts you might be using in your daily workflow that can be consolidated into an instructions file?
-- A _Public Preview_ feature similar to custom instructions files is [prompt files](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions#enabling-and-using-prompt-files). How might you use these in conjunction with or separately from custom instructions files?
+- A _Public Preview_ feature similar to custom instructions files is [prompt files](https://code.visualstudio.com/docs/copilot/customization/prompt-files). How might you use these in conjunction with or separately from custom instructions files?
 
 ### 🎯 Key Takeaways
 
