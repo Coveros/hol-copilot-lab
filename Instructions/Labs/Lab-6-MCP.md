@@ -12,7 +12,7 @@ By the end of this exercise, you will be able to...
 
 ## 🍎 Scenario: Using Model Context Protocols to Gather External Information
 
-Having spent your time at The Daily Harvest working with GitHub Copilot, you are now (hopefully) quite familiar with the the typical patterns with utilizing GitHub Copilot. However, you have now begun to notice an unusual bottleneck in your daily workflow. In order to appropriately understand the current GitHub.com environment, you have to _go_ to GitHub. Wouldn't it be _so_ much easier if there were a way for GitHub Copilot to be able to do that interfacing for you so you could spend more time focusing on your work and less time moving from your IDE to your browser back to your IDE then back to your browser once more?
+Having spent your time at The Daily Harvest working with GitHub Copilot, you are now (hopefully) quite familiar with the typical patterns with utilizing GitHub Copilot. However, you have now begun to notice an unusual bottleneck in your daily workflow. In order to appropriately understand the current GitHub.com environment, you have to _go_ to GitHub. Wouldn't it be _so_ much easier if there were a way for GitHub Copilot to be able to do that interfacing for you so you could spend more time focusing on your work and less time moving from your IDE to your browser back to your IDE then back to your browser once more?
 
 Luckily, there is a tool for that!
 
@@ -20,13 +20,13 @@ Luckily, there is a tool for that!
 
 [Model Context Protocol](https://github.com/modelcontextprotocol) acts as a mediator between your code base and external services. By combining GitHub Copilot with data stores such as files and databases, tools such as [Google Maps](https://developers.google.com/maps/ai/mcp) or [Slack](https://docs.slack.dev/ai/mcp-server/), or business planning utilities such as [Figma](https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server) or [Jira](https://github.com/atlassian/atlassian-mcp-server), you can expand the knowledge GitHub Copilot has access to.
 
-When looking to utilize MCP Servers, there are two primary ways of connecting your GitHub Copilot Client: through the MCP Registry, and through manual configuration.
+When looking to utilize MCP Servers, there are two primary ways of connecting your GitHub Copilot Client: through the MCP Registry and through manual configuration.
 
 The [MCP Registry](https://github.com/mcp) provides a list of all currently available MCP Servers that can be easily and automatically installed. Simply find the MCP Server you need, click the appropriate "Install" drop-down menu, then choose the version of VS Code for which you would like to install that Server.
 
 To manually configure an MCP connection, you will need to decide where you want to store your configuration file:
 
-- To store the configuration at the repository level, create an `.vscode/mcp.json` file
+- To store the configuration at the repository level, create a `.vscode/mcp.json` file
 - To store the configuration for your local device across workspaces, add the configuration to your `settings.json` file in Visual Studio Code
 
 Inside the chosen file, you will add a configuration such as this template below...
@@ -73,7 +73,7 @@ With that, you should be all set to begin work with the MCP Server.
 
 If you would like to see what your other options are, take a moment to peruse the MCP Registry.
 
-1. Look at the available pre-configured servers. Are there any you/your organization uses on a regular basis that could be tied in to your GitHub Copilot for greater efficiency?
+1. Look at the available pre-configured servers. Are there any you / your organization uses on a regular basis that could be tied in to your GitHub Copilot for greater efficiency?
 2. Instead of installing them, click on an interesting server instance. Check out the documentation. Are there any interesting features of that particular MCP Server that could be useful in your day-to-day workflows?
 
 ## 🏗️ Step 2: Pulling an Issue from GitHub
@@ -130,7 +130,7 @@ __Instructions:__
 
 - Installing MCP Servers from the MCP Registry
 - Understanding MCP functionality documentation
-- Utilizing MCP tools to expand GitHub Copilot's inheret capabilities
+- Utilizing MCP tools to expand GitHub Copilot's inherent capabilities
 
 ### 💡 Reflection Questions:
 
@@ -143,4 +143,4 @@ __Instructions:__
 
 ## 🔮 What's Next?
 
-In Exercise 7, we'll take the extendability we received by using MCPs and expand that customizability further through the use of __Custom Instructions files__ to ensure GitHub Copilot has both a thorough understanding of our work's context _and_ the format through which we want our responses.
+In Exercise 7, we'll take the extendability we received by using MCPs and expand that customizability further through the use of __Custom Instructions files__ to ensure GitHub Copilot has both a thorough understanding of our work's context _and_ the format in which we want our responses.
