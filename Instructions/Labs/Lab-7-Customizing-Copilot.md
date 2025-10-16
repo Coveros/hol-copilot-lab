@@ -120,7 +120,7 @@ But what if we wanted to take our automation a step further and ask the same __q
   
   <summary>A note about tool priority</summary>
 
-  While we will be discussing chat modes more in a moment, it is important to understand how the tools specified in your custom prompt file may be prioritized against tools selected by other means. In short, the list of available tools is determined the following priority order...
+  While we will be discussing chat modes more in a moment, it is important to understand how the tools specified in your custom prompt file may be prioritized against tools selected by other means. In short, the list of available tools is determined in the following priority order...
 
   1. Tools specified in the prompt file (if any)
   2. Tools from the referenced chat mode in the prompt file (if any)
