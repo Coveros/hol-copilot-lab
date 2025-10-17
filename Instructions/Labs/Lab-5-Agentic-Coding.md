@@ -89,7 +89,7 @@ Now that Copilot has eyes on the issue, let's follow along with its progress:
 3. Notice how the PR is marked as a draft, indicating that work is still in progress. Copilot will set the description of the PR based off the issue details you provided.
 4. While Copilot is working, you can monitor its progress by viewing the session logs by clicking the "View Session" button in the Pull Request timeline.
 5. Here you can see all the steps Copilot is taking to address the issue, including code changes, test runs, and any challenges it encounters. It will behave similarly to how it does in the IDE, but without the need for your direct input. Feel free to check back on this page periodically to see new updates as Copilot works through the issue.
-6. Back in the Pull Request, you can also watch as Copilot updated the PR description with it's planned approach to solving the issue. As it progresses, it will mark off tasks in the description to indicate what has been completed.
+6. Back in the Pull Request, you can also watch as Copilot updates the PR description with it's planned approach to solving the issue. As it progresses, it will mark off tasks in the description to indicate what has been completed.
 7. Once Copilot has completed its work, it will mark the Pull Request as ready for review, removing the draft status.
 
 
@@ -109,7 +109,7 @@ Try creating and assigning Copilot some additional issues while it works on the 
 ### Pro Tips for Effective Delegation:
 - Be specific in your issue descriptions - clear requirements lead to better outcomes
 - Set clear acceptance criteria in your issues
-- You can use even use Copilot to help plan out the tasks before assigning them
+- You can even use Copilot to help plan out the tasks before assigning them
 
 - Start with smaller, well-defined tasks before moving to complex features
 

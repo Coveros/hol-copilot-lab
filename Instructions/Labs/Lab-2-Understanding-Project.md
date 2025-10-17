@@ -42,7 +42,7 @@ GitHub Copilot Chat offers access to multiple AI models, each with different str
 
 ### Available Models
 
-GitHub Copilot provides access to several AI models from leading providers such as OpenAI, Anthropic, Google, and others. Tthe available options are constantly evolving. For the most up-to-date information about supported models and their capabilities, see the official documentation: [GitHub Copilot Supported Models](https://docs.github.com/copilot/reference/ai-models/supported-models)
+GitHub Copilot provides access to several AI models from leading providers such as OpenAI, Anthropic, Google, and others. The available options are constantly evolving. For the most up-to-date information about supported models and their capabilities, see the official documentation: [GitHub Copilot Supported Models](https://docs.github.com/copilot/reference/ai-models/supported-models)
 
 Different models excel at different types of tasks. For detailed information about each model's strengths and ideal use cases, see the [AI Models Comparison Guide](https://docs.github.com/copilot/reference/ai-models/model-comparison):
 - Some are optimized for **code understanding and analysis**
@@ -72,7 +72,7 @@ For complete details on model pricing and billing, see: [GitHub Copilot Billing 
 Try asking the same question to different models to compare their responses! Each model may provide unique insights or different perspectives on the same problem.
 
 **How to Switch Models:**
-1. In GitHub Copilot Chat, look for the model selector (usually at the top of the chat interface)
+1. In GitHub Copilot Chat, look for the model selector (usually below the text area in which prompts can be submitted)
 2. Click on the current model name to see available options
 3. Select a different model and ask your question
 
