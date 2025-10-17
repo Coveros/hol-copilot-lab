@@ -1,1 +1,37 @@
-
+[
+    {
+        "Name": "Mastering GitHub Copilot Across the SDLC",
+        "Language": "English",
+        "BaseURL": "https://github.com/CloudLabsAI-Azure/GitHub-Copilot-Hands-on-lab",
+        "Files": [
+            {
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Copilot-Hands-on-lab/refs/heads/main/Instructions/Labs/Lab-1-Getting-Started.md",
+                "Order": 1
+            },
+            {
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Copilot-Hands-on-lab/refs/heads/main/Instructions/Labs/Lab-2-Understanding-Project.md",
+                "Order": 2
+            },
+            {
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Copilot-Hands-on-lab/refs/heads/main/Instructions/Labs/Lab-3-Code-Editing.md",
+                "Order": 3
+            },
+            {
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Copilot-Hands-on-lab/refs/heads/main/Instructions/Labs/Lab-4-Agent-Mode.md",
+                "Order": 4
+            },
+            {
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Copilot-Hands-on-lab/refs/heads/main/Instructions/Labs/Lab-5-Agentic-Coding.md",
+                "Order": 5
+            },
+            {
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Copilot-Hands-on-lab/refs/heads/main/Instructions/Labs/Lab-6-MCP.md",
+                "Order": 6
+            },
+            {
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Copilot-Hands-on-lab/refs/heads/main/Instructions/Labs/Lab-7-Customizing-Copilot.md",
+                "Order": 7
+            }
+        ]
+    }
+]
