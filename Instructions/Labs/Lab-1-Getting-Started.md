@@ -1,5 +1,7 @@
 # Exercise 1 - Lab Overview and Setup
 
+#### Duration: 15 minutes
+
 ## Overall Lab Objectives
 
 This 4-hour hands-on lab is designed to give developers practical experience using **GitHub Copilot** as an AI-powered assistant throughout the Software Development Life Cycle (SDLC). You will explore how GitHub Copilot can improve developer productivity, code quality, and security—from feature planning and prototyping to implementation, code review, and remediation.
@@ -19,7 +21,7 @@ Through a series of guided, real-world exercises, you will learn how to:
 
 🍎 **Your Mission: Develop your daily pick of fresh code!**
 
-Congratulations! You've just been hired as a software developer at **The Daily Harvest**, an exciting new startup that's revolutionizing the way that fresh fruit is sold. Your company specializes in creating websites that allow orchards to sell their products to those who will never drive to a store.
+Congratulations! You've just been hired as a software developer at **The Daily Harvest**, an exciting new startup that's revolutionizing the way fresh fruit is sold. Your company specializes in creating websites that allow orchards to sell their products to those who will never drive to a store.
 
 ### Your Role
 
@@ -146,7 +148,7 @@ To adjust the zoom level for the environment page, click the A↕: 100% icon loc
 
 1. Type the name of the repository that you just created.
 
-1. Choose a location on the local filesystem to save that repo. If prompted, select a personal access token to authenticate
+1. Choose a location on the local filesystem to save the repo. If prompted, select a personal access token to authenticate
    with GitHub, confirm that you want to open the repository in your current VS Code window, and indicate that you trust
    the author of the files in the folder.
 
@@ -174,3 +176,11 @@ Learner Support Contacts:
 
 - Email Support: cloudlabs-support@spektrasystems.com
 - Live Chat Support: https://cloudlabs.ai/labs-support
+
+## Summary
+
+In this lab, you successfully set up your development environment, logged into GitHub, created a new repository, and configured Visual Studio Code with GitHub Copilot. 
+
+#### You have successfully completed the lab. Click on **Next >>** to continue to the next lab.
+
+![](../media/next-page.png)

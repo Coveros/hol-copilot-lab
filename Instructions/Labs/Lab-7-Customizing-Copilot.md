@@ -1,5 +1,7 @@
 # Exercise 7 - Customizing GitHub Copilot
 
+#### Duration: 30 minutes
+
 ## 🎯 Learning Objectives
 
 By the end of this exercise, you will:
@@ -66,7 +68,7 @@ Before we can begin utilizing custom instructions, we should first make sure the
 __Instructions:__
 
 1. In your VS Code instance, switch to the Explorer tab in your sidebar (if you are not already there)
-2. Open the Settings editor using `Cmd`+`,` (Mac) or `Ctrl`+`,` (Linux/Windows).
+2. Open the Settings editor using `Cmd`+`,` (Mac) or `Ctrl`+`,` (Linux/Windows)
 3. In the search box at the top of your settings editor, type "Instruction file"
 4. Ensure the check box under "Use Instruction Files" is marked
 
@@ -103,16 +105,170 @@ __Instructions:__
 
 3. After GitHub Copilot has finished, refresh your repository on GitHub.com (or simply navigate to the __Issues__ tab if you are not already there). Do you see your issue? If so, did it follow the guidelines established in your instructions file?
 
+## 💪 Extra Credit: Going further beyond with custom prompt files and chat modes
+
+### Prompt Files
+
+With custom instructions files, we have discussed the ability to set effective, automatic guardrails for GitHub Copilot: for every response, here are the things it should know and here is how it should respond.
+
+But what if we wanted to take our automation a step further and ask the same __question__ every time? That is where custom prompt files come in. Stored either locally for a particular user or in the repository within the `.github/prompts` directory, these are files which can be formatted to ensure multiple parameters are identical across uses:
+
+- What __mode__ are you using?
+- What __model__ (e.g. GPT, Claude, or Gemini) do you want this particular prompt to target?
+- Are there any __tools__ you want this prompt to use (such as those pulled from an MCP Server)?
+- What __description__ would you provide for the goal of this prompt? 
+
+<details>
+  
+  <summary>A note about tool priority</summary>
+
+  While we will be discussing chat modes more in a moment, it is important to understand how the tools specified in your custom prompt file may be prioritized against tools selected by other means. In short, the list of available tools is determined in the following priority order...
+
+  1. Tools specified in the prompt file (if any)
+  2. Tools from the referenced chat mode in the prompt file (if any)
+  3. Default tools for the selected chat mode
+  
+</details>
+
+With these optional values established, you can now define any prompt you would like. In additional to using natural language, we can include various parameters as a part of the prompt using a special `${variableName}` syntax:
+
+- Workspace variables: `${workspaceFolder}`, `${workspaceFolderBasename}`
+- Selection variables: `${selection}`, `${selectedText}`
+- File context variables: `${file}`, `${fileBasename}`, `${fileDirname}`, `${fileBasenameNoExtension}`
+- Input variables: `${input:variableName}`, `${input:variableName:placeholder} (pass values to the prompt from the chat input field)`
+
+Finally, the format for our custom prompt files is:
+
+```md
+---
+{header values, if applicable. For example...}
+description: 'This is a test prompt'
+---
+{body, including any variables and the prompt itself} 
+Workspace to target: ${workspaceFolder}
+How to start each response: ${input:greeting}
+
+Please begin your response with your assigned greeting.
+
+Create a file named `test.txt` and write "Hello, world!" to that file
+```
+
+With this, we now have the building blocks to build a simple reusable prompt file of our own! 
+
+__Instructions:__
+
+1. In your VS Code instance, switch to the Explorer tab in your sidebar (if you are not already there)
+2. Open the Settings editor using `Cmd`+`,` (Mac) or `Ctrl`+`,` (Linux/Windows)
+3. In the search menu, type "Prompt file"
+4. Ensure the (experimental) option "Chat: Prompt Files" is enabled
+5. Ensuring you have GitHub Copilot Chat open, click the cogwheel in the top-right corner of the Chat window
+6. In the drop-down menu provided, click "Prompt Files"
+7. You should now have a new menu open up in your command palette at the top of your screen. Click the button that says "New prompt file..."
+8. When choosing the location to save the prompt file, choose the standard `.github/prompts` directory
+9. For the name of the prompt file, type "explaination" and hit enter. A new file called "explanation.prompt.md" should now have been created for you
+10. Take some to create a custom prompt file that offers an explanation to the user about a code snippet that the user has input as part of the prompt. Consider the many components we have discussed above, although a sample has been provided below to give you some ideas if you are stuck
+
+<details>
+
+  <summary>Example Prompt File</summary>
+
+  
+    ```md
+    ---
+    mode: 'agent'
+    description: 'Generate a clear code explanation with examples'
+    ---
+    
+    Explain the following code in a clear, beginner-friendly way:
+    
+    Code to explain: ${input:code:Paste your code here}
+    Target audience: ${input:audience:Who is this explanation for? (e.g., beginners, intermediate developers, etc.)}
+    
+    Please provide:
+    
+    * A brief overview of what the code does
+    * A step-by-step breakdown of the main parts
+    * Explanation of any key concepts or terminology
+    * A simple example showing how it works
+    * Common use cases or when you might use this approach
+    
+    Use clear, simple language and avoid unnecessary jargon.
+    ```
+  
+</details>
+
+11. To use the prompt, move to your Chat window and type `/` followed by the name of your file (in this case, "explanation"), then hit Enter
+12. If applicable to your particular prompt file, you will see GitHub Copilot change its chat mode to whichever is specified and will, if necessary, ask you for inputs relative to the ones denoted in your reusable prompt. Provide those inputs, and see how GitHub Copilot continues responding to what you have requested in your file! 
+
+### Custom Chat Modes
+
+As discussed in exercises 2, 3, and 4, GitHub Copilot comes with three modes out of the box: Ask, Edit, and Agent mode. We have become quite familiar with these over the past exercises, but what if we want to have a mode that is more tailored to our particular environment? Much like how custom instructions files help develop GitHub Copilot's understanding of an environment, custom chat modes develop the goals GitHub Copilot strives for when constructing a response.
+
+Much like how we formatted our prompt files, chat mode configuration files are also broken up into a header and a body. The header, using YAML, can involve three optional components:
+
+- description
+- tools
+- model
+
+The body, however, resorts to natural language and Markdown to express the details of the chat mode and specific prompts, guidelines, or any other relevant information that you want the model to follow when in this chat mode.
+
+Similar to the prompt files, we can either store these chat modes in the `.github/chatmodes` or in our user profile for local usage.
+
+Now that we have an understanding of what these modes are for, let's get to building one!
+
+__Instructions:__
+
+1. In your VS Code instance, ensure GitHub Copilot Chat is open
+2. Click on the cogwheel in the top-right corner of the Chat window
+3. In the drop-down menu, select "Modes"
+4. You should now see a new drop-down menu in your command palette at the top of your IDE. Click the button that says "Create new custom chat mode file..."
+5. Choose to save this new file in `.github/chatmodes`, then name your file "Plan"
+6. You should now see a template generated titled `Plan.chatmode.md`
+7. From this template, take a few minutes to build a custom chat mode that will plan out how to tackle new code changes
+
+<details>
+
+  <summary>Example Chat Mode File</summary>
+
+  ```md
+  ---
+  description: Generate an implementation plan for new features or refactoring existing code.
+  tools: ['fetch', 'githubRepo', 'search', 'usages']
+  model: Claude Sonnet 4
+  ---
+  # Planning mode instructions
+  You are in planning mode. Your task is to generate an implementation plan for a new feature or for refactoring existing code.
+  Don't make any code edits, just generate a plan.
+  
+  The plan consists of a Markdown document that describes the implementation plan, including the following sections:
+  
+  * Overview: A brief description of the feature or refactoring task.
+  * Requirements: A list of requirements for the feature or refactoring task.
+  * Implementation Steps: A detailed list of steps to implement the feature or refactoring task.
+  * Testing: A list of tests that need to be implemented to verify the feature or refactoring task.
+  ```
+
+</details>
+
+8. To use this chat mode, return to your GitHub Copilot Chat window. At the bottom, where your prompt is entered, click your currently selected mode
+9. In the drop-down list provided, choose "Plan"
+10. Now, write a prompt to GitHub Copilot using this new mode about a new feature you would like to implement, and see how your answer reflects the goals provided by the chat mode file you created
+
 ## 🏆 Exercise Wrap-up
 
-### 💡 Reflection Questions
+In this exercise, we explored how to customize GitHub Copilot's behavior using chat modes and custom instructions files. By creating a specific chat mode for planning, we were able to guide Copilot's responses to better align with our needs for implementing new features or refactoring existing code.
+
+### Reflection Questions
 
 - A more limited feature utilizing custom instructions is the [path-specific custom instructions file](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions#creating-path-specific-custom-instructions-1). How might these be beneficial over more general repository instruction sets?
 - What are some prompts you might be using in your daily workflow that can be consolidated into an instructions file?
-- A _Public Preview_ feature similar to custom instructions files is [prompt files](https://code.visualstudio.com/docs/copilot/customization/prompt-files). How might you use these in conjunction with or separately from custom instructions files?
 
-### 🎯 Key Takeaways
+### Key Takeaways
 
 - Custom instructions files can be used to limit repetition in your prompts
 - Custom instructions can both reinforce context and define response formats
-- These files can be stored at different levels to enforce rules with different scopes
+- These files can be stored at different levels to enforce rules wih different scopes
+
+## 🎉 Conclusion
+
+Congratulations! You have now completed all seven exercises in the GitHub Copilot Labs series. You should now have a solid understanding of how to leverage GitHub Copilot's various modes, tools, and customization options to enhance your development workflow. Keep experimenting with these features to discover new ways they can assist you in your coding journey!
