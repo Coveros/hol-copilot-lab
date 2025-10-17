@@ -6,12 +6,12 @@
 
 By the end of this exercise, you will:
 
-- Explain what custom instructions are and how they shape Copilot’s behavior.
+- Explain what custom instructions are and how they shape GitHub Copilot’s behavior.
 - Enable custom instructions in this project.
 - Use one custom instruction to plan a new feature.
 - Use another to generate a GitHub Issue for that feature.
 - Push the issue into the GitHub project using MCP.
-- See how Copilot can be tailored to organizational workflows.
+- See how GitHub Copilot can be tailored to organizational workflows.
 
 ## 🍎 Scenario: Limiting Redundancy in The Daily Harvest's workflows
 
@@ -19,7 +19,7 @@ By now, things are running pretty smoothly at The Daily Harvest. Your team is ut
 
 It began when you asked GitHub Copilot to spin up a new test suite for a customer support utility and you received tests written using the Jest framework when your company uses Puppeteer. You later received functionality from GitHub Copilot that utilized the wrong version of an API for your payment processor.
 
-You've begun to notice that every new context in which you utilize GitHub Copilot—new Copilot Chat threads, individual Issues assigned to Coding Agent, or using resources drawn from MCPs to create improved functionality—require you to regurgitate a copy-pasted list of do's and don'ts regarding style guides, package versions, and response formatting to ensure GitHub Copilot provides an answer that is not just functional but also correct for your organizational standards. There has to be a better way to ensure GitHub Copilot knows which rules to follow, and some diving into the internet leads you to a perfect solution: custom instructions files.
+You've begun to notice that every new context in which you utilize GitHub Copilot—new GitHub Copilot Chat threads, individual Issues assigned to Coding Agent, or using resources drawn from MCPs to create improved functionality—require you to regurgitate a copy-pasted list of do's and don'ts regarding style guides, package versions, and response formatting to ensure GitHub Copilot provides an answer that is not just functional but also correct for your organizational standards. There has to be a better way to ensure GitHub Copilot knows which rules to follow, and some diving into the internet leads you to a perfect solution: custom instructions files.
 
 ## 📄 Introduction to Custom Instructions
 
@@ -51,7 +51,7 @@ Begin every response with "Sure thing! Let me get on that."
 End every response with "And that about does it."
 ```
 
-What you will now see from GitHub Copilot, regardless of whether you are utilizing GitHub.com Copilot Chat, Copilot Chat in your IDE, or Coding Agent, is a response that looks like...
+What you will now see from GitHub Copilot, regardless of whether you are utilizing GitHub.com Copilot Chat, GitHub Copilot Chat in your IDE, or Coding Agent, is a response that looks like...
 
 ```md
 Sure thing! Let me get on that.
@@ -114,7 +114,7 @@ With custom instructions files, we have discussed the ability to set effective, 
 But what if we wanted to take our automation a step further and ask the same __question__ every time? That is where custom prompt files come in. Stored either locally for a particular user or in the repository within the `.github/prompts` directory, these are files which can be formatted to ensure multiple parameters are identical across uses:
 
 - What __mode__ are you using?
-- What __model__ (e.g. GPT, Claude, or Gemini) do you want this particular prompt to target?
+- What __model__ (e.g., GPT, Claude, or Gemini) do you want this particular prompt to target?
 - Are there any __tools__ you want this prompt to use (such as those pulled from an MCP Server)?
 - What __description__ would you provide for the goal of this prompt? 
 
@@ -130,7 +130,7 @@ But what if we wanted to take our automation a step further and ask the same __q
   
 </details>
 
-With these optional values established, you can now define any prompt you would like. In additional to using natural language, we can include various parameters as a part of the prompt using a special `${variableName}` syntax:
+With these optional values established, you can now define any prompt you would like. In addition to using natural language, we can include various parameters as a part of the prompt using a special `${variableName}` syntax:
 
 - Workspace variables: `${workspaceFolder}`, `${workspaceFolderBasename}`
 - Selection variables: `${selection}`, `${selectedText}`
@@ -165,7 +165,7 @@ __Instructions:__
 6. In the drop-down menu provided, click "Prompt Files"
 7. You should now have a new menu open up in your command palette at the top of your screen. Click the button that says "New prompt file..."
 8. When choosing the location to save the prompt file, choose the standard `.github/prompts` directory
-9. For the name of the prompt file, type "explaination" and hit enter. A new file called "explanation.prompt.md" should now have been created for you
+9. For the name of the prompt file, type "explanation" and hit enter. A new file called "explanation.prompt.md" should now have been created for you
 10. Take some to create a custom prompt file that offers an explanation to the user about a code snippet that the user has input as part of the prompt. Consider the many components we have discussed above, although a sample has been provided below to give you some ideas if you are stuck
 
 <details>
@@ -202,7 +202,7 @@ __Instructions:__
 
 ### Custom Chat Modes
 
-As discussed in exercises 2, 3, and 4, GitHub Copilot comes with three modes out of the box: Ask, Edit, and Agent mode. We have become quite familiar with these over the past exercises, but what if we want to have a mode that is more tailored to our particular environment? Much like how custom instructions files help develop GitHub Copilot's understanding of an environment, custom chat modes develop the goals GitHub Copilot strives for when constructing a response.
+As discussed in labs 2, 3, and 4, GitHub Copilot comes with three modes out of the box: Ask, Edit, and Agent mode. We have become quite familiar with these over the past labs, but what if we want to have a mode that is more tailored to our particular environment? Much like how custom instructions files help develop GitHub Copilot's understanding of an environment, custom chat modes develop the goals GitHub Copilot strives for when constructing a response.
 
 Much like how we formatted our prompt files, chat mode configuration files are also broken up into a header and a body. The header, using YAML, can involve three optional components:
 
