@@ -4,12 +4,12 @@
 
 By the end of this exercise, you will:
 
-- Explain what custom instructions are and how they shape Copilot’s behavior.
+- Explain what custom instructions are and how they shape GitHub Copilot’s behavior.
 - Enable custom instructions in this project.
 - Use one custom instruction to plan a new feature.
 - Use another to generate a GitHub Issue for that feature.
 - Push the issue into the GitHub project using MCP.
-- See how Copilot can be tailored to organizational workflows.
+- See how GitHub Copilot can be tailored to organizational workflows.
 
 ## 🍎 Scenario: Limiting Redundancy in The Daily Harvest's workflows
 
@@ -17,7 +17,7 @@ By now, things are running pretty smoothly at The Daily Harvest. Your team is ut
 
 It began when you asked GitHub Copilot to spin up a new test suite for a customer support utility and you received tests written using the Jest framework when your company uses Puppeteer. You later received functionality from GitHub Copilot that utilized the wrong version of an API for your payment processor.
 
-You've begun to notice that every new context in which you utilize GitHub Copilot—new Copilot Chat threads, individual Issues assigned to Coding Agent, or using resources drawn from MCPs to create improved functionality—require you to regurgitate a copy-pasted list of do's and don'ts regarding style guides, package versions, and response formatting to ensure GitHub Copilot provides an answer that is not just functional but also correct for your organizational standards. There has to be a better way to ensure GitHub Copilot knows which rules to follow, and some diving into the internet leads you to a perfect solution: custom instructions files.
+You've begun to notice that every new context in which you utilize GitHub Copilot—new GitHub Copilot Chat threads, individual Issues assigned to Coding Agent, or using resources drawn from MCPs to create improved functionality—require you to regurgitate a copy-pasted list of do's and don'ts regarding style guides, package versions, and response formatting to ensure GitHub Copilot provides an answer that is not just functional but also correct for your organizational standards. There has to be a better way to ensure GitHub Copilot knows which rules to follow, and some diving into the internet leads you to a perfect solution: custom instructions files.
 
 ## 📄 Introduction to Custom Instructions
 
@@ -49,7 +49,7 @@ Begin every response with "Sure thing! Let me get on that."
 End every response with "And that about does it."
 ```
 
-What you will now see from GitHub Copilot, regardless of whether you are utilizing GitHub.com Copilot Chat, Copilot Chat in your IDE, or Coding Agent, is a response that looks like...
+What you will now see from GitHub Copilot, regardless of whether you are utilizing GitHub.com Copilot Chat, GitHub Copilot Chat in your IDE, or Coding Agent, is a response that looks like...
 
 ```md
 Sure thing! Let me get on that.
