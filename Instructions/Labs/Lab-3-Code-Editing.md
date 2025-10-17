@@ -87,9 +87,28 @@ There are many other tests that we can write for `CartPage`. While we could cont
 - 📋 **Pattern recognition**: Follows your project's testing conventions and style
 - 🚀 **Efficiency**: Generates comprehensive test suites quickly
 
+### 🔍 Providing Context for Better Test Generation:
+GitHub Copilot automatically gathers context from several sources to understand your codebase:
+- **Active editor**: The currently open file and your cursor position
+- **Selection**: Any highlighted/selected code in the editor
+- **Open tabs**: Files you have open in VS Code tabs
+- **Workspace**: Your project structure and related files
+
+However, for generating comprehensive unit tests, you should **explicitly provide context** about the component you're testing. Here's how to improve test generation for `CartPage`:
+
+#### 📋 Best Practices for Test Context:
+
+1. **Open the source file**: Have `CartPage.tsx` open in a tab alongside your test file
+2. **Use file references**: Include `@CartPage.tsx` in your prompts to explicitly reference the component
+3. **Highlight relevant code**: Select specific methods or sections you want to test
+4. **Reference dependencies**: Mention related files like `CartContext.tsx` if your tests need to mock them
+
+**Learn More:** [VS Code Copilot Chat Context Documentation](https://code.visualstudio.com/docs/copilot/chat/copilot-chat-context)
+
 ### Instructions:
 1. Open GitHub Copilot Chat and switch to Edit mode
-2. Write prompts to generate tests for uncovered conditions in `CartPage`
+2. Include `CartPage.tsx` in your context by opening it in a tab or referencing it in your prompt
+3. Write prompts to generate tests for uncovered conditions in `CartPage`. 
 
 <details>
   <summary>Sample Test Generation Prompt</summary>
