@@ -1,5 +1,7 @@
 # Exercise 4 - GitHub Copilot Agent Mode: Goal-Oriented Development
 
+#### Duration: 45 minutes
+
 ## 🎯 Learning Objectives
 
 By the end of this exercise, you will:
@@ -30,13 +32,13 @@ GitHub Copilot Agent mode represents a significant evolution in AI-assisted deve
 - ✅ Comprehensive documentation generation
 
 ### Billing Considerations:
-This is a common source of confusion when using Agent mode. You will only need to pay for an Agent mode request if you decide to submit it to one of the premium models. However, if you use GitHub Copilot in VS Code and allow it to choose a model by using **Auto** mode, one of the premium models (currently GPT-5, Claude Sonnet 3.5, and Claude Sonnet 4.5) may be selected automatically, assuming that model is available in your plan and your administrator has not disabled it. If you are on a paid GitHub Copilot plan, you will receive a 10% multiplier discount on requests submitted to auto-selected models.
+When you use Copilot agent mode, each prompt you enter counts as one premium request, multiplied by the model’s multiplier. For example, if you're using the included model—which has a multiplier of 0—your prompts won’t consume any premium requests. Copilot may take several follow-up actions to complete your task, but these follow-up actions do not count toward your premium request usage. Only the prompts you enter are billed—tool calls or background steps taken by the agent are not charged.
 
 ## 🍎 Scenario: Boosting The Daily Harvest's Test Coverage
 
 After your excellent work in Exercise 3 writing unit tests, your team lead at The Daily Harvest has assigned you a critical pre-release task: **achieve 80% or higher code coverage across the entire project**.
 
-The challenge? There are multiple components, utilities, and modules that need comprehensive testing. Manually identifying and writing tests for each uncovered area would take days. This is the perfect scenario for GitHub Copilot Agent mode!
+The challenge? There are multiple components, utilities, and modules that need comprehensive testing. Manually identifying and writing tests for each uncovered area would take a lot of work. This is the perfect scenario for GitHub Copilot Agent mode!
 
 ### Your Mission:
 Use Agent mode to automatically:
@@ -60,7 +62,7 @@ Before we delegate to the Agent, let's understand our starting point.
    - Which files have low coverage
    - Which lines are uncovered
 
-3. **Take a screenshot or note** the current coverage percentage - you'll compare this to the final result!
+3. **Note** the current coverage percentage - you'll compare this to the final result!
 
 ## 🤖 Step 2: Activating Agent Mode
 
@@ -69,7 +71,7 @@ Now let's put the Agent to work on our coverage goal.
 ### Instructions:
 
 1. **Open GitHub Copilot Chat** in VS Code
-2. **Switch to Agent mode** by clicking selecting 'Agent' from the dropdown underneath the prompt text area
+2. **Switch to Agent mode** by selecting 'Agent' from the dropdown underneath the prompt text area
 3. **Provide your goal-oriented prompt** (example below):
 
 <details>
@@ -90,36 +92,55 @@ Please work autonomously and let me know your progress as you go. Focus on busin
 
 </details>
 
-4. **Submit the prompt** and let the Agent begin working
+4. **Submit the prompt** and let the Agent begin working.
 
 ## 👀 Step 3: Observing Agent Mode in Action
 
-This is where Agent mode truly shines! Watch as it works autonomously.
+This is where Agent mode truly shines! Watch as it works autonomously, **behaving like a real developer** working toward your goal.
 
 ### What You'll Observe:
 
 **🔍 Analysis Phase:**
-- Agent examines your project structure
-- Identifies files with low/no test coverage
-- Plans its testing strategy
+- Agent examines your project structure like a developer would
+- Identifies files with low/no test coverage by analyzing existing tests
+- Plans its testing strategy and prioritizes high-impact areas
+- Reviews existing code patterns to maintain consistency
 
 **⚡ Execution Phase:**
-- Creates new test files or enhances existing ones
-- Writes tests for multiple components simultaneously
-- Makes real-time adjustments based on test results
+- Creates new test files or enhances existing ones across multiple components
+- **Runs tests automatically** to verify its work (you may see permission prompts)
+- Writes tests for multiple components simultaneously with awareness of dependencies
+- Makes real-time adjustments based on test results and build feedback
+
+**🔧 Self-Healing Capabilities:**
+- **Automatically fixes build failures** it encounters during development
+- **Resolves test failures** by analyzing error messages and adjusting code
+- **Handles dependency issues** by installing missing packages or adjusting imports
+- **Iterates on solutions** when initial attempts don't work, just like a human developer would
 
 **📊 Progress Reporting:**
-- Updates you on coverage improvements
-- Reports any issues or blockers it encounters
-- Suggests additional areas that need attention
+- Updates you on coverage improvements with specific metrics
+- Reports any issues or blockers it encounters and how it's addressing them
+- Suggests additional areas that need attention based on its analysis
+- Shows you its decision-making process and next steps
 
 ### Instructions:
 1. **Monitor the Agent's work** - don't interrupt unless there's an error
-     - If GitHub Copilot times out, simply restart the analysis
-     - You might need to press `Ctrl-C` to stop the test execution process before the Agent will continue working
-2. **Watch the file explorer** - you'll see new test files being created
-3. **Check the Agent's status updates** - it will report progress toward the 80% goal
-4. **Note the multi-file coordination** - observe how it handles dependencies between tests
+   - If GitHub Copilot times out, simply restart the analysis
+   - **Click "Allow" when prompted** - the Agent will ask permission before running tests or terminal commands for safety
+   - You might need to press `Ctrl+C` to stop the test execution process before the Agent will continue working
+2. **Watch the file explorer** - you'll see new test files being created in real-time
+3. **Check the Agent's status updates** - it will report progress toward the 80% goal with detailed feedback
+4. **Note the multi-file coordination** - observe how it handles dependencies between tests and maintains project consistency
+5. **Observe the self-healing** - watch how it responds to and fixes any build or test failures it encounters
+6. **You're always in control** - remember that you can:
+   - **Review all changes** before accepting them
+   - **Keep or discard individual files** the Agent creates
+   - **Easily undo the work** using Git if the Agent misses the mark or goes in the wrong direction
+   - **Guide the Agent** with additional instructions if needed
+
+Additional information can be found in the [GitHub Copilot Agent Mode blog post](https://github.blog/ai-and-ml/github-copilot/agent-mode-101-all-about-github-copilots-powerful-mode/) and the [Visual Studio Code Documentation](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode).
+
 
 ## 🔧 Step 4: Reviewing and Refining Agent Results
 
@@ -182,40 +203,6 @@ What were the biggest challenges you encountered while working toward the 80% co
 
 </details>
 
-## 🏆 Step 6: Comparing Agent Mode to Previous Methods
-
-Reflect on the differences between Agent mode and the approaches used in previous exercises.
-
-### Instructions:
-
-**Fill out this comparison based on your experience:**
-
-| Aspect | Autocomplete | Edit Mode | Agent Mode |
-|--------|-------------------|------------------|-------------------|
-| **Speed for large tasks** | _____________ | _____________ | _____________ |
-| **Multi-file coordination** | _____________ | _____________ | _____________ |
-| **Goal achievement** | _____________ | _____________ | _____________ |
-| **Autonomy level** | _____________ | _____________ | _____________ |
-| **Best use cases** | _____________ | _____________ | _____________ |
-
-## 🧪 BONUS: Advanced Agent Challenges
-
-If you've achieved 80% coverage quickly, try these advanced scenarios:
-
-### Challenge 1: Optimization Goal
-```
-Now that we have good coverage, please optimize our test suite for performance. Identify and refactor any slow-running tests while maintaining coverage and a 100% test pass rate.
-```
-
-### Challenge 2: Error Handling Focus
-```
-Please add comprehensive error handling tests across the application. Focus on edge cases, invalid inputs, and failure scenarios. Make sure all of the tests still pass.
-```
-
-### Challenge 3: Integration Testing
-```
-Create integration tests that verify the interaction between our components, especially the cart functionality and API calls.
-```
 
 ## 🎓 Best Practices for Agent Mode
 
@@ -234,36 +221,6 @@ Based on this exercise, here are key practices for effective Agent usage:
 - **Skip verification** - always test that the Agent's work achieves your goal
 - **Ignore errors** - address any issues the Agent reports
 
-## 🏆 Exercise Wrap-up
-
-### 🎯 Key Skills Practiced:
-- Delegating complex, multi-file tasks to AI agents
-- Setting and achieving measurable development goals
-- Understanding autonomous AI decision-making in development
-- Comparing different GitHub Copilot modes for various scenarios
-- Reviewing and validating AI-generated code at scale
-
-### 💡 Reflection Questions:
-1. **What surprised you most about Agent mode's capabilities?**
-   _____________________________________
-
-2. **How would Agent mode change your approach to large refactoring tasks?**
-   _____________________________________
-
-3. **What types of development goals would you delegate to Agent mode in real projects?**
-   _____________________________________
-
-4. **How did the Agent's autonomous approach compare to your manual development process?**
-   _____________________________________
-
-### 📊 Results Summary:
-- **Starting Coverage:** _____%
-- **Final Coverage:** _____%
-- **Goal Achieved:** ✅/❌
-- **Time to Complete:** ______ minutes
-- **Files Modified:** ______ files
-- **Tests Added:** ______ tests
-
 ## 🚀 Real-World Applications
 
 Consider how you might use Agent mode in your actual development work:
@@ -280,6 +237,26 @@ Consider how you might use Agent mode in your actual development work:
 - Adding comprehensive error handling and monitoring
 - Preparing codebases for production deployment
 
+## 🏆 Exercise Wrap-up
+
+Congratulations! You've successfully used GitHub Copilot Chat in Agent mode to achieve a complex, goal-oriented development task.
+
+### Reflection Questions:
+1. What surprised you most about Agent mode's capabilities?
+2. How would Agent mode change your approach to large refactoring tasks?
+3. What types of development goals would you delegate to Agent mode in real projects?
+4. How did the Agent's autonomous approach compare to your manual development process?
+5. Which mode of GitHub Copilot (Autocomplete, Edit, Chat, Agent) do you find most useful for different scenarios?
+
+### Key Takeaways:
+- Agent mode is particularly effective for complex, multi-file tasks that require a high level of coordination and autonomy.
+- Setting clear goals and providing context are crucial for maximizing the effectiveness of Agent mode.
+- Reviewing and validating the output of Agent mode is essential to ensure quality and adherence to project standards.
+
 ## 🔮 What's Next?
 
-In Exercise 5, we'll explore GitHub Copilot's **Agentic Coding** capability to utilize GitHub Copilot as a full workflow assistant for addressing a GitHub issue, reviewing a pull request, and generating a summary of a pull request.
+In Exercise 5, we'll take things further by exploring how GitHub Copilot Coding Agent can work autonomously in the background to assist with your coding tasks directly from a GitHub Issue. 
+
+#### You have successfully completed the lab. Click on **Next >>** to continue to the next lab.
+
+![](../media/next-page.png)

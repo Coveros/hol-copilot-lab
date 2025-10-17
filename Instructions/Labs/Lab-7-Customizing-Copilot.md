@@ -1,5 +1,7 @@
 # Exercise 7 - Customizing GitHub Copilot
 
+#### Duration: 30 minutes
+
 ## 🎯 Learning Objectives
 
 By the end of this exercise, you will:
@@ -254,13 +256,19 @@ __Instructions:__
 
 ## 🏆 Exercise Wrap-up
 
-### 💡 Reflection Questions
+In this exercise, we explored how to customize GitHub Copilot's behavior using chat modes and custom instructions files. By creating a specific chat mode for planning, we were able to guide Copilot's responses to better align with our needs for implementing new features or refactoring existing code.
+
+### Reflection Questions
 
 - A more limited feature utilizing custom instructions is the [path-specific custom instructions file](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions#creating-path-specific-custom-instructions-1). How might these be beneficial over more general repository instruction sets?
 - What are some prompts you might be using in your daily workflow that can be consolidated into an instructions file?
 
-### 🎯 Key Takeaways
+### Key Takeaways
 
 - Custom instructions files can be used to limit repetition in your prompts
 - Custom instructions can both reinforce context and define response formats
-- These files can be stored at different levels to enforce rules with different scopes
+- These files can be stored at different levels to enforce rules wih different scopes
+
+## 🎉 Conclusion
+
+Congratulations! You have now completed all seven exercises in the GitHub Copilot Labs series. You should now have a solid understanding of how to leverage GitHub Copilot's various modes, tools, and customization options to enhance your development workflow. Keep experimenting with these features to discover new ways they can assist you in your coding journey!
