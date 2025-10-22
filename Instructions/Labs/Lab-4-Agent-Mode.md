@@ -52,7 +52,7 @@ Use Agent mode to automatically:
 Before we delegate to the Agent, let's understand our starting point.
 
 ### Instructions:
-1. **Run the existing test suite** to see current coverage:
+1. **Run the existing test suite** to see current coverage (make sure you're in the **eCommApp** directory first):
    ```bash
    npm test -- --coverage
    ```

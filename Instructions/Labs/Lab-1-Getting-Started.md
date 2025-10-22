@@ -154,7 +154,7 @@ To adjust the zoom level for the environment page, click the A↕: 100% icon loc
 
    ![](../../media/clone-git-repo-vs-code.png)
 
-1. In Visual Studio Code, type the name of the repository that you just created.
+1. In Visual Studio Code, type the name of the repository that you just created in the search bar at the top of the IDE.
 
 1. Choose a location on the local filesystem to save the repo. If prompted, sign into GitHub in the browser and authorize the Git Credential Manager, confirm that you want to open the repository in your current VS Code window, and indicate that you trust the author of the files in the folder.
 
