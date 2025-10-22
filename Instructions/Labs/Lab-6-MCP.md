@@ -191,4 +191,4 @@ In Exercise 7, we'll take the extendability we received by using MCPs and expand
 
 #### You have successfully completed the lab. Click on **Next >>** to continue to the next lab.
 
-![](../media/next-page.png)
+![](../../media/next-page.png)

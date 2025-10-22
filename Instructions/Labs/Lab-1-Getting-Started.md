@@ -183,4 +183,4 @@ In this lab, you successfully set up your development environment, logged into G
 
 #### You have successfully completed the lab. Click on **Next >>** to continue to the next lab.
 
-![](../media/next-page.png)
+![](../../media/next-page.png)

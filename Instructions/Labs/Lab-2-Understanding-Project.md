@@ -467,4 +467,4 @@ In the next exercise, we'll use what we've learned about the codebase to start i
 
 #### You have successfully completed the lab. Click on **Next >>** to continue to the next lab.
 
-![](../media/next-page.png)
+![](../../media/next-page.png)

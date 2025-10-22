@@ -46,7 +46,7 @@ The first step in utilizing Coding Agent is to create a GitHub issue outlining a
 
 <details>
   <summary>Example Issue</summary>
-  ![](../media/sample-issue.png)
+  ![](../../media/sample-issue.png)
 </details>
 
 Once complete, create the issue.
@@ -236,4 +236,4 @@ In Exercise 6, we'll take a look at bringing additional context to GitHub Copilo
 
 #### You have successfully completed the lab. Click on **Next >>** to continue to the next lab.
 
-![](../media/next-page.png)
+![](../../media/next-page.png)

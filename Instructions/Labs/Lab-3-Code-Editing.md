@@ -197,4 +197,4 @@ In Exercise 4, we'll explore GitHub Copilot's **Agent mode** to tackle more comp
 
 #### You have successfully completed the lab. Click on **Next >>** to continue to the next lab.
 
-![](../media/next-page.png)
+![](../../media/next-page.png)
