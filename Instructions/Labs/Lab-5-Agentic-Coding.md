@@ -248,4 +248,4 @@ In Exercise 6, we'll take a look at bringing additional context to GitHub Copilo
 
 #### You have successfully completed the lab. Click on **Next >>** to continue to the next lab.
 
-![](../media/next-page.png)
+![](../../media/next-page.png)
