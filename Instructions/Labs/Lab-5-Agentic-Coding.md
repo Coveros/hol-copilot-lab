@@ -45,6 +45,7 @@ The first step in utilizing Coding Agent is to create a GitHub issue outlining a
 3. For the new issue, fill in an appropriate title and description to add a _Contact Us_ page to the application. Feel free to add any specific requirements or acceptance criteria you wish. A sample issue is shown below:
 
 <details>
+ 
   <summary>Example Issue</summary>
   ![](../../media/sample-issue.png)
 </details>
@@ -89,9 +90,8 @@ Now that Copilot has eyes on the issue, let's follow along with its progress:
 3. Notice how the PR is marked as a draft, indicating that work is still in progress. Copilot will set the description of the PR based off the issue details you provided.
 4. While Copilot is working, you can monitor its progress by viewing the session logs by clicking the "View Session" button in the Pull Request timeline.
 5. Here you can see all the steps Copilot is taking to address the issue, including code changes, test runs, and any challenges it encounters. It will behave similarly to how it does in the IDE, but without the need for your direct input. Feel free to check back on this page periodically to see new updates as Copilot works through the issue.
-6. Back in the Pull Request, you can also watch as Copilot updates the PR description with it's planned approach to solving the issue. As it progresses, it will mark off tasks in the description to indicate what has been completed.
-7. Once Copilot has completed its work, it will mark the Pull Request as ready for review, removing the draft status.
-
+6. Back in the Pull Request, you can also watch as Copilot updated the PR description with it's planned approach to solving the issue. As it progresses, it will mark off tasks in the description to indicate what has been completed.
+7. Once Copilot has completed its work, you can scroll to the bottom of the Pull Request and press the "Ready for review" button
 
 Note: Depending on the complexity of the issue, this process may take some time. Be patient as Copilot works through the task autonomously. Remember, normally you would be free to work on other tasks while Copilot handles this issue in the background. In the meantime, feel free to explore the optional tasks below.
 
@@ -104,7 +104,6 @@ Try creating and assigning Copilot some additional issues while it works on the 
 - Add a search bar to the product listing page
 - Add categories to the product page to make it easier to find specific types of products
 - Anything you think would improve the Daily Harvest e-commerce experience!
-
 
 ### Pro Tips for Effective Delegation:
 - Be specific in your issue descriptions - clear requirements lead to better outcomes
@@ -157,6 +156,25 @@ Even more ways to interact with Coding Agent can be found in the [GitHub Docs](h
 ## 🎁 Optional Task: Use GitHub Advanced Security + Copilot Autofix to fix a code vulnerability
 
 So far, we've looked at utilizing Coding Agent to handle improved functionality. Now, we are going to see how it handles resolving security vulnerabilities.
+
+### Turning on GitHub Advanced Security
+
+Before having GitHub Copilot tackle some security flaws, we first need to enable GitHub Advanced Security.
+
+__Instructions:__
+
+1. At the top of your your repository on GitHub.com, click the __Settings__ tab (you may need to click the 3 dots depending on your browser's width
+2. On the left sidebar, scroll towards the bottom and click "Advanced Security" under the "Security" header
+3. Once the new page loads, scroll to the bottom and, next to "GitHub Advanced Security", click "Enable"
+4. In the pop-up confirming your desire to enable the feature, click "Enable GitHub Advanced Security for this repository"
+5. Once the page refreshes and becomes quite a bit longer, scroll down to the section labeled "Code Scanning"
+6. In the box titled "CodeQL Analysis", click the "Set Up" drop-down menu and choose "Default"
+7. At the bottom of the pop-up window detailing what will be scanned, press "Enable CodeQL"
+8. If all goes well, you should see a blue strip at the top of your screen noting that a full scan of your repository is taking place
+
+### Combining the powers of GHAS and GitHub Copilot
+
+With our repository scanned, we can now begin to utilize GitHub Copilot to resolve any unsavory warnings we have received.
 
 __Instructions:__
 

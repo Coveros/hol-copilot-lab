@@ -26,6 +26,9 @@ Before we start writing new tests, let's establish a baseline by running the exi
 
 ### Instructions:
 1. Navigate to the project directory in your terminal
+   ```bash
+   cd eCommApp
+   ```
 2. Run the existing test suite to ensure everything is working:
    ```bash
    npm test

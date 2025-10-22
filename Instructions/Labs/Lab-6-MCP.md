@@ -89,6 +89,7 @@ Inside the [MCP documentation](https://github.com/mcp/github/github-mcp-server) 
 __Note:__ Before moving on, please make sure your MCP Server is running. 
 
 <details>
+  
   <summary>Instructions for ensuring MCP is started</summary>
   
   - Click on the __Extensions__ tab in VS Code
@@ -107,14 +108,18 @@ __Instructions:__
 1. The GitHub MCP server provides a large number of tools for interacting with GitHub such as Actions, Issues, Security Findings, PRs, and more. A full list of tools can be found in the [MCP documentation](https://github.com/mcp/github/github-mcp-server#available-toolsets). 
 2. Open up Github Copilot Chat and select "agent" mode.
 3. Let's start by asking GitHub Copilot to retrieve the list of issues for this repository.  You can do this by entering the following prompt into the chat input:
+  
   ```
   What open issues are there in my repository?
   ```
+
 4. Copilot will respond with a list of open issues in the repository including the issues we have created in previous exercises.
 5. Next, let's ask GitHub Copilot to create a new issue. You can do this by entering the following prompt into the chat input: _Note you may need to click allow to give permission for GitHub Copilot to create the issue._
+  
   ```
   Create a new issue titled "MCP Test Issue" with the body "This is a test issue created using MCP." 
   ```
+
 6. After a moment, Copilot will confirm that the issue has been created. You can verify this by navigating to the Issues tab in the GitHub repository in your web browser.
 
 
@@ -125,7 +130,7 @@ Microsoft also provides an MCP server that connects GitHub Copilot to the Micros
 __Instructions:__
 
 1. Start by opening up [the MCP Registry](https://github.com/mcp) in a new browser tab or window.
-2. Find the Microsoft Learn Server
+2. Find the "Microsoft Learn" Server
 3. Click the "Install" drop-down, then click "Install in VS Code"
 4. If prompted by your browser, accept opening VS Code
 5. In your IDE, an extension page for the Microsoft Learn MCP Server should be displayed. Click "Install".
@@ -133,10 +138,12 @@ __Instructions:__
 With that, you should be all set to begin work with the MCP Server.
 
 1. Open up Github Copilot Chat and select "agent" mode.
-2. Let's ask GitHub Copilot to retrieve information from Microsoft about different options for hosting this application. You can do this by entering the following prompt into the chat input:
+2. Let's ask GitHub Copilot to retrieve information From Microsoft about different options for hosting this application. You can do this by entering the following prompt into the chat input:
+  
   ```
   Search the Microsoft docs and recommend options for deploying this application.
   ```
+
 3. Try other prompts to explore the Microsoft Learn documentation. For example, you could ask:
   - "Find best practices for securing a React application."
   - "What are the steps to integrate Azure AD authentication in a web app?"
