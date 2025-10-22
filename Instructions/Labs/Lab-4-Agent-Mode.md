@@ -70,9 +70,8 @@ Now let's put the Agent to work on our coverage goal.
 
 ### Instructions:
 
-1. **Open GitHub Copilot Chat** in VS Code
-2. **Switch to Agent mode** by selecting 'Agent' from the dropdown underneath the prompt text area
-3. **Provide your goal-oriented prompt** (example below):
+1. **Switch to Agent mode** in GitHub Copilot Chat by selecting 'Agent' from the dropdown underneath the prompt text area
+2. **Provide your goal-oriented prompt** (example below):
 
 <details>
 <summary>Sample Agent Prompt</summary>
@@ -92,7 +91,7 @@ Please work autonomously and let me know your progress as you go. Focus on busin
 
 </details>
 
-4. **Submit the prompt** and let the Agent begin working.
+3. **Submit the prompt** and let the Agent begin working.
 
 ## 👀 Step 3: Observing Agent Mode in Action
 
