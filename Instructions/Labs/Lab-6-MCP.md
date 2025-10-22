@@ -133,7 +133,7 @@ __Instructions:__
 With that, you should be all set to begin work with the MCP Server.
 
 1. Open up Github Copilot Chat and select "agent" mode.
-2. Let's ask GitHub Copilot to retrieve information From Microsoft about different options for hosting this application. You can do this by entering the following prompt into the chat input:
+2. Let's ask GitHub Copilot to retrieve information from Microsoft about different options for hosting this application. You can do this by entering the following prompt into the chat input:
   ```
   Search the Microsoft docs and recommend options for deploying this application.
   ```
