@@ -258,4 +258,4 @@ In Exercise 5, we'll take things further by exploring how GitHub Copilot Coding 
 
 #### You have successfully completed the lab. Click on **Next >>** to continue to the next lab.
 
-![](../media/next-page.png)
+![](../../media/next-page.png)
