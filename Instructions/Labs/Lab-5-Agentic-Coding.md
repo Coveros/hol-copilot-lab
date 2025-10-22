@@ -45,8 +45,11 @@ The first step in utilizing Coding Agent is to create a GitHub issue outlining a
 3. For the new issue, fill in an appropriate title and description to add a _Contact Us_ page to the application. Feel free to add any specific requirements or acceptance criteria you wish. A sample issue is shown below:
 
 <details>
+ 
   <summary>Example Issue</summary>
-  ![](../media/sample-issue.png)
+  
+  ![](../../media/sample-issue.png)
+  
 </details>
 
 Once complete, create the issue.
