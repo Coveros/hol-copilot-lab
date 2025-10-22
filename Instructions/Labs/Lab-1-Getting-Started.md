@@ -25,7 +25,7 @@ Congratulations! You've just been hired as a software developer at **The Daily H
 
 ### Your Role
 
-As a new developer on the team, you'll be working on extending the functionality of the website and ensuring that it is well-tested. The company has recently adopted **GitHub Copilot** as part of their development workflow, and you'll be learning how to leverage this AI-powered assistant to accelerate your productivity and code quality.
+As a new developer on the team, you'll be working on extending the functionality of the website and ensuring that it is well-tested. The company has recently adopted **GitHub Copilot** as part of its development workflow, and you'll be learning how to leverage this AI-powered assistant to accelerate your productivity and code quality.
 
 ### The Challenge Ahead
 
@@ -120,20 +120,25 @@ To adjust the zoom level for the environment page, click the A↕: 100% icon loc
 
 ## Creating your Repository
 
-1. Navigate to the **hol-copilot-lab** repository in a web browser: https://github.com/Coveros/hol-copilot-lab/tree/main
+1. Navigate to the **hol-copilot-lab** repository in a web browser.
 
-1. Click the green **Use this template** button and then select **Create a new repository**.
+   ```
+   https://github.com/Coveros/hol-copilot-lab/tree/main
+   ```
 
-   ![](../../media/create-new-repo-from-template.png)
+1. Click the green **Use this template** button.
+
+   ![](../../media/use-this-template-button.png)
 
 1. You should see a repository creation form. Make the following selections and then click the **Create repository** button.
+   - **Include all branches:** On
    - **Owner:** Cloudlabs-Enterprises
-   - **Repository name:** hol-copilot-lab-<inject key="GitHub User Name" enableCopy="true"/>
+   - **Repository name:** <inject key="GitHub User Name" enableCopy="true"/>
    - **Visibility:** Internal
 
 1. After a few moments you should be taken to the home page of your newly-created repository.
 
-   ![](../../media/hol-copilot-lab-homepage.png)
+   ![](../../media/new-repo-home-page.png)
 
 ## Setting up IDE
 
@@ -141,32 +146,25 @@ To adjust the zoom level for the environment page, click the A↕: 100% icon loc
 
    ![](../../media/visual-studio-code-shortcut.png)
 
-1. Once the IDE opens, click on the "Clone Git Repository..." option and select **Clone from GitHub** when that option appears
-   at the top of the IDE.
+1. Once the IDE opens, click on the **Welcome** link.
+
+   ![](../../media/link-to-return-to-welcome-screen.png)
+
+1. Click on the "Clone Git Repository..." option and select **Clone from GitHub** when that option appears at the top of the IDE. Follow the steps for signing into GitHub.
 
    ![](../../media/clone-git-repo-vs-code.png)
 
-1. Type the name of the repository that you just created.
+1. In Visual Studio Code, type the name of the repository that you just created in the search bar at the top of the IDE.
 
-1. Choose a location on the local filesystem to save the repo. If prompted, select a personal access token to authenticate
-   with GitHub, confirm that you want to open the repository in your current VS Code window, and indicate that you trust
-   the author of the files in the folder.
+1. Choose a location on the local filesystem to save the repo. If prompted, sign into GitHub in the browser and authorize the Git Credential Manager, confirm that you want to open the repository in your current VS Code window, and indicate that you trust the author of the files in the folder.
 
-1. Click on the **Extensions** button on the left-hand banner and search for **GitHub Copilot**. Install the extension if needed.
+1. Click on the **Extensions** button on the left-hand banner and search for **GitHub Copilot**. Install the extension.
 
-   ![](../../media/searching-for-github-copilot-extension.png)
+   ![](../../media/install-github-copilot-extension.png)
 
-1. Click on the **Accounts** button in the lower left-hand corner of the IDE. Select **Sign in with GitHub to use GitHub Copilot**.
+1. Verify that the Copilot chat window appears on the right-hand side of the IDE.
 
-   ![](../../media/accounts-button.png)
-
-1. A browser window will open asking you to authorize Visual Studio Code. Click the **Continue** button and then **Open Visual Studio Code** when you are prompted.
-
-   ![](../../media/accounts-button.png)
-
-1. A GitHub Copilot toolbar icon will appear in the lower right-hand corner of the IDE. Copilot is now ready for you to use!
-
-   ![](../../media/copilot-toolbar-icon.png)
+   ![](../../media/evidence-that-copilot-extension-was-installed.png)
 
 ## Support Contact
 
