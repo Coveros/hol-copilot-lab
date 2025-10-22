@@ -108,7 +108,6 @@ Try creating and assigning Copilot some additional issues while it works on the 
 - Add categories to the product page to make it easier to find specific types of products
 - Anything you think would improve the Daily Harvest e-commerce experience!
 
-
 ### Pro Tips for Effective Delegation:
 - Be specific in your issue descriptions - clear requirements lead to better outcomes
 - Set clear acceptance criteria in your issues
@@ -160,6 +159,25 @@ Even more ways to interact with Coding Agent can be found in the [GitHub Docs](h
 ## 🎁 Optional Task: Use GitHub Advanced Security + Copilot Autofix to fix a code vulnerability
 
 So far, we've looked at utilizing Coding Agent to handle improved functionality. Now, we are going to see how it handles resolving security vulnerabilities.
+
+### Turning on GitHub Advanced Security
+
+Before having GitHub Copilot tackle some security flaws, we first need to enable GitHub Advanced Security.
+
+__Instructions:__
+
+1. At the top of your your repository on GitHub.com, click the __Settings__ tab (you may need to click the 3 dots depending on your browser's width
+2. On the left sidebar, scroll towards the bottom and click "Advanced Security" under the "Security" header
+3. Once the new page loads, scroll to the bottom and, next to "GitHub Advanced Security", click "Enable"
+4. In the pop-up confirming your desire to enable the feature, click "Enable GitHub Advanced Security for this repository"
+5. Once the page refreshes and becomes quite a bit longer, scroll down to the section labeled "Code Scanning"
+6. In the box titled "CodeQL Analysis", click the "Set Up" drop-down menu and choose "Default"
+7. At the bottom of the pop-up window detailing what will be scanned, press "Enable CodeQL"
+8. If all goes well, you should see a blue strip at the top of your screen noting that a full scan of your repository is taking place
+
+### Combining the powers of GHAS and GitHub Copilot
+
+With our repository scanned, we can now begin to utilize GitHub Copilot to resolve any unsavory warnings we have received.
 
 __Instructions:__
 
