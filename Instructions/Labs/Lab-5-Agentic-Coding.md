@@ -187,6 +187,14 @@ __Instructions:__
 6. You can also even assign Copilot to review its own Pull Request (or any other PR in the repository) by adding `Copilot` as a reviewer on the PR. Copilot will analyze the code changes and provide feedback or suggest improvements. See the [GitHub Docs](https://docs.github.com/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review) for more details.
 6. Once you are satisfied with the changes, approve the Pull Request and merge it into the main branch.
 
+### Scaling Security with Copilot Autofix
+
+Copilot Autofix isn't just for fixing individual vulnerabilities - it can help your organization pay down security debt at scale:
+
+- **Security Campaigns**: Use [security campaigns](https://docs.github.com/enterprise-cloud@latest/code-security/securing-your-organization/fixing-security-alerts-at-scale/about-security-campaigns) to address vulnerabilities across multiple repositories in your organization, with Copilot Autofix helping to generate fixes automatically
+- **Pull Request Integration**: Automatically [triage and fix vulnerabilities in pull requests](https://docs.github.com/code-security/code-scanning/managing-code-scanning-alerts/triaging-code-scanning-alerts-in-pull-requests#working-with-copilot-autofix-suggestions-for-alerts-on-a-pull-request) before they're merged, stopping new security issues before they enter your codebase
+
+
 
 ## 🏆 Exercise Wrap-up
 
