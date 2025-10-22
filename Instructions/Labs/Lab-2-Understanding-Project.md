@@ -42,7 +42,7 @@ GitHub Copilot Chat offers access to multiple AI models, each with different str
 
 ### Available Models
 
-GitHub Copilot provides access to several AI models from leading providers such as OpenAI, Anthropic, Google, and others. Tthe available options are constantly evolving. For the most up-to-date information about supported models and their capabilities, see the official documentation: [GitHub Copilot Supported Models](https://docs.github.com/copilot/reference/ai-models/supported-models)
+GitHub Copilot provides access to several AI models from leading providers such as OpenAI, Anthropic, Google, and others. The available options are constantly evolving. For the most up-to-date information about supported models and their capabilities, see the official documentation: [GitHub Copilot Supported Models](https://docs.github.com/copilot/reference/ai-models/supported-models)
 
 Different models excel at different types of tasks. For detailed information about each model's strengths and ideal use cases, see the [AI Models Comparison Guide](https://docs.github.com/copilot/reference/ai-models/model-comparison):
 - Some are optimized for **code understanding and analysis**
@@ -60,8 +60,8 @@ GitHub is now also offering a new auto model selection feature within Visual Stu
 - **Other Models**: Have different cost multipliers and usage limits
 - **Auto Model Selection**: Will automatically choose from a variety of models with different multipliers at a 10% discount
 - **Usage Allowances**: 
-  - Copilot Business: 300 requests per user per month
-  - Copilot Enterprise: 1,000 requests per user per month
+    - Copilot Business: 300 requests per user per month
+    - Copilot Enterprise: 1,000 requests per user per month
 - **Additional Requests**: Available at $0.04 each when you exceed your monthly allowance
 
 For complete details on model pricing and billing, see: [GitHub Copilot Billing Documentation](https://docs.github.com/copilot/concepts/billing/copilot-requests)
@@ -72,7 +72,7 @@ For complete details on model pricing and billing, see: [GitHub Copilot Billing 
 Try asking the same question to different models to compare their responses! Each model may provide unique insights or different perspectives on the same problem.
 
 **How to Switch Models:**
-1. In GitHub Copilot Chat, look for the model selector (usually at the top of the chat interface)
+1. In GitHub Copilot Chat, look for the model selector (usually below the text area in which prompts can be submitted)
 2. Click on the current model name to see available options
 3. Select a different model and ask your question
 
@@ -82,10 +82,9 @@ Try asking the same question to different models to compare their responses! Eac
 Let's start by getting a high-level understanding of what this application does.
 
 ### Instructions:
-1. Open GitHub Copilot Chat (Ctrl+Shift+I or Cmd+Shift+I)
-2. Switch to "Ask" mode if not already in that mode.
-3. Ask GitHub Copilot some questions to help you understand the application as it is currently working. 
-4. **Try different models**: Start with the default model, then experiment with others to see how their explanations differ
+1. Switch to "Ask" mode within GitHub Copilot Chat if you are not already in that mode.
+2. Ask GitHub Copilot some questions to help you understand the application as it is currently working. 
+3. **Try different models**: Start with the default model, then experiment with others to see how their explanations differ
 
 If you get stuck, try using these sample prompts to explore the project:
 
@@ -198,11 +197,11 @@ If GitHub Copilot mentions any technologies you're unfamiliar with, don't hesita
 
 Technical framework questions are great for comparing models - try asking about a complex technology stack with different available models to see different explanation styles! 
 
-**Try This**: Pick one technology or framework from the project and ask about it using different available models:
+**Try This**: Pick one technology or framework from the project and ask about it using different available models. Try each of these three prompts and compare the responses.
 
-1. **Default Model**: "What is [technology] and how does it work?"
-2. **Code-focused Model**: "Explain [technology] and its role in this project"
-3. **Reasoning-focused Model**: "Analyze the architectural benefits of using [technology] in this context"
+1. "What is [technology] and how does it work?"
+2. "Explain [technology] and its role in this project"
+3. "Analyze the architectural benefits of using [technology] in this context"
 
 **Questions to Consider:**
 - Which model gave the most comprehensive explanation?
@@ -251,6 +250,7 @@ Ask GitHub Copilot how to build your codebase. If you get stuck you can use the 
   You can build the project by [opening a terminal](https://code.visualstudio.com/docs/terminal/getting-started) in Visual Studio Code and running the following commands:
 
   ```
+  cd eCommApp
   npm install
   npm run dev
   ```

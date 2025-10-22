@@ -110,7 +110,7 @@ Try creating and assigning Copilot some additional issues while it works on the 
 ### Pro Tips for Effective Delegation:
 - Be specific in your issue descriptions - clear requirements lead to better outcomes
 - Set clear acceptance criteria in your issues
-- You can use even use Copilot to help plan out the tasks before assigning them
+- You can even use Copilot to help plan out the tasks before assigning them
 
 - Start with smaller, well-defined tasks before moving to complex features
 

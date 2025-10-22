@@ -32,7 +32,7 @@ GitHub Copilot Agent mode represents a significant evolution in AI-assisted deve
 - ✅ Comprehensive documentation generation
 
 ### Billing Considerations:
-When you use Copilot agent mode, each prompt you enter counts as one premium request, multiplied by the model’s multiplier. For example, if you're using the included model—which has a multiplier of 0—your prompts won’t consume any premium requests. Copilot may take several follow-up actions to complete your task, but these follow-up actions do not count toward your premium request usage. Only the prompts you enter are billed—tool calls or background steps taken by the agent are not charged.
+When you use Copilot agent mode, each prompt you enter counts as one premium request, multiplied by the model’s multiplier. For example, if you're using an included model—which has a multiplier of 0—your prompts won’t consume any premium requests. Copilot may take several follow-up actions to complete your task, but these follow-up actions do not count toward your premium request usage. Only the prompts you enter are billed—tool calls or background steps taken by the agent are not charged.
 
 ## 🍎 Scenario: Boosting The Daily Harvest's Test Coverage
 
@@ -52,7 +52,7 @@ Use Agent mode to automatically:
 Before we delegate to the Agent, let's understand our starting point.
 
 ### Instructions:
-1. **Run the existing test suite** to see current coverage:
+1. **Run the existing test suite** to see current coverage (make sure you're in the **eCommApp** directory first):
    ```bash
    npm test -- --coverage
    ```
@@ -70,9 +70,8 @@ Now let's put the Agent to work on our coverage goal.
 
 ### Instructions:
 
-1. **Open GitHub Copilot Chat** in VS Code
-2. **Switch to Agent mode** by selecting 'Agent' from the dropdown underneath the prompt text area
-3. **Provide your goal-oriented prompt** (example below):
+1. **Switch to Agent mode** in GitHub Copilot Chat by selecting 'Agent' from the dropdown underneath the prompt text area
+2. **Provide your goal-oriented prompt** (example below):
 
 <details>
 <summary>Sample Agent Prompt</summary>
@@ -92,7 +91,7 @@ Please work autonomously and let me know your progress as you go. Focus on busin
 
 </details>
 
-4. **Submit the prompt** and let the Agent begin working.
+3. **Submit the prompt** and let the Agent begin working.
 
 ## 👀 Step 3: Observing Agent Mode in Action
 
