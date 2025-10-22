@@ -93,8 +93,7 @@ Now that Copilot has eyes on the issue, let's follow along with its progress:
 4. While Copilot is working, you can monitor its progress by viewing the session logs by clicking the "View Session" button in the Pull Request timeline.
 5. Here you can see all the steps Copilot is taking to address the issue, including code changes, test runs, and any challenges it encounters. It will behave similarly to how it does in the IDE, but without the need for your direct input. Feel free to check back on this page periodically to see new updates as Copilot works through the issue.
 6. Back in the Pull Request, you can also watch as Copilot updated the PR description with it's planned approach to solving the issue. As it progresses, it will mark off tasks in the description to indicate what has been completed.
-7. Once Copilot has completed its work, it will mark the Pull Request as ready for review, removing the draft status.
-
+7. Once Copilot has completed its work, you can scroll to the bottom of the Pull Request and press the "Ready for review" button
 
 Note: Depending on the complexity of the issue, this process may take some time. Be patient as Copilot works through the task autonomously. Remember, normally you would be free to work on other tasks while Copilot handles this issue in the background. In the meantime, feel free to explore the optional tasks below.
 
