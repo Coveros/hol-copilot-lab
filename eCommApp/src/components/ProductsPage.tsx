@@ -9,6 +9,7 @@ const ProductsPage = () => {
     const [products, setProducts] = useState<Product[]>([]);
     const [loading, setLoading] = useState(true);
     const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+    const [selectedCategory, setSelectedCategory] = useState<string>('all');
     const cartContext = useContext(CartContext);
 
     if (!cartContext) {
@@ -24,7 +25,9 @@ const ProductsPage = () => {
                     'apple.json',
                     'grapes.json',
                     'orange.json',
-                    'pear.json'
+                    'pear.json',
+                    'carrot.json',
+                    'chips.json'
                 ];
                 const productPromises = productFiles.map(async (file) => {
                     const response = await fetch(`products/${file}`);
@@ -56,6 +59,14 @@ const ProductsPage = () => {
         }
     };
 
+    // Get unique categories from products
+    const categories = ['all', ...Array.from(new Set(products.map(p => p.category).filter(Boolean)))];
+    
+    // Filter products based on selected category
+    const filteredProducts = selectedCategory === 'all' 
+        ? products 
+        : products.filter(p => p.category === selectedCategory);
+
     if (loading) {
         return (
             <div className="app">
@@ -74,8 +85,23 @@ const ProductsPage = () => {
             <main className="main-content">
                 <div className="products-container">
                     <h2>Our Products</h2>
+                    <div className="category-filter">
+                        <label htmlFor="category-select">Filter by Category: </label>
+                        <select 
+                            id="category-select"
+                            value={selectedCategory} 
+                            onChange={(e) => setSelectedCategory(e.target.value)}
+                            className="category-dropdown"
+                        >
+                            {categories.map(category => (
+                                <option key={category} value={category}>
+                                    {category ? category.charAt(0).toUpperCase() + category.slice(1) : 'All'}
+                                </option>
+                            ))}
+                        </select>
+                    </div>
                     <div className="products-grid">
-                        {products.map((product) => (
+                        {filteredProducts.map((product) => (
                             <div key={product.id || product.name} className="product-card">
                                 {product.image && (
                                     <img

@@ -1,0 +1,10 @@
+{
+    "id": "5",
+    "name": "Carrot",
+    "description": "Fresh organic carrots",
+    "price": 0.99,
+    "image": "carrot.png",
+    "category": "vegetables",
+    "inStock": true,
+    "reviews": []
+}

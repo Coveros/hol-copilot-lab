@@ -1,0 +1,14 @@
+import 'vite/module-runner';
+export { b as VitestModuleEvaluator, a as VitestModuleEvaluatorOptions, c as createImportMetaEnvProxy, g as getDefaultRequestStubs, i as isPrimitive, u as unwrapId, w as wrapId } from './chunks/moduleRunner.d.YtNsMIoJ.js';
+import 'node:vm';
+import '@vitest/spy';
+import './chunks/worker.d.BFk-vvBU.js';
+import '@vitest/runner';
+import './chunks/config.d.u2CUDWwS.js';
+import '@vitest/pretty-format';
+import '@vitest/snapshot';
+import '@vitest/utils/diff';
+import './chunks/environment.d.CrsxCzP1.js';
+import '@vitest/utils';
+import '@vitest/mocker';
+import './chunks/mocker.d.BE_2ls6u.js';
