@@ -1,0 +1,10 @@
+{
+    "id": "6",
+    "name": "Potato Chips",
+    "description": "Crispy salted chips",
+    "price": 2.49,
+    "image": "chips.png",
+    "category": "snacks",
+    "inStock": true,
+    "reviews": []
+}
