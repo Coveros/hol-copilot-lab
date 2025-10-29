@@ -139,13 +139,17 @@ describe('ProductsPage', () => {
 
   it('should display all products when "all" category is selected', async () => {
     const mockProductsWithCategories = [
-      { ...mockProducts[0], category: 'fruits', inStock: true },
-      { ...mockProducts[1], category: 'vegetables', inStock: true }
+      { id: '1', name: 'Apple', price: 2.99, category: 'fruits', inStock: true, reviews: [] },
+      { id: '2', name: 'Grapes', price: 3.99, category: 'fruits', inStock: true, reviews: [] },
+      { id: '3', name: 'Orange', price: 1.99, category: 'fruits', inStock: false, reviews: [] },
+      { id: '4', name: 'Pear', price: 2.49, category: 'fruits', inStock: true, reviews: [] },
+      { id: '5', name: 'Carrot', price: 0.99, category: 'vegetables', inStock: true, reviews: [] },
+      { id: '6', name: 'Chips', price: 2.49, category: 'snacks', inStock: true, reviews: [] }
     ]
     
     let callCount = 0
     mockFetch.mockImplementation(() => {
-      const product = mockProductsWithCategories[callCount % 2]
+      const product = mockProductsWithCategories[callCount % 6]
       callCount++
       return Promise.resolve({
         ok: true,
@@ -160,19 +164,22 @@ describe('ProductsPage', () => {
     })
     
     expect(screen.getByText('Grapes')).toBeInTheDocument()
+    expect(screen.getByText('Carrot')).toBeInTheDocument()
   })
 
   it('should filter products by selected category', async () => {
     const mockProductsWithCategories = [
       { id: '1', name: 'Apple', price: 2.99, category: 'fruits', inStock: true, reviews: [] },
-      { id: '2', name: 'Carrot', price: 1.99, category: 'vegetables', inStock: true, reviews: [] },
-      { id: '3', name: 'Banana', price: 1.49, category: 'fruits', inStock: true, reviews: [] },
-      { id: '4', name: 'Pear', price: 2.49, category: 'fruits', inStock: true, reviews: [] }
+      { id: '2', name: 'Grapes', price: 3.99, category: 'fruits', inStock: true, reviews: [] },
+      { id: '3', name: 'Orange', price: 1.99, category: 'fruits', inStock: false, reviews: [] },
+      { id: '4', name: 'Pear', price: 2.49, category: 'fruits', inStock: true, reviews: [] },
+      { id: '5', name: 'Carrot', price: 0.99, category: 'vegetables', inStock: true, reviews: [] },
+      { id: '6', name: 'Chips', price: 2.49, category: 'snacks', inStock: true, reviews: [] }
     ]
     
     let callCount = 0
     mockFetch.mockImplementation(() => {
-      const product = mockProductsWithCategories[callCount % 4]
+      const product = mockProductsWithCategories[callCount % 6]
       callCount++
       return Promise.resolve({
         ok: true,
@@ -188,9 +195,8 @@ describe('ProductsPage', () => {
     })
     
     // Initially all products should be visible
-    expect(screen.getByText('Apple')).toBeInTheDocument()
     expect(screen.getByText('Carrot')).toBeInTheDocument()
-    expect(screen.getByText('Banana')).toBeInTheDocument()
+    expect(screen.getByText('Chips')).toBeInTheDocument()
     
     // Find the category dropdown
     const dropdown = screen.getByRole('combobox', { name: /filter by category/i })
@@ -204,8 +210,9 @@ describe('ProductsPage', () => {
       expect(screen.queryByText('Carrot')).not.toBeInTheDocument()
     })
     
-    // Fruits should still be visible
+    // Fruits should still be visible, vegetables and snacks should not
     expect(screen.getByText('Apple')).toBeInTheDocument()
-    expect(screen.getByText('Banana')).toBeInTheDocument()
+    expect(screen.getByText('Grapes')).toBeInTheDocument()
+    expect(screen.queryByText('Chips')).not.toBeInTheDocument()
   })
 })
