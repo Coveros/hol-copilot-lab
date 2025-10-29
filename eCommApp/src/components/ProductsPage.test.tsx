@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { screen, waitFor } from '@testing-library/react'
+import { screen, waitFor, fireEvent } from '@testing-library/react'
 import { render } from '../test/test-utils'
 import ProductsPage from './ProductsPage'
 
@@ -117,5 +117,95 @@ describe('ProductsPage', () => {
     await waitFor(() => {
       expect(screen.getByText('Our Products')).toBeInTheDocument()
     })
+  })
+
+  it('should render category filter dropdown', async () => {
+    mockFetch.mockImplementation(() => {
+      return Promise.resolve({
+        ok: true,
+        json: async () => ({ ...mockProducts[0], category: 'fruits', inStock: true })
+      } as Response)
+    })
+    
+    render(<ProductsPage />)
+    
+    await waitFor(() => {
+      expect(screen.getByLabelText(/filter by category/i)).toBeInTheDocument()
+    })
+    
+    const dropdown = screen.getByRole('combobox', { name: /filter by category/i })
+    expect(dropdown).toBeInTheDocument()
+  })
+
+  it('should display all products when "all" category is selected', async () => {
+    const mockProductsWithCategories = [
+      { ...mockProducts[0], category: 'fruits', inStock: true },
+      { ...mockProducts[1], category: 'vegetables', inStock: true }
+    ]
+    
+    let callCount = 0
+    mockFetch.mockImplementation(() => {
+      const product = mockProductsWithCategories[callCount % 2]
+      callCount++
+      return Promise.resolve({
+        ok: true,
+        json: async () => product
+      } as Response)
+    })
+    
+    render(<ProductsPage />)
+    
+    await waitFor(() => {
+      expect(screen.getByText('Apple')).toBeInTheDocument()
+    })
+    
+    expect(screen.getByText('Grapes')).toBeInTheDocument()
+  })
+
+  it('should filter products by selected category', async () => {
+    const mockProductsWithCategories = [
+      { id: '1', name: 'Apple', price: 2.99, category: 'fruits', inStock: true, reviews: [] },
+      { id: '2', name: 'Carrot', price: 1.99, category: 'vegetables', inStock: true, reviews: [] },
+      { id: '3', name: 'Banana', price: 1.49, category: 'fruits', inStock: true, reviews: [] },
+      { id: '4', name: 'Pear', price: 2.49, category: 'fruits', inStock: true, reviews: [] }
+    ]
+    
+    let callCount = 0
+    mockFetch.mockImplementation(() => {
+      const product = mockProductsWithCategories[callCount % 4]
+      callCount++
+      return Promise.resolve({
+        ok: true,
+        json: async () => product
+      } as Response)
+    })
+    
+    render(<ProductsPage />)
+    
+    // Wait for products to load
+    await waitFor(() => {
+      expect(screen.getByText('Apple')).toBeInTheDocument()
+    })
+    
+    // Initially all products should be visible
+    expect(screen.getByText('Apple')).toBeInTheDocument()
+    expect(screen.getByText('Carrot')).toBeInTheDocument()
+    expect(screen.getByText('Banana')).toBeInTheDocument()
+    
+    // Find the category dropdown
+    const dropdown = screen.getByRole('combobox', { name: /filter by category/i })
+    expect(dropdown).toBeInTheDocument()
+    
+    // Change to 'fruits' category
+    fireEvent.change(dropdown, { target: { value: 'fruits' } })
+    
+    // Wait for filtering to take effect
+    await waitFor(() => {
+      expect(screen.queryByText('Carrot')).not.toBeInTheDocument()
+    })
+    
+    // Fruits should still be visible
+    expect(screen.getByText('Apple')).toBeInTheDocument()
+    expect(screen.getByText('Banana')).toBeInTheDocument()
   })
 })

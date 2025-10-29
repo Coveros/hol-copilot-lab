@@ -133,6 +133,45 @@
   font-size: 2.5rem;
 }
 
+.category-filter {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.category-filter label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-right: 1rem;
+}
+
+.category-dropdown {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 150px;
+}
+
+.category-dropdown:hover {
+  border-color: #5a6fd8;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
+}
+
+.category-dropdown:focus {
+  outline: none;
+  border-color: #5a6fd8;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
