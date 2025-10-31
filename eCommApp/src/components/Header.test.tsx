@@ -14,10 +14,12 @@ describe('Header', () => {
         const homeLink = screen.getByRole('link', { name: 'Home' });
         const productsLink = screen.getByRole('link', { name: 'Products' });
         const cartLink = screen.getByRole('link', { name: 'Cart' });
+        const contactLink = screen.getByRole('link', { name: 'Contact Us' });
         
         expect(homeLink).toBeInTheDocument();
         expect(productsLink).toBeInTheDocument();
         expect(cartLink).toBeInTheDocument();
+        expect(contactLink).toBeInTheDocument();
     });
 
     it('has correct href attributes for navigation links', () => {
@@ -26,10 +28,12 @@ describe('Header', () => {
         const homeLink = screen.getByRole('link', { name: 'Home' });
         const productsLink = screen.getByRole('link', { name: 'Products' });
         const cartLink = screen.getByRole('link', { name: 'Cart' });
+        const contactLink = screen.getByRole('link', { name: 'Contact Us' });
         
         expect(homeLink).toHaveAttribute('href', '/');
         expect(productsLink).toHaveAttribute('href', '/products');
         expect(cartLink).toHaveAttribute('href', '/cart');
+        expect(contactLink).toHaveAttribute('href', '/contact');
     });
 
     it('renders admin login button', () => {
