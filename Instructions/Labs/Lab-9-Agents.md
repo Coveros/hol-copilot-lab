@@ -229,6 +229,8 @@ Acceptance criteria:
 - After Submit, show "Thank you for your message" and a Continue button.
 - Clear the form values when the message is submitted and when the modal is closed.
 - Preserve existing routes, cart behavior, and unrelated UI.
+- All text visible to the end user must be in English.
+- The format of the new menu item used to trigger the "Contact Us" modal must be identical to that of the "CART" menu item.
 
 Before editing, inspect the Header component, App routing, existing modal components, and CSS conventions. Explain the planned files and behavior first. Then implement the smallest complete change, review the diff, and run the relevant validation commands.
 ```
