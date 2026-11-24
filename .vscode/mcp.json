@@ -1,12 +1,9 @@
 {
   "mcpServers": {
-    "wynxx": {
+    "everything": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@wynxx/mcp", "--instance", "wynxx-01.techoffice.gftbr.com"],
-      "env": {
-        "npm_config_@wynxx:registry": "https://pkgs.dev.azure.com/gft-assets/ai-impact-feed/_packaging/ai-impact-feed/npm/registry/"
-      }
+      "args": ["-y", "@modelcontextprotocol/server-everything"]
     }
   }
 }
