@@ -27,8 +27,8 @@ GitHub Copilot Chat is an AI-powered conversational interface that helps you und
 | Mode | Purpose | Best For |
 |------|---------|----------|
 | **Ask** | Get explanations and answers about code | Understanding existing code, learning new concepts |
-| **Edit** | Modify existing code with AI assistance | Refactoring, bug fixes, feature additions |
-| **Agent** | Delegate complex tasks to AI | Multi-file changes, architectural decisions |
+| **Plan** | Analyze a task and create an implementation plan without making changes | Planning features, refactoring, and tests |
+| **Agent** | Delegate complex tasks to AI for execution | Multi-file changes, implementation, and architectural decisions |
 
 For exploring an unfamiliar codebase, **Ask mode** is ideal because it allows you to:
 - Query specific files or code patterns without making changes
@@ -52,19 +52,24 @@ Different models excel at different types of tasks. For detailed information abo
 
 GitHub is now also offering a new auto model selection feature within Visual Studio Code that automatically chooses the best model for your specific task based on context and requirements. This can help streamline your workflow by ensuring you're always using the most suitable AI model without manual selection. More information can be found here: [Auto Model Selection](https://docs.github.com/copilot/concepts/auto-model-selection).  
 
-### 💰 Model Pricing and Usage Limits
+### 🪙 Saving Tokens with Modes and Models
 
-**Important**: Different AI models have different pricing structures and usage limits:
+Using GitHub Copilot efficiently is not only about choosing a powerful model. It is also about selecting the right mode and providing only the context needed for the task. Good context management can reduce repetition, improve response quality, and help you get more work done with fewer requests.
 
-- **0x Models**: Unlimited usage within your Copilot subscription
-- **Other Models**: Have different cost multipliers and usage limits
-- **Auto Model Selection**: Will automatically choose from a variety of models with different multipliers at a 10% discount
-- **Usage Allowances**: 
-    - Copilot Business: 300 requests per user per month
-    - Copilot Enterprise: 1,000 requests per user per month
-- **Additional Requests**: Available at $0.04 each when you exceed your monthly allowance
+Use the modes according to the size and purpose of the task:
 
-For complete details on model pricing and billing, see: [GitHub Copilot Billing Documentation](https://docs.github.com/copilot/concepts/billing/copilot-requests)
+- **Ask**: Use for focused questions, explanations, troubleshooting, and codebase exploration. Start here when you need information without making changes.
+- **Plan**: Use before a complex task to clarify requirements, identify affected files, and define implementation steps. A good plan can prevent repeated prompts and unnecessary revisions.
+- **Agent**: Use when the task requires coordinated changes, tool usage, or work across multiple files. Avoid using it for questions that Ask can answer directly.
+
+Follow these practices to use tokens efficiently:
+
+- Provide the smallest relevant context instead of including unrelated files or the entire workspace.
+- Write clear prompts with the goal, constraints, and expected result in one request.
+- Ask focused follow-up questions instead of repeating the full original prompt.
+- Use a faster model for simple explanations and routine tasks; choose a model with stronger reasoning when the task involves architecture, debugging, or multiple dependencies.
+- Use Plan mode to break large requests into clear steps before asking Agent mode to implement them.
+- Review Copilot's response before sending another request so you can refine the next prompt with specific feedback.
 
 
 ### 🔄 Experimenting with Different Models
@@ -96,7 +101,7 @@ If you get stuck, try using these sample prompts to explore the project:
   ```
 
   ```
-  Can you give me a high-level overview of this project's features and functionality?
+  Looking solely at the application itself, can you give me an overview of the project's features and functionalities?
   ```
 
   ```
@@ -143,7 +148,7 @@ Ask GitHub Copilot some questions to help you understand the organization of the
 
 When you ask these questions, GitHub Copilot will analyze the files and folders in your workspace and provide a structural breakdown, including:
 - **Folder Roles**: Explanations of what code lives in main directories like `src/`, `tests/`, `public/`, or `components/`.
-- **Key Files**: Identification of critical files such as `package.json`, `README.md`, or main entry points (e.g., `index.js`, `main.py`).
+- **Key Files**: Identification of critical files such as `eCommApp/package.json`, `eCommApp/README.md`, or main entry points (e.g., `index.js`, `main.py`).
 - **Architectural Patterns**: Insights into how the project is organized (e.g., MVC, layered architecture, microservices).
 - **Configuration Details**: Information about configuration files like environment variables (`.env`), build configuration (e.g., `webpack.config.js`), or database connection settings.
 
@@ -298,27 +303,27 @@ Can you identify which files or functions have low or missing test coverage?
 What would be good candidates for adding more tests to improve coverage?
 ```
 
-## 🎁 Optional Task: Building a Better README
+## 🎁 Optional Task: Building a Better `eCommApp/README.md`
 
-Now that you understand the project structure and setup process, let's use GitHub Copilot to improve the project documentation for future developers.
+Now that you understand the project structure and setup process, let's use GitHub Copilot to improve `eCommApp/README.md` for future developers. This activity targets the README inside the application directory, not the repository root README.
 
 ### Instructions:
-1. Use GitHub Copilot to analyze the current README (if it exists) and suggest improvements. See the below sample prompts if you get stuck.
-2. Create or enhance documentation based on your exploration.
+1. Use GitHub Copilot to analyze `eCommApp/README.md` and suggest improvements. See the below sample prompts if you get stuck.
+2. Create or enhance `eCommApp/README.md` based on your exploration.
 
 <details>
   <summary>Sample Prompts</summary>
 
   ```
-  Does this project have a README? If so, what's missing that would help new developers?
+  Analyze eCommApp/README.md. What is missing that would help new developers set up and work on the application?
   ```
 
   ```
-  Based on our conversation about this project, can you help me create a comprehensive "Quick Start Guide" for new developers? Include setup steps, key commands, and important files to know about.
+  Based on our conversation about this project, help me improve eCommApp/README.md with a comprehensive "Quick Start Guide". Include setup steps, key commands, tests, and important files to know about.
   ```
 
   ```
-  Can you suggest a better project description and feature list for the README based on the actual codebase?
+  Can you suggest a better project description and feature list for eCommApp/README.md based on the actual codebase?
   ```
 
 </details>
@@ -465,6 +470,12 @@ Congratulations! You've successfully used GitHub Copilot Chat in Ask mode to:
 
 In the next exercise, we'll use what we've learned about the codebase to start improving test coverage and implementing new features for The Daily Harvest's e-commerce platform!
 
-#### You have successfully completed the lab. Click on **Next >>** to continue to the next lab.
+#### You have successfully completed the lab.
 
-![](../../media/next-page.png)
+<table align="center">
+  <tr>
+    <td><a href="Lab-1-Getting-Started.md"><strong>&larr; Previous Lab</strong></a></td>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td><a href="Lab-3-Code-Editing.md"><strong>Next Lab &rarr;</strong></a></td>
+  </tr>
+</table>

@@ -2,6 +2,8 @@
 
 #### Duration: 45 minutes
 
+> **Access requirement:** This Lab depends on a paid GitHub Copilot plan that includes Coding Agent. The organization's GitHub administrator must enable and configure the feature for the account or repository before it can be used. If Coding Agent is unavailable, review the workflow conceptually and continue with the provided prompts and review steps.
+
 ## 🎯 Learning Objectives
 
 By the end of this exercise, you will:
@@ -25,7 +27,7 @@ Today, you'll explore this revolutionary feature by:
 
 ## ⌨️ Introduction to Coding Agent
 
-Unlike the IDE modes of Ask, Edit, and Agent, Coding Agent works within the GitHub.com user interface. Rather than engaging in a back and forth, iterative approach, utilizing Coding Agent involves delegating tasks to the agent, giving the agent time to work, then returning to see the results of GitHub Copilot's work.
+Unlike the IDE modes of Ask, Plan, and Agent, Coding Agent works within the GitHub.com user interface. Rather than engaging in a back and forth, iterative approach, utilizing Coding Agent involves delegating tasks to the agent, giving the agent time to work, then returning to see the results of GitHub Copilot's work. Coding Agent is a separate GitHub workflow from Agent mode in the IDE.
 
 Coding Agent can...
 - Fix bugs
@@ -45,9 +47,20 @@ The first step in utilizing Coding Agent is to create a GitHub issue outlining a
 3. For the new issue, fill in an appropriate title and description to add a _Contact Us_ page to the application. Feel free to add any specific requirements or acceptance criteria you wish. A sample issue is shown below:
 
 <details>
- 
-  <summary>Example Issue</summary>
-  ![](../../media/sample-issue.png)
+<summary>Example Issue</summary>
+<pre> 
+## User Story  
+### Title  
+Add a Contact Us page  
+### Description  
+A user should be able to click a "Contact Us" button, displaying a form where they can enter their name, email address, and message.  
+Below the message field, the user should be able to click "Submit".  
+When the user clicks "Submit", a pop-up should display the message "Thank you for your message" along with a "Continue" button, and the form fields should be cleared.  
+### Technical Notes  
+- The Contact Us modal should be accessible from the existing header menu.  
+- The modal should be implemented as a separate component.  
+- The modal should be centered in the browser.  
+</pre> 
 </details>
 
 Once complete, create the issue.
@@ -252,6 +265,12 @@ Congratulations! You've successfully used GitHub Copilot Coding Agent to autonom
 
 In Exercise 6, we'll take a look at bringing additional context to GitHub Copilot through the use of **MCP Servers** to provide new functionality and information to smooth out your workflows.
 
-#### You have successfully completed the lab. Click on **Next >>** to continue to the next lab.
+#### You have successfully completed the lab.
 
-![](../../media/next-page.png)
+<table align="center">
+  <tr>
+    <td><a href="Lab-4-Agent-Mode.md"><strong>&larr; Previous Lab</strong></a></td>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td><a href="Lab-6-MCP.md"><strong>Next Lab &rarr;</strong></a></td>
+  </tr>
+</table>

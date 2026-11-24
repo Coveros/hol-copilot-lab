@@ -9,6 +9,10 @@
                 "Order": 1
             },
             {
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Copilot-Hands-on-lab/refs/heads/main/Instructions/Labs/Lab-1a-Getting-Started-2.md",
+                "Order": 1.5
+            },
+            {
                 "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Copilot-Hands-on-lab/refs/heads/main/Instructions/Labs/Lab-2-Understanding-Project.md",
                 "Order": 2
             },
@@ -31,6 +35,14 @@
             {
                 "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Copilot-Hands-on-lab/refs/heads/main/Instructions/Labs/Lab-7-Customizing-Copilot.md",
                 "Order": 7
+            },
+            {
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Copilot-Hands-on-lab/refs/heads/main/Instructions/Labs/Lab-8-Skills.md",
+                "Order": 8
+            },
+            {
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Copilot-Hands-on-lab/refs/heads/main/Instructions/Labs/Lab-9-Agents.md",
+                "Order": 9
             }
         ]
     }

@@ -6,7 +6,7 @@
 
 By the end of this exercise, you will:
 - Understand what GitHub Copilot Agent mode is and when to use it
-- Learn how Agent mode differs from Chat and Edit modes
+- Learn how Agent mode differs from Ask and Plan modes
 - Experience how Agent mode autonomously makes changes across multiple files
 - Use Agent mode to achieve a specific, measurable goal (80%+ code coverage)
 - Observe and understand Agent mode's decision-making process
@@ -14,7 +14,7 @@ By the end of this exercise, you will:
 
 ## 🤖 What is GitHub Copilot Agent Mode?
 
-GitHub Copilot Agent mode represents a significant evolution in AI-assisted development. Unlike Chat mode (conversational) or Edit mode (targeted changes), **Agent mode operates autonomously to achieve larger, goal-oriented tasks**.
+GitHub Copilot Agent mode represents a significant evolution in AI-assisted development. Unlike Ask mode (conversational) or Plan mode (structured planning), **Agent mode operates autonomously to achieve larger, goal-oriented tasks**.
 
 ### Key Features:
 - 🎯 **Goal-Oriented**: Works toward specific, measurable objectives
@@ -31,8 +31,19 @@ GitHub Copilot Agent mode represents a significant evolution in AI-assisted deve
 - ✅ Complex code migrations or upgrades
 - ✅ Comprehensive documentation generation
 
-### Billing Considerations:
-When you use Copilot agent mode, each prompt you enter counts as one premium request, multiplied by the model’s multiplier. For example, if you're using an included model—which has a multiplier of 0—your prompts won’t consume any premium requests. Copilot may take several follow-up actions to complete your task, but these follow-up actions do not count toward your premium request usage. Only the prompts you enter are billed—tool calls or background steps taken by the agent are not charged.
+### Using Agent Mode Efficiently:
+Agent mode can perform several actions autonomously, so the quality of the initial prompt and the context you provide have a direct impact on the efficiency of the session. A clear goal helps the Agent spend fewer turns clarifying requirements or correcting avoidable misunderstandings.
+
+Follow these practices to use Agent mode efficiently:
+
+- Use Plan mode first to define the scope, affected files, implementation steps, and validation criteria.
+- Include the approved plan, relevant constraints, and expected outcome in the Agent prompt.
+- Provide only the context the Agent needs, such as coverage results, related files, and project conventions.
+- Ask the Agent to work toward a measurable goal and to verify the result with tests or coverage reports.
+- Avoid interrupting the Agent with repeated instructions while it is working through the approved plan.
+- If the task is too large, divide it into smaller goals so each session has a clear scope.
+- Choose a model appropriate to the task: faster models for straightforward work and stronger reasoning models for complex debugging or architectural decisions.
+- Review the Agent's progress and results before sending a follow-up prompt, then provide specific feedback instead of repeating the original request.
 
 ## 🍎 Scenario: Boosting The Daily Harvest's Test Coverage
 
@@ -64,20 +75,40 @@ Before we delegate to the Agent, let's understand our starting point.
 
 3. **Note** the current coverage percentage - you'll compare this to the final result!
 
-## 🤖 Step 2: Activating Agent Mode
+## 🧭 Step 2: Creating a Plan for the Agent
+
+Before delegating the work, use Plan mode to turn the coverage results into a focused implementation strategy.
+
+### Instructions:
+
+1. Switch to **Plan mode** in GitHub Copilot Chat.
+2. Provide the current coverage results and ask for a short plan that identifies the highest-impact files and test scenarios needed to reach 80% coverage.
+
+<details>
+<summary>Sample Plan Prompt</summary>
+
+```
+Based on the current coverage results, create an implementation plan to reach at least 80% overall coverage. Prioritize the highest-impact files and business logic. Identify the tests to add, but do not modify any files.
+```
+
+</details>
+
+3. Review the plan and note any adjustments needed before implementation.
+
+## 🤖 Step 3: Activating Agent Mode
 
 Now let's put the Agent to work on our coverage goal.
 
 ### Instructions:
 
 1. **Switch to Agent mode** in GitHub Copilot Chat by selecting 'Agent' from the dropdown underneath the prompt text area
-2. **Provide your goal-oriented prompt** (example below):
+2. **Provide your goal-oriented prompt** and include the approved plan (example below):
 
 <details>
 <summary>Sample Agent Prompt</summary>
 
 ```
-I need you to help me achieve 80% code coverage for The Daily Harvest project. Please:
+I need you to help me achieve 80% code coverage for The Daily Harvest project. Use the approved plan below and:
 
 1. Analyze the current test coverage across all files
 2. Identify components, functions, and modules that lack adequate testing
@@ -87,13 +118,16 @@ I need you to help me achieve 80% code coverage for The Daily Harvest project. P
 6. Continue working until we reach at least 80% overall coverage
 
 Please work autonomously and let me know your progress as you go. Focus on business logic, utility functions, and React components first.
+
+Approved plan:
+[Paste the Plan mode response here]
 ```
 
 </details>
 
-3. **Submit the prompt** and let the Agent begin working.
+3. **Submit the prompt** and let the Agent begin working. Notice how Plan mode helped structure the task before Agent mode started making changes.
 
-## 👀 Step 3: Observing Agent Mode in Action
+## 👀 Step 4: Observing Agent Mode in Action
 
 This is where Agent mode truly shines! Watch as it works autonomously, **behaving like a real developer** working toward your goal.
 
@@ -141,7 +175,7 @@ This is where Agent mode truly shines! Watch as it works autonomously, **behavin
 Additional information can be found in the [GitHub Copilot Agent Mode blog post](https://github.blog/ai-and-ml/github-copilot/agent-mode-101-all-about-github-copilots-powerful-mode/) and the [Visual Studio Code Documentation](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode).
 
 
-## 🔧 Step 4: Reviewing and Refining Agent Results
+## 🔧 Step 5: Reviewing and Refining Agent Results
 
 The Agent will work toward the 80% goal, but you should review its work.
 
@@ -172,7 +206,7 @@ The Agent will work toward the 80% goal, but you should review its work.
 
     </details>
 
-## 🎯 Step 5: Understanding Agent Decision-Making
+## 🎯 Step 6: Understanding Agent Decision-Making
 
 Let's gain insight into how the Agent approached this complex task.
 
@@ -245,7 +279,7 @@ Congratulations! You've successfully used GitHub Copilot Chat in Agent mode to a
 2. How would Agent mode change your approach to large refactoring tasks?
 3. What types of development goals would you delegate to Agent mode in real projects?
 4. How did the Agent's autonomous approach compare to your manual development process?
-5. Which mode of GitHub Copilot (Autocomplete, Edit, Chat, Agent) do you find most useful for different scenarios?
+5. Which mode of GitHub Copilot (Autocomplete, Ask, Plan, Agent) do you find most useful for different scenarios?
 
 ### Key Takeaways:
 - Agent mode is particularly effective for complex, multi-file tasks that require a high level of coordination and autonomy.
@@ -256,6 +290,12 @@ Congratulations! You've successfully used GitHub Copilot Chat in Agent mode to a
 
 In Exercise 5, we'll take things further by exploring how GitHub Copilot Coding Agent can work autonomously in the background to assist with your coding tasks directly from a GitHub Issue. 
 
-#### You have successfully completed the lab. Click on **Next >>** to continue to the next lab.
+#### You have successfully completed the lab.
 
-![](../../media/next-page.png)
+<table align="center">
+   <tr>
+      <td><a href="Lab-3-Code-Editing.md"><strong>&larr; Previous Lab</strong></a></td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td><a href="Lab-5-Agentic-Coding.md"><strong>Next Lab &rarr;</strong></a></td>
+   </tr>
+</table>
